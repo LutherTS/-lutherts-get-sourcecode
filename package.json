@@ -1,0 +1,22 @@
+{
+  "name": "get-sourcecode",
+  "version": "0.1.0",
+  "description": "Retrieves the ESLint-generated SourceCode object of a file.",
+  "keywords": [
+    "sourcecode",
+    "eslint",
+    "ast",
+    "comments"
+  ],
+  "license": "MIT",
+  "author": "Luther Tchofo Safo <luther@tchofo-safo-portfolio.me>",
+  "type": "module",
+  "main": "source/library/index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "eslint": "^10.3.0",
+    "typescript-eslint": "^8.59.1"
+  }
+}
