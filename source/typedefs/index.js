@@ -1,6 +1,8 @@
-/**
- * @typedef {import("eslint").Linter.LanguageOptions} LanguageOptions
- * @typedef {import("eslint").Linter} Linter
- */
+import { getSourceCode } from "../library/index.js";
 
-export {};
+import { errorMessages_errorStatuses } from "../constants/errors/index.js";
+
+/**
+ * @typedef {keyof typeof errorMessages_errorStatuses} ErrorMessages_ErrorStatuses__Key
+ * @typedef {ReturnType<typeof getSourceCode>} GetSourceCodeReturnType
+ */

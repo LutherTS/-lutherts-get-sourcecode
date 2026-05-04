@@ -1,44 +1,34 @@
 import fs from "fs";
 
 import { Linter } from "eslint";
-import { parser } from "typescript-eslint";
 
 import { errorMessages_errorStatuses } from "../constants/errors/index.js";
 import {
+  absolutePathIsSupposedToBeAString,
   absolutePathCouldntBeRead,
   jsTsJsxTsxCouldntBeParsed,
 } from "../constants/errors/messages.js";
 
 import { successTrue } from "./constants/index.js";
+import { typeScriptAndJSXCompatible } from "./constants/parser.js";
 
 import { makeSuccessFalseTypeError } from "./utilities/index.js";
 
 /**
- * @typedef {import("../typedefs/index.js").LanguageOptions} LanguageOptions
- * @typedef {import("../typedefs/index.js").Linter} Linter
- */
-
-const typeScriptAndJSXCompatible = /** @type {const} */ ({
-  parser,
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-});
-
-/**
  *
  * @param {string} absolutePath
- * @param {Object} options
- * @param {LanguageOptions} [options.languageOptions]
- * @param {Linter} [options.linter]
  * @returns
  */
-export const getSourceCode = (
-  absolutePath,
-  { languageOptions = typeScriptAndJSXCompatible, linter = new Linter() } = {},
-) => {
+export const getSourceCode = (absolutePath) => {
+  if (typeof absolutePath !== "string")
+    return makeSuccessFalseTypeError(
+      absolutePathIsSupposedToBeAString,
+      errorMessages_errorStatuses[absolutePathIsSupposedToBeAString],
+    );
+
+  const linter = new Linter();
+  const languageOptions = typeScriptAndJSXCompatible;
+
   /** @type {string} */
   let code;
 
@@ -61,7 +51,7 @@ export const getSourceCode = (
     );
 
   return /** @type {const} */ ({
-    ...successTrue,
     sourceCode,
+    ...successTrue,
   });
 };

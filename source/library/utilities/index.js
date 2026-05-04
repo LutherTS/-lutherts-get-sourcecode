@@ -11,14 +11,14 @@ import { successFalse, typeError, typeWarning } from "../constants/index.js";
  */
 export const makeSuccessFalseTypeError = (message, status) =>
   /** @type {const} */ ({
-    ...successFalse,
     errors: [
       {
-        ...typeError,
         message,
         status,
+        ...typeError,
       },
     ],
+    ...successFalse,
   });
 
 /**
@@ -30,12 +30,12 @@ export const makeSuccessFalseTypeError = (message, status) =>
  */
 export const makeSuccessFalseTypeWarning = (message, status) =>
   /** @type {const} */ ({
-    ...successFalse,
     errors: [
       {
-        ...typeWarning,
         message,
         status,
+        ...typeWarning,
       },
     ],
+    ...successFalse,
   }); // (Currently unused. The current rationale is that it is up to the consumer to decide whether to consider the errors as warning or not depending on its own use cases.)

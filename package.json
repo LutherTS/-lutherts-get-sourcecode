@@ -1,7 +1,7 @@
 {
   "name": "get-sourcecode",
   "version": "0.1.0",
-  "description": "Retrieves the ESLint-generated SourceCode object of a file.",
+  "description": "Retrieves the ESLint-generated SourceCode object of a JS/TS/JSX/TSX file.",
   "keywords": [
     "sourcecode",
     "eslint",
