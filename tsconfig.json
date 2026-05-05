@@ -6,6 +6,7 @@
     "declarationDir": "declarations",
     "emitDeclarationOnly": true,
     "skipLibCheck": true,
+    "removeComments": true,
     "types": ["node"]
   },
   "files": ["source/library/index.js"]

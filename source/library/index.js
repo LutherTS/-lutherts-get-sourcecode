@@ -14,6 +14,8 @@ import { typeScriptAndJSXCompatible } from "./constants/parser.js";
 
 import { makeSuccessFalseTypeError } from "./utilities/index.js";
 
+/* Primary export */
+
 /**
  * $COMMENT#JSDOC#DEFS#GETSOURCECODE
  * @param absolutePath $COMMENT#JSDOC#PARAMS#ABSOLUTEPATH
@@ -55,6 +57,10 @@ export const getSourceCode = (/** @type {string} */ absolutePath) => {
   });
 };
 
+/* Secondary exports */
+
+// This library also exports the basic constants ...
+
 export {
   successFalse,
   successTrue,
@@ -62,7 +68,17 @@ export {
   typeWarning,
 } from "./constants/index.js";
 
+// ... and utilities used across my projects for error handling.
+
 export {
   makeSuccessFalseTypeError,
   makeSuccessFalseTypeWarning,
 } from "./utilities/index.js";
+
+// Additionally, it showcases how to access a library's comment variables as keys and values.
+// For the JS version (typed with literals):
+// - `import { commentVariablesResolvedConfigData as getSourceCodeCommentVariablesDataJS } from "get-sourcecode";`
+// For the JSON version (typed with strings):
+// - `import getSourceCodeCommentVariablesDataJSON from "get-sourcecode/comments.config.json" with { type: "json" };`
+
+export { resolvedConfigData as commentVariablesResolvedConfigData } from "../../comments.config.mjs";

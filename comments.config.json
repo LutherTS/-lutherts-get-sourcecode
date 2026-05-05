@@ -2,6 +2,7 @@
   "en": {
     "jsDoc": {
       "consts": {
+        "public": {},
         "successFalse": {
           "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.",
           "key": "EN#JSDOC#CONSTS#SUCCESSFALSE"
@@ -20,6 +21,7 @@
         }
       },
       "defs": {
+        "public": {},
         "getSourceCode": {
           "value": "Gets the ESLint-generated `SourceCode` object of a file from its absolute path.",
           "key": "EN#JSDOC#DEFS#GETSOURCECODE"
@@ -34,6 +36,7 @@
         }
       },
       "params": {
+        "public": {},
         "absolutePath": {
           "value": "The absolute path of the file at hand.",
           "key": "EN#JSDOC#PARAMS#ABSOLUTEPATH"
@@ -48,6 +51,7 @@
         }
       },
       "returns": {
+        "public": {},
         "getSourceCode": {
           "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.",
           "key": "EN#JSDOC#RETURNS#GETSOURCECODE"
