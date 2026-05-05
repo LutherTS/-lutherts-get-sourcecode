@@ -10,9 +10,9 @@ import { errorMessages_errorStatuses } from "../../constants/errors/index.js";
 /* assert */
 
 /**
- * Asserts that `getSourceCode` fails when it should.
- * @param getSourceCodeResults The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.
- * @param expectedMessage The expected message of the error that should be encountered during failure, from which the status can be inferred.
+ * $COMMENT#TSDOC#TESTS#DEFS#ASSERTFAILUREWITHMESSAGE
+ * @param getSourceCodeResults $COMMENT#TSDOC#TESTS#PARAMS#GETSOURCECODERESULTS
+ * @param expectedMessage $COMMENT#TSDOC#TESTS#PARAMS#EXPECTEDMESSAGE
  * @returns
  */
 export const assertFailureWithMessage =
@@ -32,8 +32,8 @@ export const assertFailureWithMessage =
   };
 
 /**
- * Asserts that `getSourceCode` succeeds when it should.
- * @param getSourceCodeResults The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.
+ * $COMMENT#TSDOC#TESTS#DEFS#ASSERTSUCCESS
+ * @param getSourceCodeResults $COMMENT#TSDOC#TESTS#PARAMS#GETSOURCECODERESULTS
  * @returns
  */
 export const assertSuccess = (
