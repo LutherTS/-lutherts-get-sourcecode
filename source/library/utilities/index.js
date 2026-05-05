@@ -42,4 +42,4 @@ export const makeSuccessFalseTypeWarning =
         },
       ],
       ...successFalse,
-    }); // (Currently unused. The current rationale is that it is up to the consumer to decide whether to consider the errors as warning or not depending on its own use cases.)
+    });

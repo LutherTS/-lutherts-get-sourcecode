@@ -1,3 +1,5 @@
+/* error messages */
+
 export const absolutePathIsSupposedToBeAString =
   "`absolutePath` is supposed to be a string.";
 export const absolutePathCouldntBeRead =
