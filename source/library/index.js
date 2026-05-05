@@ -15,11 +15,10 @@ import { typeScriptAndJSXCompatible } from "./constants/parser.js";
 import { makeSuccessFalseTypeError } from "./utilities/index.js";
 
 /**
- *
- * @param {string} absolutePath
+ * @param absolutePath The absolute path of the file at hand.
  * @returns
  */
-export const getSourceCode = (absolutePath) => {
+export const getSourceCode = (/** @type {string} */ absolutePath) => {
   if (typeof absolutePath !== "string")
     return makeSuccessFalseTypeError(
       absolutePathIsSupposedToBeAString,
@@ -29,8 +28,7 @@ export const getSourceCode = (absolutePath) => {
   const linter = new Linter();
   const languageOptions = typeScriptAndJSXCompatible;
 
-  /** @type {string} */
-  let code;
+  let code = /** @type {string | undefined} */ (undefined);
 
   try {
     code = fs.readFileSync(absolutePath, "utf8");
@@ -55,3 +53,15 @@ export const getSourceCode = (absolutePath) => {
     ...successTrue,
   });
 };
+
+export {
+  successFalse,
+  successTrue,
+  typeError,
+  typeWarning,
+} from "./constants/index.js";
+
+export {
+  makeSuccessFalseTypeError,
+  makeSuccessFalseTypeWarning,
+} from "./utilities/index.js";

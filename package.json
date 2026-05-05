@@ -12,6 +12,7 @@
   "author": "Luther Tchofo Safo <luther@tchofo-safo-portfolio.me>",
   "type": "module",
   "main": "source/library/index.js",
+  "types": "declarations/source/library/index.d.ts",
   "scripts": {
     "test": "node --test"
   },
@@ -20,6 +21,7 @@
     "typescript-eslint": "^8.59.1"
   },
   "devDependencies": {
+    "@types/node": "^25.6.0",
     "typescript": "^6.0.3"
   }
 }

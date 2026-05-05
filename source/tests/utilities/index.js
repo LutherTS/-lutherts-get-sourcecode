@@ -11,29 +11,34 @@ import { errorMessages_errorStatuses } from "../../constants/errors/index.js";
 
 /**
  *
- * @template {ErrorMessages_ErrorStatuses__Key} T
- * @param {GetSourceCodeReturnType} getSourceCodeResults
- * @param {T} expectedMessage
+ * @param getSourceCodeResults
+ * @param expectedMessage
  * @returns
  */
-export const assertFailure = (getSourceCodeResults, expectedMessage) => {
-  assert.strictEqual(getSourceCodeResults.success, false);
-  assert.strictEqual(
-    getSourceCodeResults.errors.some(
-      (e) =>
-        e.message === expectedMessage &&
-        e.status === errorMessages_errorStatuses[expectedMessage],
-    ),
-    true,
-  );
-};
+export const assertFailure =
+  /** @template {ErrorMessages_ErrorStatuses__Key} T */ (
+    /** @type {GetSourceCodeReturnType} */ getSourceCodeResults,
+    /** @type {T} */ expectedMessage,
+  ) => {
+    assert.strictEqual(getSourceCodeResults.success, false);
+    assert.strictEqual(
+      getSourceCodeResults.errors.some(
+        (e) =>
+          e.message === expectedMessage &&
+          e.status === errorMessages_errorStatuses[expectedMessage],
+      ),
+      true,
+    );
+  };
 
 /**
  *
- * @param {GetSourceCodeReturnType} getSourceCodeResults
+ * @param getSourceCodeResults
  * @returns
  */
-export const assertSuccess = (getSourceCodeResults) => {
+export const assertSuccess = (
+  /** @type {GetSourceCodeReturnType} */ getSourceCodeResults,
+) => {
   assert.strictEqual(getSourceCodeResults.success, true);
   assert.ok(getSourceCodeResults.sourceCode.ast);
   assert.strictEqual(

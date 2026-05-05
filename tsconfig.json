@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
     "rootDir": ".",
-    "outDir": "declarations", // Where the .d.ts files go
-    "allowJs": true, // Read JS files as input
-    "declaration": true, // Generate .d.ts files
-    "emitDeclarationOnly": true // Only output .d.ts, no compiled JS
+    "allowJs": true,
+    "declaration": true,
+    "declarationDir": "declarations",
+    "emitDeclarationOnly": true,
+    "skipLibCheck": true,
+    "types": ["node"]
   },
-  "include": ["source/library/index.js"] // Where your JS source files live
+  "files": ["source/library/index.js"]
 }

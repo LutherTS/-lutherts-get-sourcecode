@@ -14,4 +14,4 @@ export const typeError = /** @type {const} */ ({
 });
 export const typeWarning = /** @type {const} */ ({
   type: "warning",
-}); // (Currently unused. The current rationale is that it is up to the consumer to decide whether to consider the errors as warning or not depending on its own use cases.)
+});

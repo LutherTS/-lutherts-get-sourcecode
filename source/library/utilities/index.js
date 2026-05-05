@@ -4,38 +4,42 @@ import { successFalse, typeError, typeWarning } from "../constants/index.js";
 
 /**
  *
- * @template {string} T
- * @template {string} U
- * @param {T} message
- * @param {U} status
+ * @param message
+ * @param status
  */
-export const makeSuccessFalseTypeError = (message, status) =>
-  /** @type {const} */ ({
-    errors: [
-      {
-        message,
-        status,
-        ...typeError,
-      },
-    ],
-    ...successFalse,
-  });
+export const makeSuccessFalseTypeError =
+  /** @template {string} T, @template {string} U */ (
+    /** @type {T} */ message,
+    /** @type {U} */ status,
+  ) =>
+    /** @type {const} */ ({
+      errors: [
+        {
+          message,
+          status,
+          ...typeError,
+        },
+      ],
+      ...successFalse,
+    });
 
 /**
  *
- * @template {string} T
- * @template {string} U
- * @param {T} message
- * @param {U} status
+ * @param message
+ * @param status
  */
-export const makeSuccessFalseTypeWarning = (message, status) =>
-  /** @type {const} */ ({
-    errors: [
-      {
-        message,
-        status,
-        ...typeWarning,
-      },
-    ],
-    ...successFalse,
-  }); // (Currently unused. The current rationale is that it is up to the consumer to decide whether to consider the errors as warning or not depending on its own use cases.)
+export const makeSuccessFalseTypeWarning =
+  /** @template {string} T, @template {string} U */ (
+    /** @type {T} */ message,
+    /** @type {U} */ status,
+  ) =>
+    /** @type {const} */ ({
+      errors: [
+        {
+          message,
+          status,
+          ...typeWarning,
+        },
+      ],
+      ...successFalse,
+    }); // (Currently unused. The current rationale is that it is up to the consumer to decide whether to consider the errors as warning or not depending on its own use cases.)
