@@ -17,9 +17,9 @@ import { makeSuccessFalseTypeError } from "./utilities/index.js";
 /* Primary export */
 
 /**
- * $COMMENT#JSDOC#DEFS#GETSOURCECODE
- * @param absolutePath $COMMENT#JSDOC#PARAMS#ABSOLUTEPATH
- * @returns $COMMENT#JSDOC#RETURNS#GETSOURCECODE
+ * $COMMENT#JSDOC#DEFS#PUBLIC#GETSOURCECODE
+ * @param absolutePath $COMMENT#JSDOC#PARAMS#PUBLIC#ABSOLUTEPATH
+ * @returns $COMMENT#JSDOC#RETURNS#PUBLIC#GETSOURCECODE
  */
 export const getSourceCode = (/** @type {string} */ absolutePath) => {
   if (typeof absolutePath !== "string")
