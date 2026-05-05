@@ -3,9 +3,9 @@ import { successFalse, typeError, typeWarning } from "../constants/index.js";
 /* makeSuccessFalse */
 
 /**
- * $COMMENT#JSDOC#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR
- * @param message $COMMENT#JSDOC#PARAMS#PUBLIC#MESSAGE
- * @param status $COMMENT#JSDOC#PARAMS#PUBLIC#STATUS
+ * Makes a `{success: false}` object with a single error in its errors array of `{type: error}` based on the message it is meant to display and the status it is meant to have.
+ * @param message The human-readable message of the error.
+ * @param status The static status text of the error.
  */
 export const makeSuccessFalseTypeError =
   /** @template {string} T, @template {string} U */ (
@@ -24,9 +24,9 @@ export const makeSuccessFalseTypeError =
     });
 
 /**
- * $COMMENT#JSDOC#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING
- * @param message $COMMENT#JSDOC#PARAMS#PUBLIC#MESSAGE
- * @param status $COMMENT#JSDOC#PARAMS#PUBLIC#STATUS
+ * Makes a `{success: false}` object with a single error in its errors array of `{type: warning}` based on the message it is meant to display and the status it is meant to have.
+ * @param message The human-readable message of the error.
+ * @param status The static status text of the error.
  */
 export const makeSuccessFalseTypeWarning =
   /** @template {string} T, @template {string} U */ (

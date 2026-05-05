@@ -17,9 +17,9 @@ import { makeSuccessFalseTypeError } from "./utilities/index.js";
 /* Primary export */
 
 /**
- * $COMMENT#JSDOC#DEFS#PUBLIC#GETSOURCECODE
- * @param absolutePath $COMMENT#JSDOC#PARAMS#PUBLIC#ABSOLUTEPATH
- * @returns $COMMENT#JSDOC#RETURNS#PUBLIC#GETSOURCECODE
+ * Gets the ESLint-generated `SourceCode` object of a file from its absolute path.
+ * @param absolutePath The absolute path of the file at hand.
+ * @returns The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.
  */
 export const getSourceCode = (/** @type {string} */ absolutePath) => {
   if (typeof absolutePath !== "string")

@@ -1,66 +1,90 @@
-/** @typedef {{"en":{"jsDoc":{"consts":{"public":{"successFalse":{"value":"Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.","key":"EN#JSDOC#CONSTS#PUBLIC#SUCCESSFALSE"},"successTrue":{"value":"Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.","key":"EN#JSDOC#CONSTS#PUBLIC#SUCCESSTRUE"},"typeError":{"value":"Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.","key":"EN#JSDOC#CONSTS#PUBLIC#TYPEERROR"},"typeWarning":{"value":"Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.","key":"EN#JSDOC#CONSTS#PUBLIC#TYPEWARNING"}}},"defs":{"public":{"getSourceCode":{"value":"Gets the ESLint-generated `SourceCode` object of a file from its absolute path.","key":"EN#JSDOC#DEFS#PUBLIC#GETSOURCECODE"},"makeSuccessFalseTypeError":{"value":"Makes a `{success: false}` object with a single error in its errors array of `{type: error}` based on the message it is meant to display and the status it is meant to have.","key":"EN#JSDOC#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR"},"makeSuccessFalseTypeWarning":{"value":"Makes a `{success: false}` object with a single error in its errors array of `{type: warning}` based on the message it is meant to display and the status it is meant to have.","key":"EN#JSDOC#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"}}},"params":{"public":{"absolutePath":{"value":"The absolute path of the file at hand.","key":"EN#JSDOC#PARAMS#PUBLIC#ABSOLUTEPATH"},"message":{"value":"The human-readable message of the error.","key":"EN#JSDOC#PARAMS#PUBLIC#MESSAGE"},"status":{"value":"The static status text of the error.","key":"EN#JSDOC#PARAMS#PUBLIC#STATUS"}}},"returns":{"public":{"getSourceCode":{"value":"The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.","key":"EN#JSDOC#RETURNS#PUBLIC#GETSOURCECODE"}}}},"composedVariablesExclusives":{"successFalse":{"value":"successFalse","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE"},"successTrue":{"value":"successTrue","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSTRUE"},"typeError":{"value":"typeError","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEERROR"},"typeWarning":{"value":"typeWarning","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING"},"success_false":{"value":"success: false","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE"},"success_true":{"value":"success: true","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE"},"type_error":{"value":"type: error","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR"},"type_warning":{"value":"type: warning","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING"},"success":{"value":"success","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS"},"false":{"value":"false","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE"},"true":{"value":"true","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE"},"type":{"value":"type","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE"},"error":{"value":"error","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR"},"warning":{"value":"warning","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING"},"applyLastWith":{"value":"Apply last with","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#APPLYLASTWITH"},"toEnsure":{"value":"to ensure that","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE"},"sitsAtTopLike":{"value":"sits at the top of its object's type definition, like","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE"},"propApropB":{"value":"propertyA, propertyB","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB"},"eslintSourceCode":{"value":"ESLint-generated `SourceCode` object of a file","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE"},"singleError":{"value":"single error in its errors array","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR"},"basedOnMessageAndStatus":{"value":"based on the message it is meant to display and the status it is meant to have","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS"},"absolutePath":{"value":"absolute path of the file","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH"},"atHand":{"value":"at hand","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND"}}}}} ResolvedConfigData */
+/** @typedef {{"en":{"jsDoc":{"core":{"consts":{"public":{"successFalse":{"value":"Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.","key":"EN#JSDOC#CORE#CONSTS#PUBLIC#SUCCESSFALSE"},"successTrue":{"value":"Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.","key":"EN#JSDOC#CORE#CONSTS#PUBLIC#SUCCESSTRUE"},"typeError":{"value":"Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.","key":"EN#JSDOC#CORE#CONSTS#PUBLIC#TYPEERROR"},"typeWarning":{"value":"Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.","key":"EN#JSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING"}}},"defs":{"public":{"getSourceCode":{"value":"Gets the ESLint-generated `SourceCode` object of a file from its absolute path.","key":"EN#JSDOC#CORE#DEFS#PUBLIC#GETSOURCECODE"},"makeSuccessFalseTypeError":{"value":"Makes a `{success: false}` object with a single error in its errors array of `{type: error}` based on the message it is meant to display and the status it is meant to have.","key":"EN#JSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR"},"makeSuccessFalseTypeWarning":{"value":"Makes a `{success: false}` object with a single error in its errors array of `{type: warning}` based on the message it is meant to display and the status it is meant to have.","key":"EN#JSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"}}},"params":{"public":{"absolutePath":{"value":"The absolute path of the file at hand.","key":"EN#JSDOC#CORE#PARAMS#PUBLIC#ABSOLUTEPATH"},"message":{"value":"The human-readable message of the error.","key":"EN#JSDOC#CORE#PARAMS#PUBLIC#MESSAGE"},"status":{"value":"The static status text of the error.","key":"EN#JSDOC#CORE#PARAMS#PUBLIC#STATUS"}}},"returns":{"public":{"getSourceCode":{"value":"The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.","key":"EN#JSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE"}}}},"tests":{"defs":{"assertFailureWithMessage":{"value":"Asserts that `getSourceCode` fails when it should.","key":"EN#JSDOC#TESTS#DEFS#ASSERTFAILUREWITHMESSAGE"},"assertSuccess":{"value":"Asserts that `getSourceCode` succeeds when it should.","key":"EN#JSDOC#TESTS#DEFS#ASSERTSUCCESS"}},"params":{"getSourceCodeResults":{"value":"The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.","key":"EN#JSDOC#TESTS#PARAMS#GETSOURCECODERESULTS"},"expectedMessage":{"value":"The expected message of the error that should be encountered during failure, from which the status can be inferred.","key":"EN#JSDOC#TESTS#PARAMS#EXPECTEDMESSAGE"}}}},"composedVariablesExclusives":{"successFalse":{"value":"successFalse","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE"},"successTrue":{"value":"successTrue","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSTRUE"},"typeError":{"value":"typeError","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEERROR"},"typeWarning":{"value":"typeWarning","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING"},"success_false":{"value":"success: false","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE"},"success_true":{"value":"success: true","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE"},"type_error":{"value":"type: error","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR"},"type_warning":{"value":"type: warning","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING"},"success":{"value":"success","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS"},"false":{"value":"false","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE"},"true":{"value":"true","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE"},"type":{"value":"type","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE"},"error":{"value":"error","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR"},"warning":{"value":"warning","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING"},"_applyLastWith":{"value":"Apply last with","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH"},"toEnsure":{"value":"to ensure that","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE"},"sitsAtTopLike":{"value":"sits at the top of its object's type definition, like","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE"},"propApropB":{"value":"propertyA, propertyB","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB"},"eslintSourceCode":{"value":"ESLint-generated `SourceCode` object of a file","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE"},"singleError":{"value":"single error in its errors array","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR"},"basedOnMessageAndStatus":{"value":"based on the message it is meant to display and the status it is meant to have","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS"},"absolutePath":{"value":"absolute path of the file","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH"},"atHand":{"value":"at hand","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND"},"_asserts":{"value":"Asserts","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS"},"getSourceCode":{"value":"getSourceCode","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#GETSOURCECODE"},"whenItShould":{"value":"when it should","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD"},"message":{"value":"message","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE"},"status":{"value":"status","key":"EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS"}}}}} ResolvedConfigData */
 
 /** @type {ResolvedConfigData} */
 export const resolvedConfigData = {
   "en": {
     "jsDoc": {
-      "consts": {
-        "public": {
-          "successFalse": {
-            "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.",
-            "key": "EN#JSDOC#CONSTS#PUBLIC#SUCCESSFALSE"
-          },
-          "successTrue": {
-            "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.",
-            "key": "EN#JSDOC#CONSTS#PUBLIC#SUCCESSTRUE"
-          },
-          "typeError": {
-            "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.",
-            "key": "EN#JSDOC#CONSTS#PUBLIC#TYPEERROR"
-          },
-          "typeWarning": {
-            "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.",
-            "key": "EN#JSDOC#CONSTS#PUBLIC#TYPEWARNING"
+      "core": {
+        "consts": {
+          "public": {
+            "successFalse": {
+              "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.",
+              "key": "EN#JSDOC#CORE#CONSTS#PUBLIC#SUCCESSFALSE"
+            },
+            "successTrue": {
+              "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.",
+              "key": "EN#JSDOC#CORE#CONSTS#PUBLIC#SUCCESSTRUE"
+            },
+            "typeError": {
+              "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.",
+              "key": "EN#JSDOC#CORE#CONSTS#PUBLIC#TYPEERROR"
+            },
+            "typeWarning": {
+              "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.",
+              "key": "EN#JSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING"
+            }
+          }
+        },
+        "defs": {
+          "public": {
+            "getSourceCode": {
+              "value": "Gets the ESLint-generated `SourceCode` object of a file from its absolute path.",
+              "key": "EN#JSDOC#CORE#DEFS#PUBLIC#GETSOURCECODE"
+            },
+            "makeSuccessFalseTypeError": {
+              "value": "Makes a `{success: false}` object with a single error in its errors array of `{type: error}` based on the message it is meant to display and the status it is meant to have.",
+              "key": "EN#JSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+            },
+            "makeSuccessFalseTypeWarning": {
+              "value": "Makes a `{success: false}` object with a single error in its errors array of `{type: warning}` based on the message it is meant to display and the status it is meant to have.",
+              "key": "EN#JSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+            }
+          }
+        },
+        "params": {
+          "public": {
+            "absolutePath": {
+              "value": "The absolute path of the file at hand.",
+              "key": "EN#JSDOC#CORE#PARAMS#PUBLIC#ABSOLUTEPATH"
+            },
+            "message": {
+              "value": "The human-readable message of the error.",
+              "key": "EN#JSDOC#CORE#PARAMS#PUBLIC#MESSAGE"
+            },
+            "status": {
+              "value": "The static status text of the error.",
+              "key": "EN#JSDOC#CORE#PARAMS#PUBLIC#STATUS"
+            }
+          }
+        },
+        "returns": {
+          "public": {
+            "getSourceCode": {
+              "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.",
+              "key": "EN#JSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE"
+            }
           }
         }
       },
-      "defs": {
-        "public": {
-          "getSourceCode": {
-            "value": "Gets the ESLint-generated `SourceCode` object of a file from its absolute path.",
-            "key": "EN#JSDOC#DEFS#PUBLIC#GETSOURCECODE"
+      "tests": {
+        "defs": {
+          "assertFailureWithMessage": {
+            "value": "Asserts that `getSourceCode` fails when it should.",
+            "key": "EN#JSDOC#TESTS#DEFS#ASSERTFAILUREWITHMESSAGE"
           },
-          "makeSuccessFalseTypeError": {
-            "value": "Makes a `{success: false}` object with a single error in its errors array of `{type: error}` based on the message it is meant to display and the status it is meant to have.",
-            "key": "EN#JSDOC#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
-          },
-          "makeSuccessFalseTypeWarning": {
-            "value": "Makes a `{success: false}` object with a single error in its errors array of `{type: warning}` based on the message it is meant to display and the status it is meant to have.",
-            "key": "EN#JSDOC#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+          "assertSuccess": {
+            "value": "Asserts that `getSourceCode` succeeds when it should.",
+            "key": "EN#JSDOC#TESTS#DEFS#ASSERTSUCCESS"
           }
-        }
-      },
-      "params": {
-        "public": {
-          "absolutePath": {
-            "value": "The absolute path of the file at hand.",
-            "key": "EN#JSDOC#PARAMS#PUBLIC#ABSOLUTEPATH"
+        },
+        "params": {
+          "getSourceCodeResults": {
+            "value": "The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.",
+            "key": "EN#JSDOC#TESTS#PARAMS#GETSOURCECODERESULTS"
           },
-          "message": {
-            "value": "The human-readable message of the error.",
-            "key": "EN#JSDOC#PARAMS#PUBLIC#MESSAGE"
-          },
-          "status": {
-            "value": "The static status text of the error.",
-            "key": "EN#JSDOC#PARAMS#PUBLIC#STATUS"
-          }
-        }
-      },
-      "returns": {
-        "public": {
-          "getSourceCode": {
-            "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.",
-            "key": "EN#JSDOC#RETURNS#PUBLIC#GETSOURCECODE"
+          "expectedMessage": {
+            "value": "The expected message of the error that should be encountered during failure, from which the status can be inferred.",
+            "key": "EN#JSDOC#TESTS#PARAMS#EXPECTEDMESSAGE"
           }
         }
       }
@@ -122,9 +146,9 @@ export const resolvedConfigData = {
         "value": "warning",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING"
       },
-      "applyLastWith": {
+      "_applyLastWith": {
         "value": "Apply last with",
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#APPLYLASTWITH"
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH"
       },
       "toEnsure": {
         "value": "to ensure that",
@@ -157,6 +181,26 @@ export const resolvedConfigData = {
       "atHand": {
         "value": "at hand",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND"
+      },
+      "_asserts": {
+        "value": "Asserts",
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS"
+      },
+      "getSourceCode": {
+        "value": "getSourceCode",
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#GETSOURCECODE"
+      },
+      "whenItShould": {
+        "value": "when it should",
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD"
+      },
+      "message": {
+        "value": "message",
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE"
+      },
+      "status": {
+        "value": "status",
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS"
       }
     }
   }

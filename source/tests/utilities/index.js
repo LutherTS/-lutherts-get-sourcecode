@@ -10,12 +10,12 @@ import { errorMessages_errorStatuses } from "../../constants/errors/index.js";
 /* assert */
 
 /**
- *
- * @param getSourceCodeResults
- * @param expectedMessage
+ * Asserts that `getSourceCode` fails when it should.
+ * @param getSourceCodeResults The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.
+ * @param expectedMessage The expected message of the error that should be encountered during failure, from which the status can be inferred.
  * @returns
  */
-export const assertFailure =
+export const assertFailureWithMessage =
   /** @template {ErrorMessages_ErrorStatuses__Key} T */ (
     /** @type {GetSourceCodeReturnType} */ getSourceCodeResults,
     /** @type {T} */ expectedMessage,
@@ -32,8 +32,8 @@ export const assertFailure =
   };
 
 /**
- *
- * @param getSourceCodeResults
+ * Asserts that `getSourceCode` succeeds when it should.
+ * @param getSourceCodeResults The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.
  * @returns
  */
 export const assertSuccess = (

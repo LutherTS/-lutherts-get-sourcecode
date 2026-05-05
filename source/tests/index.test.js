@@ -14,7 +14,7 @@ import {
 
 import { JAVASCRIPT, TYPESCRIPT } from "./constants/index.js";
 
-import { assertFailure, assertSuccess } from "./utilities/index.js";
+import { assertFailureWithMessage, assertSuccess } from "./utilities/index.js";
 
 const currentDirectoryPath = path.dirname(url.fileURLToPath(import.meta.url));
 
@@ -53,18 +53,21 @@ describe("getSourceCode", () => {
 
   it("should error if `absolutePath` is not a string", () => {
     const getSourceCodeResults = getSourceCode(2);
-    assertFailure(getSourceCodeResults, absolutePathIsSupposedToBeAString);
+    assertFailureWithMessage(
+      getSourceCodeResults,
+      absolutePathIsSupposedToBeAString,
+    );
   });
 
   it("should error if `absolutePath` is not found", () => {
     const getSourceCodeResults = getSourceCode("does-not-exist.js");
-    assertFailure(getSourceCodeResults, absolutePathCouldntBeRead);
+    assertFailureWithMessage(getSourceCodeResults, absolutePathCouldntBeRead);
   });
 
   for (const l of languages) {
     it(`should error if given an invalid ${l.language} file`, () => {
       const getSourceCodeResults = getSourceCode(l.fatalPath);
-      assertFailure(getSourceCodeResults, jsTsJsxTsxCouldntBeParsed);
+      assertFailureWithMessage(getSourceCodeResults, jsTsJsxTsxCouldntBeParsed);
     });
 
     it(`should succeed if given a valid ${l.language} file`, () => {
