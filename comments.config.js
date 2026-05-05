@@ -1,0 +1,128 @@
+/* variants */
+
+const EN = "en";
+const ENGLISH = "English";
+
+/* data */
+
+const enData = Object.freeze({
+  jsDoc: Object.freeze({
+    consts: Object.freeze({
+      successFalse:
+        "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE}`." /* variations: $COMMENT#JSDOC#CONSTS#SUCCESSFALSE / core: $COMMENT#EN#JSDOC#CONSTS#SUCCESSFALSE */,
+      successTrue:
+        "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSTRUE` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSTRUE}`." /* variations: $COMMENT#JSDOC#CONSTS#SUCCESSTRUE / core: $COMMENT#EN#JSDOC#CONSTS#SUCCESSTRUE */,
+      typeError:
+        "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEERROR` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEERROR}`." /* variations: $COMMENT#JSDOC#CONSTS#TYPEERROR / core: $COMMENT#EN#JSDOC#CONSTS#TYPEERROR */,
+      typeWarning:
+        "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING}`." /* variations: $COMMENT#JSDOC#CONSTS#TYPEWARNING / core: $COMMENT#EN#JSDOC#CONSTS#TYPEWARNING */,
+    }),
+    defs: Object.freeze({
+      getSourceCode:
+        "Gets the $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE from its absolute path." /* variations: $COMMENT#JSDOC#DEFS#GETSOURCECODE / core: $COMMENT#EN#JSDOC#DEFS#GETSOURCECODE */,
+    }),
+    params: Object.freeze({
+      absolutePath:
+        "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND." /* variations: $COMMENT#JSDOC#PARAMS#ABSOLUTEPATH / core: $COMMENT#EN#JSDOC#PARAMS#ABSOLUTEPATH */,
+    }),
+    returns: Object.freeze({
+      getSourceCode:
+        "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE` object at its `sourceCode` key. In case of an error, a `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE` object is returned instead." /* variations: $COMMENT#JSDOC#RETURNS#GETSOURCECODE / core: $COMMENT#EN#JSDOC#RETURNS#GETSOURCECODE */,
+    }),
+  }),
+  composedVariablesExclusives: Object.freeze({
+    // jsDoc.consts
+    successFalse:
+      "successFalse" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE */,
+    successTrue:
+      "successTrue" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSTRUE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSTRUE */,
+    typeError:
+      "typeError" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TYPEERROR / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEERROR */,
+    typeWarning:
+      "typeWarning" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING */,
+    success_false:
+      "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE */,
+    success_true:
+      "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE */,
+    type_error:
+      "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR */,
+    type_warning:
+      "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING */,
+    success:
+      "success" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS */,
+    false:
+      "false" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#FALSE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE */,
+    true: "true" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TRUE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE */,
+    type: "type" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TYPE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE */,
+    error:
+      "error" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ERROR / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR */,
+    warning:
+      "warning" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#WARNING / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING */,
+    applyLastWith:
+      "Apply last with" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#APPLYLASTWITH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#APPLYLASTWITH */,
+    toEnsure:
+      "to ensure that" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE */,
+    sitsAtTopLike:
+      "sits at the top of its object's type definition, like" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE */,
+    propApropB:
+      "propertyA, propertyB" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB */,
+    // jsDoc.defs
+    eslintSourceCode:
+      "ESLint-generated `SourceCode` object of a file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE */,
+    // jsDoc.params
+    absolutePath:
+      "absolute path of the file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH */,
+    atHand:
+      "at hand" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ATHAND / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND */,
+  }),
+});
+
+const data = Object.freeze({
+  [EN]: enData,
+});
+
+/* ignores */
+
+const ignores = [];
+
+/* lintConfigImports */
+
+const lintConfigImports = false; // can be omitted
+
+/* myIgnoresOnly */
+
+const myIgnoresOnly = false; // can be omitted
+
+/* composedVariablesExclusives */
+
+const enComposedVariablesExclusives = [];
+
+const composedVariablesExclusives = [...enComposedVariablesExclusives]; // can be omitted, composed variables allowed
+
+/* variations */
+
+const variations = Object.freeze({
+  // Defines all variants that have matching variations duly defined within the top-level keys of `data`.
+  variants: Object.freeze({
+    [EN]: Object.freeze({ label: ENGLISH }),
+  }),
+  // Defines the current variant that Comment Variables currently resolves to.
+  variant: EN,
+  // Defines the reference variation that all other variations need to have (or aim to have) matching keys with. Requires a JavaScript variable as it needs to be the exact same object as the one referenced at `data[variations.referenceVariant]`.
+  referenceData: enData,
+  // Defines the variant of the reference variation.
+  referenceVariant: EN,
+  // Defines the behavior of the error handling in case of variations that do not match one-to-one with the reference variation. If `true`, allows incomplete variations data to remain. If `false`, errors and guides the fixing of missing variations data.
+  allowIncompleteVariations: true,
+});
+
+const config = {
+  data,
+  ignores,
+  lintConfigImports,
+  myIgnoresOnly,
+  composedVariablesExclusives,
+  variations,
+};
+
+export default config;

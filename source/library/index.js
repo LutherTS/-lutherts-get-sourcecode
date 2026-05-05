@@ -15,8 +15,9 @@ import { typeScriptAndJSXCompatible } from "./constants/parser.js";
 import { makeSuccessFalseTypeError } from "./utilities/index.js";
 
 /**
- * @param absolutePath The absolute path of the file at hand.
- * @returns
+ * $COMMENT#JSDOC#DEFS#GETSOURCECODE
+ * @param absolutePath $COMMENT#JSDOC#PARAMS#ABSOLUTEPATH
+ * @returns $COMMENT#JSDOC#RETURNS#GETSOURCECODE
  */
 export const getSourceCode = (/** @type {string} */ absolutePath) => {
   if (typeof absolutePath !== "string")

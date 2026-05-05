@@ -1,21 +1,21 @@
 /* success objects */
 
-/** Apply last with `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`. */
+/** $COMMENT#JSDOC#CONSTS#SUCCESSFALSE */
 export const successFalse = Object.freeze({
   success: false,
 });
-/** Apply last with `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`. */
+/** $COMMENT#JSDOC#CONSTS#SUCCESSTRUE */
 export const successTrue = Object.freeze({
   success: true,
 });
 
 /* error objects */
 
-/** Apply last with `...typeError` to ensure that `type: "error"` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`. */
+/** $COMMENT#JSDOC#CONSTS#TYPEERROR */
 export const typeError = Object.freeze({
   type: "error",
 });
-/** Apply last with `...typeWarning` to ensure that `type: "warning"` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`. */
+/** $COMMENT#JSDOC#CONSTS#TYPEWARNING */
 export const typeWarning = Object.freeze({
   type: "warning",
 });
