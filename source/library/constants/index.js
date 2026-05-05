@@ -1,17 +1,21 @@
 /* success objects */
 
-export const successFalse = /** @type {const} */ ({
+/** A. */
+export const successFalse = Object.freeze({
   success: false,
 });
-export const successTrue = /** @type {const} */ ({
+/** B. */
+export const successTrue = Object.freeze({
   success: true,
 });
 
 /* error objects */
 
-export const typeError = /** @type {const} */ ({
+/** C. */
+export const typeError = Object.freeze({
   type: "error",
 });
-export const typeWarning = /** @type {const} */ ({
+/** D. */
+export const typeWarning = Object.freeze({
   type: "warning",
 });

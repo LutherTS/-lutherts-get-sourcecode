@@ -1,14 +1,16 @@
-export namespace successFalse {
-    let success: false;
-}
-export namespace successTrue {
-    let success_1: true;
-    export { success_1 as success };
-}
-export namespace typeError {
-    let type: "error";
-}
-export namespace typeWarning {
-    let type_1: "warning";
-    export { type_1 as type };
-}
+/** A. */
+export const successFalse: Readonly<{
+    success: false;
+}>;
+/** B. */
+export const successTrue: Readonly<{
+    success: true;
+}>;
+/** C. */
+export const typeError: Readonly<{
+    type: "error";
+}>;
+/** D. */
+export const typeWarning: Readonly<{
+    type: "warning";
+}>;
