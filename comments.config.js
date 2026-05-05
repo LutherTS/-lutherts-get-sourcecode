@@ -20,14 +20,22 @@ const enData = Object.freeze({
     defs: Object.freeze({
       getSourceCode:
         "Gets the $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE from its absolute path." /* variations: $COMMENT#JSDOC#DEFS#GETSOURCECODE / core: $COMMENT#EN#JSDOC#DEFS#GETSOURCECODE */,
+      makeSuccessFalseTypeError:
+        "Makes a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` object with a $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR of `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR}` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS." /* variations: $COMMENT#JSDOC#DEFS#MAKESUCCESSFALSETYPEERROR / core: $COMMENT#EN#JSDOC#DEFS#MAKESUCCESSFALSETYPEERROR */,
+      makeSuccessFalseTypeWarning:
+        "Makes a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` object with a $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR of `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING}` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS." /* variations: $COMMENT#JSDOC#DEFS#MAKESUCCESSFALSETYPEWARNING / core: $COMMENT#EN#JSDOC#DEFS#MAKESUCCESSFALSETYPEWARNING */,
     }),
     params: Object.freeze({
       absolutePath:
         "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND." /* variations: $COMMENT#JSDOC#PARAMS#ABSOLUTEPATH / core: $COMMENT#EN#JSDOC#PARAMS#ABSOLUTEPATH */,
+      message:
+        "The human-readable message of the $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR." /* variations: $COMMENT#JSDOC#PARAMS#MESSAGE / core: $COMMENT#EN#JSDOC#PARAMS#MESSAGE */,
+      status:
+        "The static status text of the $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR." /* variations: $COMMENT#JSDOC#PARAMS#STATUS / core: $COMMENT#EN#JSDOC#PARAMS#STATUS */,
     }),
     returns: Object.freeze({
       getSourceCode:
-        "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE` object at its `sourceCode` key. In case of an error, a `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE` object is returned instead." /* variations: $COMMENT#JSDOC#RETURNS#GETSOURCECODE / core: $COMMENT#EN#JSDOC#RETURNS#GETSOURCECODE */, // /!\ a recursive composed variable /!\
+        "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE}` object at its `sourceCode` key. In case of an error, a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` object is returned instead." /* variations: $COMMENT#JSDOC#RETURNS#GETSOURCECODE / core: $COMMENT#EN#JSDOC#RETURNS#GETSOURCECODE */, // /!\ a recursive composed variable /!\
     }),
   }),
   composedVariablesExclusives: Object.freeze({
@@ -69,6 +77,10 @@ const enData = Object.freeze({
     // jsDoc.defs
     eslintSourceCode:
       "ESLint-generated `SourceCode` object of a file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE */,
+    singleError:
+      "single error in its errors array" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR */,
+    basedOnMessageAndStatus:
+      "based on the message it is meant to display and the status it is meant to have" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS */,
     // jsDoc.params
     absolutePath:
       "absolute path of the file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH */,

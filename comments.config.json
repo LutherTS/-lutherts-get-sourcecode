@@ -23,17 +23,33 @@
         "getSourceCode": {
           "value": "Gets the ESLint-generated `SourceCode` object of a file from its absolute path.",
           "key": "EN#JSDOC#DEFS#GETSOURCECODE"
+        },
+        "makeSuccessFalseTypeError": {
+          "value": "Makes a `{success: false}` object with a single error in its errors array of `{type: error}` based on the message it is meant to display and the status it is meant to have.",
+          "key": "EN#JSDOC#DEFS#MAKESUCCESSFALSETYPEERROR"
+        },
+        "makeSuccessFalseTypeWarning": {
+          "value": "Makes a `{success: false}` object with a single error in its errors array of `{type: warning}` based on the message it is meant to display and the status it is meant to have.",
+          "key": "EN#JSDOC#DEFS#MAKESUCCESSFALSETYPEWARNING"
         }
       },
       "params": {
         "absolutePath": {
           "value": "The absolute path of the file at hand.",
           "key": "EN#JSDOC#PARAMS#ABSOLUTEPATH"
+        },
+        "message": {
+          "value": "The human-readable message of the error.",
+          "key": "EN#JSDOC#PARAMS#MESSAGE"
+        },
+        "status": {
+          "value": "The static status text of the error.",
+          "key": "EN#JSDOC#PARAMS#STATUS"
         }
       },
       "returns": {
         "getSourceCode": {
-          "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `success: true` object at its `sourceCode` key. In case of an error, a `success: false` object is returned instead.",
+          "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.",
           "key": "EN#JSDOC#RETURNS#GETSOURCECODE"
         }
       }
@@ -114,6 +130,14 @@
       "eslintSourceCode": {
         "value": "ESLint-generated `SourceCode` object of a file",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE"
+      },
+      "singleError": {
+        "value": "single error in its errors array",
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR"
+      },
+      "basedOnMessageAndStatus": {
+        "value": "based on the message it is meant to display and the status it is meant to have",
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS"
       },
       "absolutePath": {
         "value": "absolute path of the file",
