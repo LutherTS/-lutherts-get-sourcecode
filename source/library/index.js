@@ -18,6 +18,7 @@ import { makeSuccessFalseTypeError } from "./utilities/index.js";
 
 /**
  * $COMMENT#TSDOC#CORE#DEFS#PUBLIC#GETSOURCECODE
+ *
  * @param absolutePath - $COMMENT#TSDOC#CORE#PARAMS#PUBLIC#ABSOLUTEPATH
  * @returns $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE
  */
