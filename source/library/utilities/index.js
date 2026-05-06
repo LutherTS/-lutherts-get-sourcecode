@@ -7,6 +7,7 @@ import { successFalse, typeError, typeWarning } from "../constants/index.js";
  *
  * @param message - $COMMENT#TSDOC#CORE#PARAMS#PUBLIC#MESSAGE
  * @param status - $COMMENT#TSDOC#CORE#PARAMS#PUBLIC#STATUS
+ * @returns $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR
  */
 export const makeSuccessFalseTypeError =
   /** @template {string} T, @template {string} U */ (
@@ -29,6 +30,7 @@ export const makeSuccessFalseTypeError =
  *
  * @param message - $COMMENT#TSDOC#CORE#PARAMS#PUBLIC#MESSAGE
  * @param status - $COMMENT#TSDOC#CORE#PARAMS#PUBLIC#STATUS
+ * @returns $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEWARNING
  */
 export const makeSuccessFalseTypeWarning =
   /** @template {string} T, @template {string} U */ (

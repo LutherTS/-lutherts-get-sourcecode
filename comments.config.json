@@ -59,6 +59,14 @@
             "getSourceCode": {
               "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.",
               "key": "EN#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE"
+            },
+            "makeSuccessFalseTypeError": {
+              "value": "A `{success: false}` object with a single error in its errors array of `{type: error}`.",
+              "key": "EN#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+            },
+            "makeSuccessFalseTypeWarning": {
+              "value": "A `{success: false}` object with a single error in its errors array of `{type: warning}`.",
+              "key": "EN#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
             }
           }
         }
