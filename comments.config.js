@@ -199,6 +199,14 @@ const variations = Object.freeze({
   // public: [EN] // NEW
 });
 
+// /* libraries */
+
+// import { commentVariablesData as libraryCommentVariablesData } from "library"
+
+// const libraries = {
+//   "library": libraryCommentVariablesData.variantKey
+// } // NEW
+
 const config = {
   data,
   ignores,
@@ -206,6 +214,7 @@ const config = {
   myIgnoresOnly,
   composedVariablesExclusives,
   variations,
+  // libraries // NEW
 };
 
 export default config;
