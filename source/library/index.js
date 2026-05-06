@@ -77,8 +77,8 @@ export {
 
 // Additionally, it showcases how to access a library's comment variables as keys and values.
 // For the JS version (typed with literals):
-// - `import { commentVariablesResolvedConfigData as getSourceCodeCommentVariablesDataJS } from "get-sourcecode";`
+// - `import { commentVariablesData as getSourceCodeCommentVariablesData } from "get-sourcecode";`
 // For the JSON version (typed with strings):
-// - `import getSourceCodeCommentVariablesDataJSON from "get-sourcecode/comments.config.json" with { type: "json" };`
+// - `import getSourceCodeCommentVariablesData from "get-sourcecode/comments.config.json" with { type: "json" };` // from "get-sourcecode/comments.public.json"
 
-export { resolvedConfigData as commentVariablesResolvedConfigData } from "../../comments.config.mjs";
+export { resolvedConfigData as commentVariablesData } from "../../comments.config.mjs"; // from "../../comments.public.mjs"

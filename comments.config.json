@@ -86,6 +86,12 @@
         }
       }
     },
+    "forComposedVariables": {
+      "getSourceCode": {
+        "value": "getSourceCode",
+        "key": "EN#FORCOMPOSEDVARIABLES#GETSOURCECODE"
+      }
+    },
     "composedVariablesExclusives": {
       "successFalse": {
         "value": "successFalse",
@@ -182,10 +188,6 @@
       "_asserts": {
         "value": "Asserts",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS"
-      },
-      "getSourceCode": {
-        "value": "getSourceCode",
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#GETSOURCECODE"
       },
       "whenItShould": {
         "value": "when it should",

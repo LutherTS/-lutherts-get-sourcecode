@@ -23,6 +23,6 @@ export function getSourceCode(absolutePath: string): {
     readonly success: true;
     readonly sourceCode: import("eslint").SourceCode;
 };
-export { resolvedConfigData as commentVariablesResolvedConfigData } from "../../comments.config.mjs";
+export { resolvedConfigData as commentVariablesData } from "../../comments.config.mjs";
 export { successFalse, successTrue, typeError, typeWarning } from "./constants/index.js";
 export { makeSuccessFalseTypeError, makeSuccessFalseTypeWarning } from "./utilities/index.js";

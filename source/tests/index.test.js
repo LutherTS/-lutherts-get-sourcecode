@@ -12,6 +12,8 @@ import {
   jsTsJsxTsxCouldntBeParsed,
 } from "../constants/errors/messages.js";
 
+import { GET_SOURCECODE } from "./comment-variables/index.js";
+
 import { JAVASCRIPT, TYPESCRIPT } from "./constants/index.js";
 
 import { assertFailureWithMessage, assertSuccess } from "./utilities/index.js";
@@ -24,6 +26,9 @@ const toValidJsFilePath = "./valid/javascript.js";
 const toValidTsFilePath = "./valid/typescript.ts";
 const toJsxJsFilePath = "./jsx/javascript.jsx";
 const toJsxTsFilePath = "./jsx/typescript.tsx";
+
+const toValidDeclarationFilePath = "./valid/others/declaration.d.ts";
+const toValidDeclarationMFilePath = "./valid/others/declaration-m.d.mts";
 
 const languages = /** @type {const} */ ([
   {
@@ -40,15 +45,15 @@ const languages = /** @type {const} */ ([
   },
 ]);
 
-describe("getSourceCode", () => {
+describe(GET_SOURCECODE, () => {
   it("should be a function", () => {
     const getSourceCodeType = typeof getSourceCode;
     assert.strictEqual(getSourceCodeType, "function");
   });
 
-  it("should be named `getSourceCode`", () => {
+  it(`should be named \`${GET_SOURCECODE}\``, () => {
     const getSourceCodeName = getSourceCode.name;
-    assert.strictEqual(getSourceCodeName, "getSourceCode");
+    assert.strictEqual(getSourceCodeName, GET_SOURCECODE);
   });
 
   it("should error if `absolutePath` is not a string", () => {
@@ -80,4 +85,18 @@ describe("getSourceCode", () => {
       assertSuccess(getSourceCodeResults);
     });
   }
+
+  it("should succeed if given a valid `.ts` TypeScript declaration file", () => {
+    const getSourceCodeResults = getSourceCode(
+      path.join(currentDirectoryPath, toValidDeclarationFilePath),
+    );
+    assertSuccess(getSourceCodeResults);
+  });
+
+  it("should succeed if given a valid `.mts` TypeScript declaration file", () => {
+    const getSourceCodeResults = getSourceCode(
+      path.join(currentDirectoryPath, toValidDeclarationMFilePath),
+    );
+    assertSuccess(getSourceCodeResults);
+  });
 });
