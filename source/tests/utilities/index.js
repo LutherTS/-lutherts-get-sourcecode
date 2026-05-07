@@ -36,7 +36,7 @@ export const assertFailureWithMessage =
  * $COMMENT#TSDOC#TESTS#DEFS#ASSERTSUCCESS
  *
  * @param getSourceCodeResults - $COMMENT#TSDOC#TESTS#PARAMS#GETSOURCECODERESULTS
- * @returns $COMMENT#TSDOC#TESTS#RETURNS#ASSERTSUCCESS
+ * @returns $COMMENT#TSDOC#TESTS#RETURNS#ASSERTFAILUREWITHMESSAGE
  */
 export const assertSuccess = (
   /** @type {GetSourceCodeReturnType} */ getSourceCodeResults,
