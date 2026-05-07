@@ -3,6 +3,9 @@
 const EN = "en";
 const ENGLISH = "English";
 
+const FR = "fr";
+const FRANÇAIS = "français";
+
 /* data */
 
 const enData = Object.freeze({
@@ -106,7 +109,7 @@ const enData = Object.freeze({
     warning:
       "warning" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#WARNING / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING */,
     _applyLastWith:
-      "Apply last with" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH */ /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#APPLYLASTWITH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH */,
+      "Apply last with" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH */,
     toEnsure:
       "to ensure that" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE */,
     sitsAtTopLike:
@@ -117,9 +120,9 @@ const enData = Object.freeze({
     eslintSourceCode:
       "ESLint-generated `SourceCode` object of a file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE */,
     singleError:
-      "single error in its errors array" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR */,
+      "single error in its `errors` array" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR */,
     basedOnMessageAndStatus:
-      "based on the message it is meant to display and the status it is meant to have" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS */,
+      "based on the `message` it is meant to display and the `status` it is meant to have" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS */,
     // tsDoc.core.params
     absolutePath:
       "absolute path of the file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH */,
@@ -138,8 +141,122 @@ const enData = Object.freeze({
   }),
 });
 
+const frData = Object.freeze({
+  tsDoc: Object.freeze({
+    core: Object.freeze({
+      consts: Object.freeze({
+        public: Object.freeze({
+          successFalse:
+            "$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE}`." /* variations: $COMMENT#TSDOC#CORE#CONSTS#PUBLIC#SUCCESSFALSE / core: $COMMENT#FR#TSDOC#CORE#CONSTS#PUBLIC#SUCCESSFALSE */,
+          successTrue:
+            "$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSTRUE` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSTRUE}`." /* variations: $COMMENT#TSDOC#CORE#CONSTS#PUBLIC#SUCCESSTRUE / core: $COMMENT#FR#TSDOC#CORE#CONSTS#PUBLIC#SUCCESSTRUE */,
+          typeError:
+            "$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEERROR` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEERROR}`." /* variations: $COMMENT#TSDOC#CORE#CONSTS#PUBLIC#TYPEERROR / core: $COMMENT#FR#TSDOC#CORE#CONSTS#PUBLIC#TYPEERROR */,
+          typeWarning:
+            "$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING}`." /* variations: $COMMENT#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING / core: $COMMENT#FR#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING */,
+        }),
+      }),
+      defs: Object.freeze({
+        public: Object.freeze({
+          getSourceCode:
+            "Obtient l'$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE à partir de son chemin absolu." /* variations: $COMMENT#TSDOC#CORE#DEFS#PUBLIC#GETSOURCECODE / core: $COMMENT#FR#TSDOC#CORE#DEFS#PUBLIC#GETSOURCECODE */,
+          makeSuccessFalseTypeError:
+            "Crée un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` avec une $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR de `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR}` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS." /* variations: $COMMENT#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR / core: $COMMENT#FR#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR */,
+          makeSuccessFalseTypeWarning:
+            "Crée un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` avec une $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR de `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING}` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS." /* variations: $COMMENT#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING / core: $COMMENT#FR#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING */,
+        }),
+      }),
+      params: Object.freeze({
+        public: Object.freeze({
+          absolutePath:
+            "Le $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ." /* variations: $COMMENT#TSDOC#CORE#PARAMS#PUBLIC#ABSOLUTEPATH / core: $COMMENT#FR#TSDOC#CORE#PARAMS#PUBLIC#ABSOLUTEPATH */,
+          message:
+            "Le message en clair de l'$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR." /* variations: $COMMENT#TSDOC#CORE#PARAMS#PUBLIC#MESSAGE / core: $COMMENT#FR#TSDOC#CORE#PARAMS#PUBLIC#MESSAGE */,
+          status:
+            "Le texte statique du statut de l'$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR." /* variations: $COMMENT#TSDOC#CORE#PARAMS#PUBLIC#STATUS / core: $COMMENT#FR#TSDOC#CORE#PARAMS#PUBLIC#STATUS */,
+        }),
+      }),
+      returns: Object.freeze({
+        public: Object.freeze({
+          getSourceCode:
+            "L'$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE}` à sa clé `sourceCode`. En cas d'erreur, un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` est retourné à la place." /* variations: $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE / core: $COMMENT#FR#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE */, // /!\ une variable composée récursive /!\
+          makeSuccessFalseTypeError:
+            "Un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` avec une $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR de `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR}`." /* variations: $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR / core: $COMMENT#FR#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR */,
+          makeSuccessFalseTypeWarning:
+            "Un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` avec une $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR de `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING}`." /* variations: $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEWARNING / core: $COMMENT#FR#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEWARNING */,
+        }),
+      }),
+    }),
+  }),
+  forComposedVariables: Object.freeze({
+    // // tsDoc.tests.defs
+    // getSourceCode:
+    //   "getSourceCode" /* variations: $COMMENT#FORCOMPOSEDVARIABLES#GETSOURCECODE / core: $COMMENT#EN#FORCOMPOSEDVARIABLES#GETSOURCECODE */,
+  }),
+  composedVariablesExclusives: Object.freeze({
+    // // tsDoc.core.consts
+    // successFalse:
+    //   "successFalse" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE */,
+    // successTrue:
+    //   "successTrue" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSTRUE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSTRUE */,
+    // typeError:
+    //   "typeError" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TYPEERROR / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEERROR */,
+    // typeWarning:
+    //   "typeWarning" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING */,
+    // success_false:
+    //   "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE */,
+    // success_true:
+    //   "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE */,
+    // type_error:
+    //   "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR */,
+    // type_warning:
+    //   "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING */,
+    // success:
+    //   "success" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS */,
+    // false:
+    //   "false" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#FALSE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE */,
+    // true: "true" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TRUE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE */,
+    // type: "type" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TYPE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE */,
+    error:
+      "erreur" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ERROR / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR */,
+    // warning:
+    //   "warning" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#WARNING / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING */,
+    _applyLastWith:
+      "À apposer en dernier via" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH */,
+    toEnsure:
+      "pour s'assurer que" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE */,
+    sitsAtTopLike:
+      "apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE */,
+    // propApropB:
+    //   "propertyA, propertyB" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB */,
+    // // tsDoc.core.defs
+    eslintSourceCode:
+      "objet `SourceCode` généré par ESLint d'un fichier" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE */,
+    singleError:
+      "seule erreur dans son array `errors`" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR */,
+    basedOnMessageAndStatus:
+      "basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS */,
+    // tsDoc.core.params
+    absolutePath:
+      "chemin absolu du fichier" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH */,
+    concerné:
+      "concerné" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ *,
+    // // tsDoc.tests.defs
+    // _asserts:
+    //   "Asserts" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS */,
+    // whenItShould:
+    //   "when it should" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD */,
+    // // tsDoc.tests.params
+    // message:
+    //   "message" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE */,
+    // status:
+    //   "status" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#STATUS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS */,
+  }),
+});
+
 const data = Object.freeze({
   [EN]: enData,
+  [FR]: frData,
 });
 
 /* ignores */
@@ -166,14 +283,15 @@ const variations = Object.freeze({
   // Defines all variants that have matching variations duly defined within the top-level keys of `data`.
   variants: Object.freeze({
     [EN]: Object.freeze({ label: ENGLISH }),
+    [FR]: Object.freeze({ label: FRANÇAIS }),
   }),
   // Defines the current variant that Comment Variables currently resolves to.
-  variant: EN,
+  variant: FR,
   // Defines the reference variation that all other variations need to have (or aim to have) matching keys with. Requires a JavaScript variable as it needs to be the exact same object as the one referenced at `data[variations.referenceVariant]`.
   referenceData: enData,
   // Defines the variant of the reference variation.
   referenceVariant: EN,
-  // Defines the behavior of the error handling in case of variations that do not match one-to-one with the reference variation. If `true`, allows incomplete variations data to remain. If `false`, errors and guides the fixing of missing variations data.
+  // Defines the behavior of the error handling in case of variations that do not match one-to-one with the reference variation. If `true`, allows incomplete variations data to remain. If `false`, errors and guides the fixing of missing variations data (while ignoring composed variables exclusives).
   allowIncompleteVariations: true,
   // Defines which variants' `#PUBLIC#` Comment Variables should be publicly available, by default via `comments.public.mjs` and `comments.public.json`.
   // public: [EN] // NEW

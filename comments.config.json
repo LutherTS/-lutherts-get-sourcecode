@@ -29,11 +29,11 @@
               "key": "EN#TSDOC#CORE#DEFS#PUBLIC#GETSOURCECODE"
             },
             "makeSuccessFalseTypeError": {
-              "value": "Makes a `{success: false}` object with a single error in its errors array of `{type: error}` based on the message it is meant to display and the status it is meant to have.",
+              "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.",
               "key": "EN#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
             },
             "makeSuccessFalseTypeWarning": {
-              "value": "Makes a `{success: false}` object with a single error in its errors array of `{type: warning}` based on the message it is meant to display and the status it is meant to have.",
+              "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.",
               "key": "EN#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
             }
           }
@@ -61,11 +61,11 @@
               "key": "EN#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE"
             },
             "makeSuccessFalseTypeError": {
-              "value": "A `{success: false}` object with a single error in its errors array of `{type: error}`.",
+              "value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.",
               "key": "EN#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
             },
             "makeSuccessFalseTypeWarning": {
-              "value": "A `{success: false}` object with a single error in its errors array of `{type: warning}`.",
+              "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.",
               "key": "EN#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
             }
           }
@@ -188,11 +188,11 @@
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE"
       },
       "singleError": {
-        "value": "single error in its errors array",
+        "value": "single error in its `errors` array",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR"
       },
       "basedOnMessageAndStatus": {
-        "value": "based on the message it is meant to display and the status it is meant to have",
+        "value": "based on the `message` it is meant to display and the `status` it is meant to have",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS"
       },
       "absolutePath": {
@@ -218,6 +218,119 @@
       "status": {
         "value": "status",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS"
+      }
+    }
+  },
+  "fr": {
+    "tsDoc": {
+      "core": {
+        "consts": {
+          "public": {
+            "successFalse": {
+              "value": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.",
+              "key": "FR#TSDOC#CORE#CONSTS#PUBLIC#SUCCESSFALSE"
+            },
+            "successTrue": {
+              "value": "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.",
+              "key": "FR#TSDOC#CORE#CONSTS#PUBLIC#SUCCESSTRUE"
+            },
+            "typeError": {
+              "value": "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.",
+              "key": "FR#TSDOC#CORE#CONSTS#PUBLIC#TYPEERROR"
+            },
+            "typeWarning": {
+              "value": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.",
+              "key": "FR#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING"
+            }
+          }
+        },
+        "defs": {
+          "public": {
+            "getSourceCode": {
+              "value": "Obtient l'objet `SourceCode` généré par ESLint d'un fichier à partir de son chemin absolu.",
+              "key": "FR#TSDOC#CORE#DEFS#PUBLIC#GETSOURCECODE"
+            },
+            "makeSuccessFalseTypeError": {
+              "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
+              "key": "FR#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+            },
+            "makeSuccessFalseTypeWarning": {
+              "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
+              "key": "FR#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+            }
+          }
+        },
+        "params": {
+          "public": {
+            "absolutePath": {
+              "value": "Le chemin absolu du fichier concerné.",
+              "key": "FR#TSDOC#CORE#PARAMS#PUBLIC#ABSOLUTEPATH"
+            },
+            "message": {
+              "value": "Le message en clair de l'erreur.",
+              "key": "FR#TSDOC#CORE#PARAMS#PUBLIC#MESSAGE"
+            },
+            "status": {
+              "value": "Le texte statique du statut de l'erreur.",
+              "key": "FR#TSDOC#CORE#PARAMS#PUBLIC#STATUS"
+            }
+          }
+        },
+        "returns": {
+          "public": {
+            "getSourceCode": {
+              "value": "L'objet `SourceCode` généré par ESLint d'un fichier, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{success: true}` à sa clé `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourné à la place.",
+              "key": "FR#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE"
+            },
+            "makeSuccessFalseTypeError": {
+              "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.",
+              "key": "FR#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+            },
+            "makeSuccessFalseTypeWarning": {
+              "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.",
+              "key": "FR#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+            }
+          }
+        }
+      }
+    },
+    "forComposedVariables": {},
+    "composedVariablesExclusives": {
+      "error": {
+        "value": "erreur",
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR"
+      },
+      "_applyLastWith": {
+        "value": "À apposer en dernier via",
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH"
+      },
+      "toEnsure": {
+        "value": "pour s'assurer que",
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE"
+      },
+      "sitsAtTopLike": {
+        "value": "apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon",
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE"
+      },
+      "eslintSourceCode": {
+        "value": "objet `SourceCode` généré par ESLint d'un fichier",
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE"
+      },
+      "singleError": {
+        "value": "seule erreur dans son array `errors`",
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR"
+      },
+      "basedOnMessageAndStatus": {
+        "value": "basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir",
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS"
+      },
+      "absolutePath": {
+        "value": "chemin absolu du fichier",
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH"
+      },
+      "concerné": {
+        "value": "concerné",
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ"
       }
     }
   }
