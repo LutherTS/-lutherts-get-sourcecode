@@ -91,6 +91,16 @@
             "value": "The expected message of the error that should be encountered during failure, from which the status can be inferred.",
             "key": "EN#TSDOC#TESTS#PARAMS#EXPECTEDMESSAGE"
           }
+        },
+        "returns": {
+          "assertFailureWithMessage": {
+            "value": "Void.",
+            "key": "EN#TSDOC#TESTS#RETURNS#ASSERTFAILUREWITHMESSAGE"
+          },
+          "assertSuccess": {
+            "value": "Void.",
+            "key": "EN#TSDOC#TESTS#RETURNS#ASSERTSUCCESS"
+          }
         }
       }
     },

@@ -64,6 +64,12 @@ const enData = Object.freeze({
         expectedMessage:
           "The expected $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE of the error that should be encountered during failure, from which the $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS can be inferred." /* variations: $COMMENT#TSDOC#TESTS#PARAMS#EXPECTEDMESSAGE / core: $COMMENT#EN#TSDOC#TESTS#PARAMS#EXPECTEDMESSAGE */,
       }),
+      returns: Object.freeze({
+        assertFailureWithMessage:
+          "Void." /* variations: $COMMENT#TSDOC#TESTS#RETURNS#ASSERTFAILUREWITHMESSAGE / core: $COMMENT#EN#TSDOC#TESTS#RETURNS#ASSERTFAILUREWITHMESSAGE */,
+        assertSuccess:
+          "EN#TSDOC#TESTS#RETURNS#ASSERTFAILUREWITHMESSAGE" /* variations: $COMMENT#TSDOC#TESTS#RETURNS#ASSERTSUCCESS / core: $COMMENT#EN#TSDOC#TESTS#RETURNS#ASSERTSUCCESS */,
+      }),
     }),
   }),
   forComposedVariables: Object.freeze({

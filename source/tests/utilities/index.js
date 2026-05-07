@@ -14,6 +14,7 @@ import { errorMessages_errorStatuses } from "../../constants/errors/index.js";
  *
  * @param getSourceCodeResults - $COMMENT#TSDOC#TESTS#PARAMS#GETSOURCECODERESULTS
  * @param expectedMessage - $COMMENT#TSDOC#TESTS#PARAMS#EXPECTEDMESSAGE
+ * @returns $COMMENT#TSDOC#TESTS#RETURNS#ASSERTFAILUREWITHMESSAGE
  */
 export const assertFailureWithMessage =
   /** @template {ErrorMessages_ErrorStatuses__Key} T */ (
@@ -35,6 +36,7 @@ export const assertFailureWithMessage =
  * $COMMENT#TSDOC#TESTS#DEFS#ASSERTSUCCESS
  *
  * @param getSourceCodeResults - $COMMENT#TSDOC#TESTS#PARAMS#GETSOURCECODERESULTS
+ * @returns $COMMENT#TSDOC#TESTS#RETURNS#ASSERTSUCCESS
  */
 export const assertSuccess = (
   /** @type {GetSourceCodeReturnType} */ getSourceCodeResults,
