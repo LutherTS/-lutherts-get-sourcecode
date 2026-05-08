@@ -46,7 +46,7 @@ const enData = Object.freeze({
       returns: Object.freeze({
         public: Object.freeze({
           getSourceCode:
-            "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE}` object at its `sourceCode` key. In case of an error, a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` object is returned instead." /* variations: $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE / core: $COMMENT#EN#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE */, // /!\ a recursive composed variable /!\
+            "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE}` object at its `sourceCode` key. In case of an error, a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` object is returned instead." /* variations: $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE / core: $COMMENT#EN#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE */,
           makeSuccessFalseTypeError:
             "A `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` object with a $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR of `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR}`." /* variations: $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR / core: $COMMENT#EN#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR */,
           makeSuccessFalseTypeWarning:
@@ -179,7 +179,7 @@ const frData = Object.freeze({
       returns: Object.freeze({
         public: Object.freeze({
           getSourceCode:
-            "L'$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE}` à sa clé `sourceCode`. En cas d'erreur, un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` est retourné à la place." /* variations: $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE / core: $COMMENT#FR#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE */, // /!\ une variable composée récursive /!\
+            "L'$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE}` à sa clé `sourceCode`. En cas d'erreur, un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` est retourné à la place." /* variations: $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE / core: $COMMENT#FR#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE */,
           makeSuccessFalseTypeError:
             "Un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` avec une $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR de `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR}`." /* variations: $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR / core: $COMMENT#FR#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR */,
           makeSuccessFalseTypeWarning:
