@@ -10,6 +10,29 @@ const FRANÇAIS = "français";
 
 const enData = Object.freeze({
   tsDoc: Object.freeze({
+    source: Object.freeze({
+      consts: Object.freeze({
+        messages: Object.freeze({
+          absolutePathIsSupposedToBeAString:
+            "`absolutePath` is supposed to be a string." /* variations: $COMMENT#TSDOC#SOURCE#CONSTS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING / core: $COMMENT#EN#TSDOC#SOURCE#CONSTS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING */,
+          absolutePathCouldntBeRead:
+            "Absolute file path could not be read." /* variations: $COMMENT#TSDOC#SOURCE#CONSTS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD / core: $COMMENT#EN#TSDOC#SOURCE#CONSTS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD */,
+          jsTsJsxTsxCouldntBeParsed:
+            "JS/TS/JSX/TSX source code could not be parsed." /* variations: $COMMENT#TSDOC#SOURCE#CONSTS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED / core: $COMMENT#EN#TSDOC#SOURCE#CONSTS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED */,
+        }),
+        statuses: Object.freeze({
+          public: Object.freeze({
+            ABSOLUTE_PATH_NOT_STRING:
+              '"$COMMENT#EN#TSDOC#SOURCE#CONSTS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING"' /* variations: $COMMENT#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING / core: $COMMENT#EN#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING */,
+            ABSOLUTE_PATH_NOT_FOUND:
+              '"$COMMENT#EN#TSDOC#SOURCE#CONSTS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD"' /* variations: $COMMENT#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND / core: $COMMENT#EN#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND */,
+            SOURCE_CODE_FATAL_SYNTAX:
+              '"$COMMENT#EN#TSDOC#SOURCE#CONSTS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED"' /* variations: $COMMENT#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX / core: $COMMENT#EN#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX */,
+          }),
+        }),
+      }),
+    }),
+    // supposed to be named library
     core: Object.freeze({
       consts: Object.freeze({
         public: Object.freeze({
@@ -149,6 +172,20 @@ const enData = Object.freeze({
 
 const frData = Object.freeze({
   tsDoc: Object.freeze({
+    source: Object.freeze({
+      consts: Object.freeze({
+        statuses: Object.freeze({
+          public: Object.freeze({
+            ABSOLUTE_PATH_NOT_STRING:
+              '$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS : "$COMMENT#EN#TSDOC#SOURCE#CONSTS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING"' /* variations: $COMMENT#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING / core: $COMMENT#EN#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING */,
+            ABSOLUTE_PATH_NOT_FOUND:
+              '$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS : "$COMMENT#EN#TSDOC#SOURCE#CONSTS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD"' /* variations: $COMMENT#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND / core: $COMMENT#EN#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND */,
+            SOURCE_CODE_FATAL_SYNTAX:
+              '$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS : "$COMMENT#EN#TSDOC#SOURCE#CONSTS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED"' /* variations: $COMMENT#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX / core: $COMMENT#EN#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX */,
+          }),
+        }),
+      }),
+    }),
     core: Object.freeze({
       consts: Object.freeze({
         public: Object.freeze({
@@ -202,6 +239,9 @@ const frData = Object.freeze({
   }),
   forComposedVariables: Object.freeze({}),
   composedVariablesExclusives: Object.freeze({
+    // tsDoc.source.consts
+    _enAnglais:
+      "En anglais à l'exécution" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS */,
     // tsDoc.core.consts
     error:
       "erreur" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ERROR / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR */,

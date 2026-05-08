@@ -1,8 +1,13 @@
+import { commentVariablesData } from "../../comment-variables/index.js";
+
 /* error messages */
 
 export const absolutePathIsSupposedToBeAString =
-  "`absolutePath` is supposed to be a string.";
+  commentVariablesData.en.tsDoc.source.consts.messages
+    .absolutePathIsSupposedToBeAString.value;
 export const absolutePathCouldntBeRead =
-  "Absolute file path could not be read.";
+  commentVariablesData.en.tsDoc.source.consts.messages.absolutePathCouldntBeRead
+    .value;
 export const jsTsJsxTsxCouldntBeParsed =
-  "JS/TS/JSX/TSX source code could not be parsed.";
+  commentVariablesData.en.tsDoc.source.consts.messages.jsTsJsxTsxCouldntBeParsed
+    .value;

@@ -12,9 +12,7 @@ import {
   jsTsJsxTsxCouldntBeParsed,
 } from "../constants/errors/messages.js";
 
-import { GET_SOURCECODE } from "./comment-variables/index.js";
-
-import { JAVASCRIPT, TYPESCRIPT } from "./constants/index.js";
+import { GET_SOURCECODE, JAVASCRIPT, TYPESCRIPT } from "./constants/index.js";
 
 import { assertFailureWithMessage, assertSuccess } from "./utilities/index.js";
 

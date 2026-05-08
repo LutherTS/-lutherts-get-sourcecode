@@ -1,6 +1,40 @@
 {
   "en": {
     "tsDoc": {
+      "source": {
+        "consts": {
+          "messages": {
+            "absolutePathIsSupposedToBeAString": {
+              "value": "`absolutePath` is supposed to be a string.",
+              "key": "EN#TSDOC#SOURCE#CONSTS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING"
+            },
+            "absolutePathCouldntBeRead": {
+              "value": "Absolute file path could not be read.",
+              "key": "EN#TSDOC#SOURCE#CONSTS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD"
+            },
+            "jsTsJsxTsxCouldntBeParsed": {
+              "value": "JS/TS/JSX/TSX source code could not be parsed.",
+              "key": "EN#TSDOC#SOURCE#CONSTS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED"
+            }
+          },
+          "statuses": {
+            "public": {
+              "ABSOLUTE_PATH_NOT_STRING": {
+                "value": "\"`absolutePath` is supposed to be a string.\"",
+                "key": "EN#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING"
+              },
+              "ABSOLUTE_PATH_NOT_FOUND": {
+                "value": "\"Absolute file path could not be read.\"",
+                "key": "EN#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND"
+              },
+              "SOURCE_CODE_FATAL_SYNTAX": {
+                "value": "\"JS/TS/JSX/TSX source code could not be parsed.\"",
+                "key": "EN#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX"
+              }
+            }
+          }
+        }
+      },
       "core": {
         "consts": {
           "public": {
@@ -231,6 +265,26 @@
   },
   "fr": {
     "tsDoc": {
+      "source": {
+        "consts": {
+          "statuses": {
+            "public": {
+              "ABSOLUTE_PATH_NOT_STRING": {
+                "value": "En anglais à l'exécution : \"`absolutePath` is supposed to be a string.\"",
+                "key": "FR#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING"
+              },
+              "ABSOLUTE_PATH_NOT_FOUND": {
+                "value": "En anglais à l'exécution : \"Absolute file path could not be read.\"",
+                "key": "FR#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND"
+              },
+              "SOURCE_CODE_FATAL_SYNTAX": {
+                "value": "En anglais à l'exécution : \"JS/TS/JSX/TSX source code could not be parsed.\"",
+                "key": "FR#TSDOC#SOURCE#CONSTS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX"
+              }
+            }
+          }
+        }
+      },
       "core": {
         "consts": {
           "public": {
@@ -312,6 +366,10 @@
     },
     "forComposedVariables": {},
     "composedVariablesExclusives": {
+      "_enAnglais": {
+        "value": "En anglais à l'exécution",
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS"
+      },
       "error": {
         "value": "erreur",
         "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR"
