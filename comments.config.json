@@ -68,14 +68,18 @@
               "getSourceCode": {
                 "value": "Gets the ESLint-generated `SourceCode` object of a file from its absolute path.",
                 "key": "EN#TSDOC#SRC#LIB#DEFS#PUBLIC#GETSOURCECODE"
-              },
-              "makeSuccessFalseTypeError": {
-                "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.",
-                "key": "EN#TSDOC#SRC#LIB#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
-              },
-              "makeSuccessFalseTypeWarning": {
-                "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.",
-                "key": "EN#TSDOC#SRC#LIB#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+              }
+            },
+            "utils": {
+              "public": {
+                "makeSuccessFalseTypeError": {
+                  "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.",
+                  "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+                },
+                "makeSuccessFalseTypeWarning": {
+                  "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.",
+                  "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+                }
               }
             }
           },
@@ -84,14 +88,18 @@
               "absolutePath": {
                 "value": "The absolute path of the file at hand.",
                 "key": "EN#TSDOC#SRC#LIB#PARAMS#PUBLIC#ABSOLUTEPATH"
-              },
-              "message": {
-                "value": "The human-readable message of the error.",
-                "key": "EN#TSDOC#SRC#LIB#PARAMS#PUBLIC#MESSAGE"
-              },
-              "status": {
-                "value": "The static status text of the error.",
-                "key": "EN#TSDOC#SRC#LIB#PARAMS#PUBLIC#STATUS"
+              }
+            },
+            "utils": {
+              "public": {
+                "message": {
+                  "value": "The human-readable message of the error.",
+                  "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE"
+                },
+                "status": {
+                  "value": "The static status text of the error.",
+                  "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS"
+                }
               }
             }
           },
@@ -100,47 +108,57 @@
               "getSourceCode": {
                 "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.",
                 "key": "EN#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE"
-              },
-              "makeSuccessFalseTypeError": {
-                "value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.",
-                "key": "EN#TSDOC#SRC#LIB#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
-              },
-              "makeSuccessFalseTypeWarning": {
-                "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.",
-                "key": "EN#TSDOC#SRC#LIB#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+              }
+            },
+            "utils": {
+              "public": {
+                "makeSuccessFalseTypeError": {
+                  "value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.",
+                  "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+                },
+                "makeSuccessFalseTypeWarning": {
+                  "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.",
+                  "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+                }
               }
             }
           }
         },
         "tests": {
           "defs": {
-            "assertFailureWithMessage": {
-              "value": "Asserts that `getSourceCode` fails when it should.",
-              "key": "EN#TSDOC#SRC#TESTS#DEFS#ASSERTFAILUREWITHMESSAGE"
-            },
-            "assertSuccess": {
-              "value": "Asserts that `getSourceCode` succeeds when it should.",
-              "key": "EN#TSDOC#SRC#TESTS#DEFS#ASSERTSUCCESS"
+            "utils": {
+              "assertFailureWithMessage": {
+                "value": "Asserts that `getSourceCode` fails when it should.",
+                "key": "EN#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE"
+              },
+              "assertSuccess": {
+                "value": "Asserts that `getSourceCode` succeeds when it should.",
+                "key": "EN#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS"
+              }
             }
           },
           "params": {
-            "getSourceCodeResults": {
-              "value": "The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.",
-              "key": "EN#TSDOC#SRC#TESTS#PARAMS#GETSOURCECODERESULTS"
-            },
-            "expectedMessage": {
-              "value": "The expected message of the error that should be encountered during failure, from which the status can be inferred.",
-              "key": "EN#TSDOC#SRC#TESTS#PARAMS#EXPECTEDMESSAGE"
+            "utils": {
+              "getSourceCodeResults": {
+                "value": "The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.",
+                "key": "EN#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS"
+              },
+              "expectedMessage": {
+                "value": "The expected message of the error that should be encountered during failure, from which the status can be inferred.",
+                "key": "EN#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE"
+              }
             }
           },
           "returns": {
-            "assertFailureWithMessage": {
-              "value": "Void.",
-              "key": "EN#TSDOC#SRC#TESTS#RETURNS#ASSERTFAILUREWITHMESSAGE"
-            },
-            "assertSuccess": {
-              "value": "EN#TSDOC#TESTS#RETURNS#ASSERTFAILUREWITHMESSAGE",
-              "key": "EN#TSDOC#SRC#TESTS#RETURNS#ASSERTSUCCESS"
+            "utils": {
+              "assertFailureWithMessage": {
+                "value": "Void.",
+                "key": "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE"
+              },
+              "assertSuccess": {
+                "value": "Void.",
+                "key": "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS"
+              }
             }
           }
         }
@@ -318,14 +336,18 @@
               "getSourceCode": {
                 "value": "Obtient l'objet `SourceCode` généré par ESLint d'un fichier à partir de son chemin absolu.",
                 "key": "FR#TSDOC#SRC#LIB#DEFS#PUBLIC#GETSOURCECODE"
-              },
-              "makeSuccessFalseTypeError": {
-                "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
-                "key": "FR#TSDOC#SRC#LIB#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
-              },
-              "makeSuccessFalseTypeWarning": {
-                "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
-                "key": "FR#TSDOC#SRC#LIB#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+              }
+            },
+            "utils": {
+              "public": {
+                "makeSuccessFalseTypeError": {
+                  "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
+                  "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+                },
+                "makeSuccessFalseTypeWarning": {
+                  "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
+                  "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+                }
               }
             }
           },
@@ -334,14 +356,18 @@
               "absolutePath": {
                 "value": "Le chemin absolu du fichier concerné.",
                 "key": "FR#TSDOC#SRC#LIB#PARAMS#PUBLIC#ABSOLUTEPATH"
-              },
-              "message": {
-                "value": "Le message en clair de l'erreur.",
-                "key": "FR#TSDOC#SRC#LIB#PARAMS#PUBLIC#MESSAGE"
-              },
-              "status": {
-                "value": "Le texte statique du statut de l'erreur.",
-                "key": "FR#TSDOC#SRC#LIB#PARAMS#PUBLIC#STATUS"
+              }
+            },
+            "utils": {
+              "public": {
+                "message": {
+                  "value": "Le message en clair de l'erreur.",
+                  "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE"
+                },
+                "status": {
+                  "value": "Le texte statique du statut de l'erreur.",
+                  "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS"
+                }
               }
             }
           },
@@ -350,14 +376,18 @@
               "getSourceCode": {
                 "value": "L'objet `SourceCode` généré par ESLint d'un fichier, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{success: true}` à sa clé `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourné à la place.",
                 "key": "FR#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE"
-              },
-              "makeSuccessFalseTypeError": {
-                "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.",
-                "key": "FR#TSDOC#SRC#LIB#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
-              },
-              "makeSuccessFalseTypeWarning": {
-                "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.",
-                "key": "FR#TSDOC#SRC#LIB#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+              }
+            },
+            "utils": {
+              "public": {
+                "makeSuccessFalseTypeError": {
+                  "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.",
+                  "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+                },
+                "makeSuccessFalseTypeWarning": {
+                  "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.",
+                  "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+                }
               }
             }
           }
