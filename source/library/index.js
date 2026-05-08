@@ -17,10 +17,10 @@ import { makeSuccessFalseTypeError } from "./utilities/index.js";
 /* Primary export */
 
 /**
- * $COMMENT#TSDOC#CORE#DEFS#PUBLIC#GETSOURCECODE
+ * $COMMENT#TSDOC#LIBRARY#DEFS#PUBLIC#GETSOURCECODE
  *
- * @param absolutePath - $COMMENT#TSDOC#CORE#PARAMS#PUBLIC#ABSOLUTEPATH
- * @returns $COMMENT#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE
+ * @param absolutePath - $COMMENT#TSDOC#LIBRARY#PARAMS#PUBLIC#ABSOLUTEPATH
+ * @returns $COMMENT#TSDOC#LIBRARY#RETURNS#PUBLIC#GETSOURCECODE
  */
 export const getSourceCode = (/** @type {string} */ absolutePath) => {
   if (typeof absolutePath !== "string")
