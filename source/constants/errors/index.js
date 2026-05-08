@@ -11,7 +11,7 @@ import {
 
 /* error messages to error statuses */
 
-export const errorMessages_errorStatuses = /** @type {const} */ ({
+export const errorMessages_errorStatuses = Object.freeze({
   [absolutePathIsSupposedToBeAString]: ABSOLUTE_PATH_NOT_STRING,
   [absolutePathCouldntBeRead]: ABSOLUTE_PATH_NOT_FOUND,
   [jsTsJsxTsxCouldntBeParsed]: SOURCE_CODE_FATAL_SYNTAX,
