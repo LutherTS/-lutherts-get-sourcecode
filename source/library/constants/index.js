@@ -1,21 +1,21 @@
 /* success objects */
 
-/** À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`. */
+/** $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE */
 export const successFalse = Object.freeze({
   success: false,
 });
-/** À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`. */
+/** $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE */
 export const successTrue = Object.freeze({
   success: true,
 });
 
 /* error objects */
 
-/** À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`. */
+/** $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR */
 export const typeError = Object.freeze({
   type: "error",
 });
-/** À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`. */
+/** $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING */
 export const typeWarning = Object.freeze({
   type: "warning",
 });

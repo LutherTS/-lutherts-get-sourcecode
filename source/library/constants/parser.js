@@ -2,7 +2,7 @@ import { parser } from "typescript-eslint";
 
 /* languageOptions */
 
-/** Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React). */
+/** $COMMENT#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE */
 export const typeScriptAndJSXCompatible = /** @type {const} */ ({
   parser,
   parserOptions: {

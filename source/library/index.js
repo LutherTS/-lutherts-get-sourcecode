@@ -17,10 +17,10 @@ import { makeSuccessFalseTypeError } from "./utilities/index.js";
 /* Primary export */
 
 /**
- * Obtient l'objet `SourceCode` généré par ESLint d'un fichier à partir de son chemin absolu.
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#PUBLIC#GETSOURCECODE
  *
- * @param absolutePath - Le chemin absolu du fichier concerné.
- * @returns L'objet `SourceCode` généré par ESLint d'un fichier, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{success: true}` à sa clé `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourné à la place.
+ * @param absolutePath - $COMMENT#TSDOC#SRC#LIB#PARAMS#PUBLIC#ABSOLUTEPATH
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE
  */
 export const getSourceCode = (/** @type {string} */ absolutePath) => {
   if (typeof absolutePath !== "string")
