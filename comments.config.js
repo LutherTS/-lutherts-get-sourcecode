@@ -22,6 +22,12 @@ const enData = Object.freeze({
           typeWarning:
             "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING}`." /* variations: $COMMENT#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING / core: $COMMENT#EN#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING */,
         }),
+        parser: Object.freeze({
+          public: Object.freeze({
+            typeScriptAndJSXCompatible:
+              "`languageOptions` object for instances of the `ESLint` and `Linter` classes enabling the linting of TypeScript and JSX (React) files." /* variations: $COMMENT#TSDOC#CORE#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE / core: $COMMENT#EN#TSDOC#CORE#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE */,
+          }),
+        }),
       }),
       defs: Object.freeze({
         public: Object.freeze({
@@ -155,6 +161,12 @@ const frData = Object.freeze({
           typeWarning:
             "$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING}`." /* variations: $COMMENT#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING / core: $COMMENT#FR#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING */,
         }),
+        parser: Object.freeze({
+          public: Object.freeze({
+            typeScriptAndJSXCompatible:
+              "Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React)." /* variations: $COMMENT#TSDOC#CORE#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE / core: $COMMENT#FR#TSDOC#CORE#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE */,
+          }),
+        }),
       }),
       defs: Object.freeze({
         public: Object.freeze({
@@ -234,8 +246,12 @@ const myIgnoresOnly = false; // can be omitted
 /* composedVariablesExclusives */
 
 const enComposedVariablesExclusives = [];
+const frComposedVariablesExclusives = [];
 
-const composedVariablesExclusives = [...enComposedVariablesExclusives]; // composed variables allowed, Comment Variables that include `#COMPOSEDVARIABLESEXCLUSIVES#` are implicitly added
+const composedVariablesExclusives = [
+  ...enComposedVariablesExclusives,
+  ...frComposedVariablesExclusives,
+]; // composed variables allowed, Comment Variables that include `#COMPOSEDVARIABLESEXCLUSIVES#` are implicitly added
 
 /* variations */
 
@@ -253,8 +269,8 @@ const variations = Object.freeze({
   referenceVariant: EN,
   // Defines the behavior of the error handling in case of variations that do not match one-to-one with the reference variation. If `true`, allows incomplete variations data to remain. If `false`, errors and guides the fixing of missing variations data (while ignoring composed variables exclusives).
   allowIncompleteVariations: true,
-  // Defines which variants' `#PUBLIC#` Comment Variables should be publicly available, by default via `comments.public.mjs` and `comments.public.json`.
-  // public: [EN] // NEW
+  // Defines which variants' `#PUBLIC#` Comment Variables should be publicly available, by default through `comments.public.mjs` and `comments.public.json`.
+  // public: [EN, FR] // NEW
 });
 
 // /* libraries */

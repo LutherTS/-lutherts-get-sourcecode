@@ -68,6 +68,7 @@ export {
   typeError,
   typeWarning,
 } from "./constants/index.js";
+export { typeScriptAndJSXCompatible } from "./constants/parser.js";
 
 // ... and utilities used across my projects for error handling.
 

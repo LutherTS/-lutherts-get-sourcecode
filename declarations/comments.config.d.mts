@@ -22,6 +22,14 @@ export type ResolvedConfigData = {
                             "key": "EN#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING";
                         };
                     };
+                    "parser": {
+                        "public": {
+                            "typeScriptAndJSXCompatible": {
+                                "value": "`languageOptions` object for instances of the `ESLint` and `Linter` classes enabling the linting of TypeScript and JSX (React) files.";
+                                "key": "EN#TSDOC#CORE#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
+                            };
+                        };
+                    };
                 };
                 "defs": {
                     "public": {
@@ -242,6 +250,14 @@ export type ResolvedConfigData = {
                         "typeWarning": {
                             "value": "\u00C0 apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeWarning}`.";
                             "key": "FR#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING";
+                        };
+                    };
+                    "parser": {
+                        "public": {
+                            "typeScriptAndJSXCompatible": {
+                                "value": "Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React).";
+                                "key": "FR#TSDOC#CORE#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
+                            };
                         };
                     };
                 };

@@ -20,6 +20,14 @@
               "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.",
               "key": "EN#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING"
             }
+          },
+          "parser": {
+            "public": {
+              "typeScriptAndJSXCompatible": {
+                "value": "`languageOptions` object for instances of the `ESLint` and `Linter` classes enabling the linting of TypeScript and JSX (React) files.",
+                "key": "EN#TSDOC#CORE#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE"
+              }
+            }
           }
         },
         "defs": {
@@ -241,6 +249,14 @@
             "typeWarning": {
               "value": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.",
               "key": "FR#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING"
+            }
+          },
+          "parser": {
+            "public": {
+              "typeScriptAndJSXCompatible": {
+                "value": "Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React).",
+                "key": "FR#TSDOC#CORE#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE"
+              }
             }
           }
         },
