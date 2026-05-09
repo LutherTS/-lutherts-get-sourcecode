@@ -75,7 +75,7 @@ export {
 } from "../constants/errors/statuses.js";
 export { typeScriptAndJSXCompatible } from "./constants/parser.js";
 
-// ... and utilities used across my projects for error handling.
+// ... and utilities used across my projects (and from this specific projet when it comes to statuses) for error handling.
 
 export {
   makeSuccessFalseTypeError,
