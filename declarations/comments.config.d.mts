@@ -2,113 +2,165 @@ export const resolvedConfigData: ResolvedConfigData;
 export type ResolvedConfigData = {
     "en": {
         "tsDoc": {
-            "core": {
+            "src": {
                 "consts": {
-                    "public": {
-                        "successFalse": {
-                            "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
-                            "key": "EN#TSDOC#CORE#CONSTS#PUBLIC#SUCCESSFALSE";
+                    "messages": {
+                        "absolutePathIsSupposedToBeAString": {
+                            "value": "`absolutePath` is supposed to be a string.";
+                            "key": "EN#TSDOC#SRC#CONSTS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING";
                         };
-                        "successTrue": {
-                            "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
-                            "key": "EN#TSDOC#CORE#CONSTS#PUBLIC#SUCCESSTRUE";
+                        "absolutePathCouldntBeRead": {
+                            "value": "Absolute file path could not be read.";
+                            "key": "EN#TSDOC#SRC#CONSTS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD";
                         };
-                        "typeError": {
-                            "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
-                            "key": "EN#TSDOC#CORE#CONSTS#PUBLIC#TYPEERROR";
-                        };
-                        "typeWarning": {
-                            "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
-                            "key": "EN#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING";
+                        "jsTsJsxTsxCouldntBeParsed": {
+                            "value": "JS/TS/JSX/TSX source code could not be parsed.";
+                            "key": "EN#TSDOC#SRC#CONSTS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED";
                         };
                     };
-                    "parser": {
+                    "statuses": {
                         "public": {
-                            "typeScriptAndJSXCompatible": {
-                                "value": "`languageOptions` object for instances of the `ESLint` and `Linter` classes enabling the linting of TypeScript and JSX (React) files.";
-                                "key": "EN#TSDOC#CORE#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
+                            "ABSOLUTE_PATH_NOT_STRING": {
+                                "value": "\"`absolutePath` is supposed to be a string.\"";
+                                "key": "EN#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING";
+                            };
+                            "ABSOLUTE_PATH_NOT_FOUND": {
+                                "value": "\"Absolute file path could not be read.\"";
+                                "key": "EN#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND";
+                            };
+                            "SOURCE_CODE_FATAL_SYNTAX": {
+                                "value": "\"JS/TS/JSX/TSX source code could not be parsed.\"";
+                                "key": "EN#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX";
                             };
                         };
                     };
                 };
-                "defs": {
-                    "public": {
-                        "getSourceCode": {
-                            "value": "Gets the ESLint-generated `SourceCode` object of a file from its absolute path.";
-                            "key": "EN#TSDOC#CORE#DEFS#PUBLIC#GETSOURCECODE";
+                "lib": {
+                    "consts": {
+                        "public": {
+                            "successFalse": {
+                                "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
+                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
+                            };
+                            "successTrue": {
+                                "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
+                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
+                            };
+                            "typeError": {
+                                "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
+                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
+                            };
+                            "typeWarning": {
+                                "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
+                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
+                            };
                         };
-                        "makeSuccessFalseTypeError": {
-                            "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.";
-                            "key": "EN#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                        "parser": {
+                            "public": {
+                                "typeScriptAndJSXCompatible": {
+                                    "value": "`languageOptions` object for instances of the `ESLint` and `Linter` classes enabling the linting of TypeScript and JSX (React) files.";
+                                    "key": "EN#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
+                                };
+                            };
                         };
-                        "makeSuccessFalseTypeWarning": {
-                            "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.";
-                            "key": "EN#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                    };
+                    "defs": {
+                        "public": {
+                            "getSourceCode": {
+                                "value": "Gets the ESLint-generated `SourceCode` object of a file from its absolute path.";
+                                "key": "EN#TSDOC#SRC#LIB#DEFS#PUBLIC#GETSOURCECODE";
+                            };
+                        };
+                        "utils": {
+                            "public": {
+                                "makeSuccessFalseTypeError": {
+                                    "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.";
+                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                };
+                                "makeSuccessFalseTypeWarning": {
+                                    "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.";
+                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                };
+                            };
+                        };
+                    };
+                    "params": {
+                        "public": {
+                            "absolutePath": {
+                                "value": "The absolute path of the file at hand.";
+                                "key": "EN#TSDOC#SRC#LIB#PARAMS#PUBLIC#ABSOLUTEPATH";
+                            };
+                        };
+                        "utils": {
+                            "public": {
+                                "message": {
+                                    "value": "The human-readable message of the error.";
+                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE";
+                                };
+                                "status": {
+                                    "value": "The static status text of the error.";
+                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
+                                };
+                            };
+                        };
+                    };
+                    "returns": {
+                        "public": {
+                            "getSourceCode": {
+                                "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.";
+                                "key": "EN#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE";
+                            };
+                        };
+                        "utils": {
+                            "public": {
+                                "makeSuccessFalseTypeError": {
+                                    "value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
+                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                };
+                                "makeSuccessFalseTypeWarning": {
+                                    "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
+                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                };
+                            };
                         };
                     };
                 };
-                "params": {
-                    "public": {
-                        "absolutePath": {
-                            "value": "The absolute path of the file at hand.";
-                            "key": "EN#TSDOC#CORE#PARAMS#PUBLIC#ABSOLUTEPATH";
-                        };
-                        "message": {
-                            "value": "The human-readable message of the error.";
-                            "key": "EN#TSDOC#CORE#PARAMS#PUBLIC#MESSAGE";
-                        };
-                        "status": {
-                            "value": "The static status text of the error.";
-                            "key": "EN#TSDOC#CORE#PARAMS#PUBLIC#STATUS";
+                "tests": {
+                    "defs": {
+                        "utils": {
+                            "assertFailureWithMessage": {
+                                "value": "Asserts that `getSourceCode` fails when it should.";
+                                "key": "EN#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE";
+                            };
+                            "assertSuccess": {
+                                "value": "Asserts that `getSourceCode` succeeds when it should.";
+                                "key": "EN#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS";
+                            };
                         };
                     };
-                };
-                "returns": {
-                    "public": {
-                        "getSourceCode": {
-                            "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.";
-                            "key": "EN#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE";
-                        };
-                        "makeSuccessFalseTypeError": {
-                            "value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
-                            "key": "EN#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
-                        };
-                        "makeSuccessFalseTypeWarning": {
-                            "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
-                            "key": "EN#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                    "params": {
+                        "utils": {
+                            "getSourceCodeResults": {
+                                "value": "The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.";
+                                "key": "EN#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS";
+                            };
+                            "expectedMessage": {
+                                "value": "The expected message of the error that should be encountered during failure, from which the status can be inferred.";
+                                "key": "EN#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE";
+                            };
                         };
                     };
-                };
-            };
-            "tests": {
-                "defs": {
-                    "assertFailureWithMessage": {
-                        "value": "Asserts that `getSourceCode` fails when it should.";
-                        "key": "EN#TSDOC#TESTS#DEFS#ASSERTFAILUREWITHMESSAGE";
-                    };
-                    "assertSuccess": {
-                        "value": "Asserts that `getSourceCode` succeeds when it should.";
-                        "key": "EN#TSDOC#TESTS#DEFS#ASSERTSUCCESS";
-                    };
-                };
-                "params": {
-                    "getSourceCodeResults": {
-                        "value": "The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.";
-                        "key": "EN#TSDOC#TESTS#PARAMS#GETSOURCECODERESULTS";
-                    };
-                    "expectedMessage": {
-                        "value": "The expected message of the error that should be encountered during failure, from which the status can be inferred.";
-                        "key": "EN#TSDOC#TESTS#PARAMS#EXPECTEDMESSAGE";
-                    };
-                };
-                "returns": {
-                    "assertFailureWithMessage": {
-                        "value": "Void.";
-                        "key": "EN#TSDOC#TESTS#RETURNS#ASSERTFAILUREWITHMESSAGE";
-                    };
-                    "assertSuccess": {
-                        "value": "Void.";
-                        "key": "EN#TSDOC#TESTS#RETURNS#ASSERTSUCCESS";
+                    "returns": {
+                        "utils": {
+                            "assertFailureWithMessage": {
+                                "value": "Void.";
+                                "key": "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE";
+                            };
+                            "assertSuccess": {
+                                "value": "Void.";
+                                "key": "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS";
+                            };
+                        };
                     };
                 };
             };
@@ -232,80 +284,112 @@ export type ResolvedConfigData = {
     };
     "fr": {
         "tsDoc": {
-            "core": {
+            "src": {
                 "consts": {
-                    "public": {
-                        "successFalse": {
-                            "value": "\u00C0 apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successFalse}`.";
-                            "key": "FR#TSDOC#CORE#CONSTS#PUBLIC#SUCCESSFALSE";
-                        };
-                        "successTrue": {
-                            "value": "\u00C0 apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successTrue}`.";
-                            "key": "FR#TSDOC#CORE#CONSTS#PUBLIC#SUCCESSTRUE";
-                        };
-                        "typeError": {
-                            "value": "\u00C0 apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeError}`.";
-                            "key": "FR#TSDOC#CORE#CONSTS#PUBLIC#TYPEERROR";
-                        };
-                        "typeWarning": {
-                            "value": "\u00C0 apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeWarning}`.";
-                            "key": "FR#TSDOC#CORE#CONSTS#PUBLIC#TYPEWARNING";
-                        };
-                    };
-                    "parser": {
+                    "statuses": {
                         "public": {
-                            "typeScriptAndJSXCompatible": {
-                                "value": "Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React).";
-                                "key": "FR#TSDOC#CORE#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
+                            "ABSOLUTE_PATH_NOT_STRING": {
+                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"`absolutePath` is supposed to be a string.\"";
+                                "key": "FR#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING";
+                            };
+                            "ABSOLUTE_PATH_NOT_FOUND": {
+                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"Absolute file path could not be read.\"";
+                                "key": "FR#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND";
+                            };
+                            "SOURCE_CODE_FATAL_SYNTAX": {
+                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"JS/TS/JSX/TSX source code could not be parsed.\"";
+                                "key": "FR#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX";
                             };
                         };
                     };
                 };
-                "defs": {
-                    "public": {
-                        "getSourceCode": {
-                            "value": "Obtient l'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier \u00E0 partir de son chemin absolu.";
-                            "key": "FR#TSDOC#CORE#DEFS#PUBLIC#GETSOURCECODE";
+                "lib": {
+                    "consts": {
+                        "public": {
+                            "successFalse": {
+                                "value": "\u00C0 apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successFalse}`.";
+                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
+                            };
+                            "successTrue": {
+                                "value": "\u00C0 apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successTrue}`.";
+                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
+                            };
+                            "typeError": {
+                                "value": "\u00C0 apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeError}`.";
+                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
+                            };
+                            "typeWarning": {
+                                "value": "\u00C0 apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeWarning}`.";
+                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
+                            };
                         };
-                        "makeSuccessFalseTypeError": {
-                            "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` bas\u00E9e sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.";
-                            "key": "FR#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
-                        };
-                        "makeSuccessFalseTypeWarning": {
-                            "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.";
-                            "key": "FR#TSDOC#CORE#DEFS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
-                        };
-                    };
-                };
-                "params": {
-                    "public": {
-                        "absolutePath": {
-                            "value": "Le chemin absolu du fichier concern\u00E9.";
-                            "key": "FR#TSDOC#CORE#PARAMS#PUBLIC#ABSOLUTEPATH";
-                        };
-                        "message": {
-                            "value": "Le message en clair de l'erreur.";
-                            "key": "FR#TSDOC#CORE#PARAMS#PUBLIC#MESSAGE";
-                        };
-                        "status": {
-                            "value": "Le texte statique du statut de l'erreur.";
-                            "key": "FR#TSDOC#CORE#PARAMS#PUBLIC#STATUS";
+                        "parser": {
+                            "public": {
+                                "typeScriptAndJSXCompatible": {
+                                    "value": "Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React).";
+                                    "key": "FR#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
+                                };
+                            };
                         };
                     };
-                };
-                "returns": {
-                    "public": {
-                        "getSourceCode": {
-                            "value": "L'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier, \u00E0 partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent \u00EAtre extraits, \u00E0 l'int\u00E9rieur d'un objet `{success: true}` \u00E0 sa cl\u00E9 `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourn\u00E9 \u00E0 la place.";
-                            "key": "FR#TSDOC#CORE#RETURNS#PUBLIC#GETSOURCECODE";
+                    "defs": {
+                        "public": {
+                            "getSourceCode": {
+                                "value": "Obtient l'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier \u00E0 partir de son chemin absolu.";
+                                "key": "FR#TSDOC#SRC#LIB#DEFS#PUBLIC#GETSOURCECODE";
+                            };
                         };
-                        "makeSuccessFalseTypeError": {
-                            "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
-                            "key": "FR#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                        "utils": {
+                            "public": {
+                                "makeSuccessFalseTypeError": {
+                                    "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` bas\u00E9e sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.";
+                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                };
+                                "makeSuccessFalseTypeWarning": {
+                                    "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.";
+                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                };
+                            };
                         };
-                        "makeSuccessFalseTypeWarning": {
-                            "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
-                            "key": "FR#TSDOC#CORE#RETURNS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                    };
+                    "params": {
+                        "public": {
+                            "absolutePath": {
+                                "value": "Le chemin absolu du fichier concern\u00E9.";
+                                "key": "FR#TSDOC#SRC#LIB#PARAMS#PUBLIC#ABSOLUTEPATH";
+                            };
+                        };
+                        "utils": {
+                            "public": {
+                                "message": {
+                                    "value": "Le message en clair de l'erreur.";
+                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE";
+                                };
+                                "status": {
+                                    "value": "Le texte statique du statut de l'erreur.";
+                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
+                                };
+                            };
+                        };
+                    };
+                    "returns": {
+                        "public": {
+                            "getSourceCode": {
+                                "value": "L'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier, \u00E0 partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent \u00EAtre extraits, \u00E0 l'int\u00E9rieur d'un objet `{success: true}` \u00E0 sa cl\u00E9 `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourn\u00E9 \u00E0 la place.";
+                                "key": "FR#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE";
+                            };
+                        };
+                        "utils": {
+                            "public": {
+                                "makeSuccessFalseTypeError": {
+                                    "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
+                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                };
+                                "makeSuccessFalseTypeWarning": {
+                                    "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
+                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                };
+                            };
                         };
                     };
                 };
@@ -313,6 +397,10 @@ export type ResolvedConfigData = {
         };
         "forComposedVariables": {};
         "composedVariablesExclusives": {
+            "_enAnglais": {
+                "value": "En anglais \u00E0 l'ex\u00E9cution";
+                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
+            };
             "error": {
                 "value": "erreur";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR";

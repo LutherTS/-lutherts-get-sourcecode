@@ -68,12 +68,13 @@ export {
   typeError,
   typeWarning,
 } from "./constants/index.js";
+export { typeScriptAndJSXCompatible } from "./constants/parser.js";
+
 export {
   ABSOLUTE_PATH_NOT_STRING,
   ABSOLUTE_PATH_NOT_FOUND,
   SOURCE_CODE_FATAL_SYNTAX,
 } from "../constants/errors/statuses.js";
-export { typeScriptAndJSXCompatible } from "./constants/parser.js";
 
 // ... and utilities used across my projects (and from this specific projet when it comes to statuses) for error handling.
 

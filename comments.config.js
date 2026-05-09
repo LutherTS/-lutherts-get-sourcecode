@@ -344,7 +344,7 @@ const variations = Object.freeze({
 
 // /* libraries */
 
-// import libraryCommentVariablesData from "library/comments.public.json" with { type: "json" }
+// import { commentVariablesData as libraryCommentVariablesData } from "library"
 
 // const libraries = {
 //   "library": libraryCommentVariablesData.variantKey
