@@ -14,9 +14,9 @@
   "main": "source/library/index.js",
   "types": "declarations/source/library/index.d.ts",
   "scripts": {
-    "test": "node --test",
     "types": "tsc",
-    "prepare": "npm run test && npm run types"
+    "test": "node --test",
+    "prepare": "npm run types && npm run test"
   },
   "dependencies": {
     "eslint": "^10.3.0",
