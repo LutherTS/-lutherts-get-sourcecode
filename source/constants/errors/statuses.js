@@ -1,8 +1,8 @@
 /* error statuses */
 
-/** $COMMENT#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING */
+/** "`absolutePath` is supposed to be a string." */
 export const ABSOLUTE_PATH_NOT_STRING = "ABSOLUTE_PATH_NOT_STRING";
-/** $COMMENT#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND */
+/** "Absolute file path could not be read." */
 export const ABSOLUTE_PATH_NOT_FOUND = "ABSOLUTE_PATH_NOT_FOUND";
-/** $COMMENT#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX */
+/** "JS/TS/JSX/TSX source code could not be parsed." */
 export const SOURCE_CODE_FATAL_SYNTAX = "SOURCE_CODE_FATAL_SYNTAX";

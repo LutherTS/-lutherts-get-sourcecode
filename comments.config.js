@@ -331,7 +331,7 @@ const variations = Object.freeze({
     [FR]: Object.freeze({ label: FRANÇAIS }),
   }),
   // Defines the current variant that Comment Variables currently resolves to.
-  variant: FR,
+  variant: EN,
   // Defines the reference variation that all other variations need to have (or aim to have) matching keys with. Requires a JavaScript variable as it needs to be the exact same object as the one referenced at `data[variations.referenceVariant]`.
   referenceData: enData,
   // Defines the variant of the reference variation.
