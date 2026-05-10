@@ -344,11 +344,11 @@ const variations = Object.freeze({
 
 // /* libraries */
 
-// import { commentVariablesData as libraryCommentVariablesData } from "library"
+// import getSourceCodeCommentVariablesData from "./comments.config.json" with { type: "json" };
 
 // const libraries = {
-//   "library": libraryCommentVariablesData.variantKey
-// } // v3
+//   "get-sourcecode": getSourceCodeCommentVariablesData.en,
+// }; // v3
 
 const config = {
   data,
@@ -357,7 +357,7 @@ const config = {
   myIgnoresOnly,
   composedVariablesExclusives,
   variations,
-  // libraries // v3
+  // libraries, // v3
 };
 
 export default config;
