@@ -1,13 +1,10 @@
-import { commentVariablesData } from "../../comment-variables/index.js";
+import { messages } from "../../comment-variables/index.js";
 
 /* error messages */
 
 export const absolutePathIsSupposedToBeAString =
-  commentVariablesData.en.tsDoc.src.consts.messages
-    .absolutePathIsSupposedToBeAString.value;
+  messages.absolutePathIsSupposedToBeAString.value;
 export const absolutePathCouldntBeRead =
-  commentVariablesData.en.tsDoc.src.consts.messages.absolutePathCouldntBeRead
-    .value;
+  messages.absolutePathCouldntBeRead.value;
 export const jsTsJsxTsxCouldntBeParsed =
-  commentVariablesData.en.tsDoc.src.consts.messages.jsTsJsxTsxCouldntBeParsed
-    .value;
+  messages.jsTsJsxTsxCouldntBeParsed.value;

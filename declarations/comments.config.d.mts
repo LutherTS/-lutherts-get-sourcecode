@@ -3,33 +3,35 @@ export const resolvedConfigData: {
         "tsDoc": {
             "src": {
                 "consts": {
-                    "messages": {
-                        "absolutePathIsSupposedToBeAString": {
-                            "value": "`absolutePath` is supposed to be a string.";
-                            "key": "EN#TSDOC#SRC#CONSTS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING";
-                        };
-                        "absolutePathCouldntBeRead": {
-                            "value": "Absolute file path could not be read.";
-                            "key": "EN#TSDOC#SRC#CONSTS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD";
-                        };
-                        "jsTsJsxTsxCouldntBeParsed": {
-                            "value": "JS/TS/JSX/TSX source code could not be parsed.";
-                            "key": "EN#TSDOC#SRC#CONSTS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED";
-                        };
-                    };
-                    "statuses": {
-                        "public": {
-                            "ABSOLUTE_PATH_NOT_STRING": {
-                                "value": "\"`absolutePath` is supposed to be a string.\"";
-                                "key": "EN#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING";
+                    "errors": {
+                        "messages": {
+                            "absolutePathIsSupposedToBeAString": {
+                                "value": "`absolutePath` is supposed to be a string.";
+                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING";
                             };
-                            "ABSOLUTE_PATH_NOT_FOUND": {
-                                "value": "\"Absolute file path could not be read.\"";
-                                "key": "EN#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND";
+                            "absolutePathCouldntBeRead": {
+                                "value": "Absolute file path could not be read.";
+                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD";
                             };
-                            "SOURCE_CODE_FATAL_SYNTAX": {
-                                "value": "\"JS/TS/JSX/TSX source code could not be parsed.\"";
-                                "key": "EN#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX";
+                            "jsTsJsxTsxCouldntBeParsed": {
+                                "value": "JS/TS/JSX/TSX source code could not be parsed.";
+                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED";
+                            };
+                        };
+                        "statuses": {
+                            "public": {
+                                "ABSOLUTE_PATH_NOT_STRING": {
+                                    "value": "\"`absolutePath` is supposed to be a string.\"";
+                                    "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING";
+                                };
+                                "ABSOLUTE_PATH_NOT_FOUND": {
+                                    "value": "\"Absolute file path could not be read.\"";
+                                    "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND";
+                                };
+                                "SOURCE_CODE_FATAL_SYNTAX": {
+                                    "value": "\"JS/TS/JSX/TSX source code could not be parsed.\"";
+                                    "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX";
+                                };
                             };
                         };
                     };
@@ -285,19 +287,21 @@ export const resolvedConfigData: {
         "tsDoc": {
             "src": {
                 "consts": {
-                    "statuses": {
-                        "public": {
-                            "ABSOLUTE_PATH_NOT_STRING": {
-                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"`absolutePath` is supposed to be a string.\"";
-                                "key": "FR#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING";
-                            };
-                            "ABSOLUTE_PATH_NOT_FOUND": {
-                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"Absolute file path could not be read.\"";
-                                "key": "FR#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND";
-                            };
-                            "SOURCE_CODE_FATAL_SYNTAX": {
-                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"JS/TS/JSX/TSX source code could not be parsed.\"";
-                                "key": "FR#TSDOC#SRC#CONSTS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX";
+                    "errors": {
+                        "statuses": {
+                            "public": {
+                                "ABSOLUTE_PATH_NOT_STRING": {
+                                    "value": "En anglais \u00E0 l'ex\u00E9cution : \"`absolutePath` is supposed to be a string.\"";
+                                    "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING";
+                                };
+                                "ABSOLUTE_PATH_NOT_FOUND": {
+                                    "value": "En anglais \u00E0 l'ex\u00E9cution : \"Absolute file path could not be read.\"";
+                                    "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND";
+                                };
+                                "SOURCE_CODE_FATAL_SYNTAX": {
+                                    "value": "En anglais \u00E0 l'ex\u00E9cution : \"JS/TS/JSX/TSX source code could not be parsed.\"";
+                                    "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX";
+                                };
                             };
                         };
                     };

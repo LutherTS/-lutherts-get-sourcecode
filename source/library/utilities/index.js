@@ -3,11 +3,11 @@ import { successFalse, typeError, typeWarning } from "../constants/index.js";
 /* makeSuccessFalse */
 
 /**
- * Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
  *
- * @param message - The human-readable message of the error.
- * @param status - The static status text of the error.
- * @returns A `{success: false}` object with a single error in its `errors` array of `{type: error}`.
+ * @param message - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE
+ * @param status - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
  */
 export const makeSuccessFalseTypeError =
   /** @template {string} T, @template {string} U */ (
@@ -26,11 +26,11 @@ export const makeSuccessFalseTypeError =
     });
 
 /**
- * Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING
  *
- * @param message - The human-readable message of the error.
- * @param status - The static status text of the error.
- * @returns A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.
+ * @param message - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE
+ * @param status - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING
  */
 export const makeSuccessFalseTypeWarning =
   /** @template {string} T, @template {string} U */ (

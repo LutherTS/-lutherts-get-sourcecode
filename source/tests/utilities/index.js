@@ -10,11 +10,11 @@ import { errorMessages_errorStatuses } from "../../constants/errors/index.js";
 /* assert */
 
 /**
- * Asserts that `getSourceCode` fails when it should.
+ * $COMMENT#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE
  *
- * @param getSourceCodeResults - The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.
- * @param expectedMessage - The expected message of the error that should be encountered during failure, from which the status can be inferred.
- * @returns Void.
+ * @param getSourceCodeResults - $COMMENT#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS
+ * @param expectedMessage - $COMMENT#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE
+ * @returns $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE
  */
 export const assertFailureWithMessage =
   /** @template {ErrorMessages_ErrorStatuses__Key} T */ (
@@ -33,10 +33,10 @@ export const assertFailureWithMessage =
   };
 
 /**
- * Asserts that `getSourceCode` succeeds when it should.
+ * $COMMENT#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS
  *
- * @param getSourceCodeResults - The results of the `getSourceCode` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.
- * @returns Void.
+ * @param getSourceCodeResults - $COMMENT#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS
+ * @returns $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE
  */
 export const assertSuccess = (
   /** @type {GetSourceCodeReturnType} */ getSourceCodeResults,
