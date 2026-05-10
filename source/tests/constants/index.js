@@ -1,10 +1,9 @@
-import { commentVariablesData } from "../../comment-variables/index.js";
+import { forComposedVariables } from "../../comment-variables/index.js";
 
 /* Primary export name */
 
 /** $COMMENT#FORCOMPOSEDVARIABLES#GETSOURCECODE */
-export const GET_SOURCECODE =
-  commentVariablesData.en.forComposedVariables.getSourceCode.value;
+export const GET_SOURCECODE = forComposedVariables.getSourceCode.value;
 
 /* languages */
 
