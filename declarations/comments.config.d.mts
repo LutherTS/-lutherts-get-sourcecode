@@ -1,5 +1,4 @@
-export const resolvedConfigData: ResolvedConfigData;
-export type ResolvedConfigData = {
+export const resolvedConfigData: {
     "en": {
         "tsDoc": {
             "src": {
