@@ -20,9 +20,9 @@ export const resolvedConfigData: {
                         };
                         "statuses": {
                             "public": {
-                                "ABSOLUTE_PATH_NOT_STRING": {
+                                "ABSOLUTEPATH_NOT_STRING": {
                                     "value": "\"`absolutePath` is supposed to be a string.\"";
-                                    "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING";
+                                    "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTEPATH_NOT_STRING";
                                 };
                                 "ABSOLUTE_PATH_NOT_FOUND": {
                                     "value": "\"Absolute file path could not be read.\"";
@@ -167,12 +167,22 @@ export const resolvedConfigData: {
             };
         };
         "forComposedVariables": {
-            "getSourceCode": {
-                "value": "getSourceCode";
-                "key": "EN#FORCOMPOSEDVARIABLES#GETSOURCECODE";
+            "variables": {
+                "getSourceCode": {
+                    "value": "getSourceCode";
+                    "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE";
+                };
             };
+            "arguments": {};
         };
         "composedVariablesExclusives": {
+            "variables": {};
+            "arguments": {
+                "absolutePath": {
+                    "value": "absolutePath";
+                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH";
+                };
+            };
             "successFalse": {
                 "value": "successFalse";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE";
@@ -290,9 +300,9 @@ export const resolvedConfigData: {
                     "errors": {
                         "statuses": {
                             "public": {
-                                "ABSOLUTE_PATH_NOT_STRING": {
+                                "ABSOLUTEPATH_NOT_STRING": {
                                     "value": "En anglais \u00E0 l'ex\u00E9cution : \"`absolutePath` is supposed to be a string.\"";
-                                    "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING";
+                                    "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTEPATH_NOT_STRING";
                                 };
                                 "ABSOLUTE_PATH_NOT_FOUND": {
                                     "value": "En anglais \u00E0 l'ex\u00E9cution : \"Absolute file path could not be read.\"";

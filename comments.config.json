@@ -5,9 +5,9 @@
         "consts": {
           "errors": {
             "messages": {
-              "absolutePathIsSupposedToBeAString": {
+              "absolutePathSupposedToBeString": {
                 "value": "`absolutePath` is supposed to be a string.",
-                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING"
+                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING"
               },
               "absolutePathCouldntBeRead": {
                 "value": "Absolute file path could not be read.",
@@ -20,9 +20,9 @@
             },
             "statuses": {
               "public": {
-                "ABSOLUTE_PATH_NOT_STRING": {
-                  "value": "\"`absolutePath` is supposed to be a string.\"",
-                  "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING"
+                "ABSOLUTEPATH_NOT_STRING": {
+                  "value": "\"$COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING\"",
+                  "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTEPATH_NOT_STRING"
                 },
                 "ABSOLUTE_PATH_NOT_FOUND": {
                   "value": "\"Absolute file path could not be read.\"",
@@ -167,12 +167,22 @@
       }
     },
     "forComposedVariables": {
-      "getSourceCode": {
-        "value": "getSourceCode",
-        "key": "EN#FORCOMPOSEDVARIABLES#GETSOURCECODE"
-      }
+      "variables": {
+        "getSourceCode": {
+          "value": "getSourceCode",
+          "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE"
+        }
+      },
+      "arguments": {}
     },
     "composedVariablesExclusives": {
+      "variables": {},
+      "arguments": {
+        "absolutePath": {
+          "value": "absolutePath",
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH"
+        }
+      },
       "successFalse": {
         "value": "successFalse",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE"
@@ -290,9 +300,9 @@
           "errors": {
             "statuses": {
               "public": {
-                "ABSOLUTE_PATH_NOT_STRING": {
+                "ABSOLUTEPATH_NOT_STRING": {
                   "value": "En anglais à l'exécution : \"`absolutePath` is supposed to be a string.\"",
-                  "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_STRING"
+                  "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTEPATH_NOT_STRING"
                 },
                 "ABSOLUTE_PATH_NOT_FOUND": {
                   "value": "En anglais à l'exécution : \"Absolute file path could not be read.\"",

@@ -1,10 +1,10 @@
 import {
-  absolutePathIsSupposedToBeAString,
+  absolutePathSupposedToBeString,
   absolutePathCouldntBeRead,
   jsTsJsxTsxCouldntBeParsed,
 } from "./messages.js";
 import {
-  ABSOLUTE_PATH_NOT_STRING,
+  ABSOLUTEPATH_NOT_STRING,
   ABSOLUTE_PATH_NOT_FOUND,
   SOURCE_CODE_FATAL_SYNTAX,
 } from "./statuses.js";
@@ -12,7 +12,7 @@ import {
 /* error messages to error statuses */
 
 export const errorMessages_errorStatuses = Object.freeze({
-  [absolutePathIsSupposedToBeAString]: ABSOLUTE_PATH_NOT_STRING,
+  [absolutePathSupposedToBeString]: ABSOLUTEPATH_NOT_STRING,
   [absolutePathCouldntBeRead]: ABSOLUTE_PATH_NOT_FOUND,
   [jsTsJsxTsxCouldntBeParsed]: SOURCE_CODE_FATAL_SYNTAX,
 });

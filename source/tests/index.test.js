@@ -7,12 +7,17 @@ import assert from "node:assert";
 import { getSourceCode } from "../library/index.js";
 
 import {
-  absolutePathIsSupposedToBeAString,
+  absolutePathSupposedToBeString,
   absolutePathCouldntBeRead,
   jsTsJsxTsxCouldntBeParsed,
 } from "../constants/errors/messages.js";
 
-import { GET_SOURCECODE, JAVASCRIPT, TYPESCRIPT } from "./constants/index.js";
+import {
+  GET_SOURCECODE,
+  ABSOLUTE_PATH,
+  JAVASCRIPT,
+  TYPESCRIPT,
+} from "./constants/index.js";
 
 import { assertFailureWithMessage, assertSuccess } from "./utilities/index.js";
 
@@ -54,15 +59,15 @@ describe(GET_SOURCECODE, () => {
     assert.strictEqual(getSourceCodeName, GET_SOURCECODE);
   });
 
-  it("should error if `absolutePath` is not a string", () => {
+  it(`should error if \`${ABSOLUTE_PATH}\` is not a string`, () => {
     const getSourceCodeResults = getSourceCode(2);
     assertFailureWithMessage(
       getSourceCodeResults,
-      absolutePathIsSupposedToBeAString,
+      absolutePathSupposedToBeString,
     );
   });
 
-  it("should error if `absolutePath` is not found", () => {
+  it(`should error if \`${ABSOLUTE_PATH}\` is not found`, () => {
     const getSourceCodeResults = getSourceCode("does-not-exist.js");
     assertFailureWithMessage(getSourceCodeResults, absolutePathCouldntBeRead);
   });

@@ -3,7 +3,7 @@ export function getSourceCode(absolutePath: string): {
     readonly errors: readonly [{
         readonly type: "error";
         readonly message: "`absolutePath` is supposed to be a string.";
-        readonly status: "ABSOLUTE_PATH_NOT_STRING";
+        readonly status: "ABSOLUTEPATH_NOT_STRING";
     }];
 } | {
     readonly success: false;
@@ -26,5 +26,5 @@ export function getSourceCode(absolutePath: string): {
 export { typeScriptAndJSXCompatible } from "./constants/parser.js";
 export { resolvedConfigData as commentVariablesData } from "../../comments.config.mjs";
 export { successFalse, successTrue, typeError, typeWarning } from "./constants/index.js";
-export { ABSOLUTE_PATH_NOT_STRING, ABSOLUTE_PATH_NOT_FOUND, SOURCE_CODE_FATAL_SYNTAX } from "../constants/errors/statuses.js";
+export { ABSOLUTEPATH_NOT_STRING as ABSOLUTE_PATH_NOT_STRING, ABSOLUTE_PATH_NOT_FOUND, SOURCE_CODE_FATAL_SYNTAX } from "../constants/errors/statuses.js";
 export { makeSuccessFalseTypeError, makeSuccessFalseTypeWarning } from "./utilities/index.js";

@@ -4,7 +4,7 @@ import { Linter } from "eslint";
 
 import { errorMessages_errorStatuses } from "../constants/errors/index.js";
 import {
-  absolutePathIsSupposedToBeAString,
+  absolutePathSupposedToBeString,
   absolutePathCouldntBeRead,
   jsTsJsxTsxCouldntBeParsed,
 } from "../constants/errors/messages.js";
@@ -14,7 +14,7 @@ import { typeScriptAndJSXCompatible } from "./constants/parser.js";
 
 import { makeSuccessFalseTypeError } from "./utilities/index.js";
 
-/* Primary export */
+/* primary export */
 
 /**
  * $COMMENT#TSDOC#SRC#LIB#DEFS#PUBLIC#GETSOURCECODE
@@ -25,8 +25,8 @@ import { makeSuccessFalseTypeError } from "./utilities/index.js";
 export const getSourceCode = (/** @type {string} */ absolutePath) => {
   if (typeof absolutePath !== "string")
     return makeSuccessFalseTypeError(
-      absolutePathIsSupposedToBeAString,
-      errorMessages_errorStatuses[absolutePathIsSupposedToBeAString],
+      absolutePathSupposedToBeString,
+      errorMessages_errorStatuses[absolutePathSupposedToBeString],
     );
 
   const linter = new Linter();
@@ -58,7 +58,7 @@ export const getSourceCode = (/** @type {string} */ absolutePath) => {
   });
 };
 
-/* Secondary exports */
+/* secondary exports */
 
 // This library also exports the basic constants ...
 
@@ -71,7 +71,7 @@ export {
 export { typeScriptAndJSXCompatible } from "./constants/parser.js";
 
 export {
-  ABSOLUTE_PATH_NOT_STRING,
+  ABSOLUTEPATH_NOT_STRING as ABSOLUTE_PATH_NOT_STRING,
   ABSOLUTE_PATH_NOT_FOUND,
   SOURCE_CODE_FATAL_SYNTAX,
 } from "../constants/errors/statuses.js";
