@@ -290,6 +290,10 @@
       "status": {
         "value": "status",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS"
+      },
+      "_void": {
+        "value": "Void",
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID"
       }
     }
   },

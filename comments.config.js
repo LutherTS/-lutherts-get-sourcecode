@@ -115,7 +115,7 @@ const enData = Object.freeze({
         returns: Object.freeze({
           utils: Object.freeze({
             assertFailureWithMessage:
-              "Void." /* variations: $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE / core: $COMMENT#EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE */,
+              "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID." /* variations: $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE / core: $COMMENT#EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE */,
             assertSuccess:
               "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE" /* variations: $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS / core: $COMMENT#EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS */,
           }),
@@ -171,7 +171,7 @@ const enData = Object.freeze({
       "sits at the top of its object's type definition, like" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE */,
     propApropB:
       "propertyA, propertyB" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB */,
-    // tsDoc.src.defs
+    // tsDoc.src.lib.defs
     eslintSourceCode:
       "ESLint-generated `SourceCode` object of a file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE */,
     singleError:
@@ -183,7 +183,7 @@ const enData = Object.freeze({
       "absolute path of the file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH */,
     atHand:
       "at hand" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ATHAND / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND */,
-    // tsDoc.src.tests.defs
+    // tsDoc.src.tests.defs.utils
     _asserts:
       "Asserts" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS */,
     whenItShould:
@@ -193,6 +193,8 @@ const enData = Object.freeze({
       "message" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE */,
     status:
       "status" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#STATUS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS */,
+    _void:
+      "Void" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_VOID / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID */,
   }),
 });
 
@@ -279,7 +281,7 @@ const frData = Object.freeze({
   }),
   forComposedVariables: Object.freeze({}),
   composedVariablesExclusives: Object.freeze({
-    // tsDoc.source.consts
+    // tsDoc.src.consts
     _enAnglais:
       "En anglais à l'exécution" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS */,
     // tsDoc.core.consts
@@ -291,14 +293,14 @@ const frData = Object.freeze({
       "pour s'assurer que" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE */,
     sitsAtTopLike:
       "apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE */,
-    // tsDoc.core.defs
+    // tsDoc.src.lib.defs
     eslintSourceCode:
       "objet `SourceCode` généré par ESLint d'un fichier" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE */,
     singleError:
       "seule erreur dans son array `errors`" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR */,
     basedOnMessageAndStatus:
       "basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS */,
-    // tsDoc.core.params
+    // tsDoc.src.lib.params
     absolutePath:
       "chemin absolu du fichier" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH */,
     concerné:
