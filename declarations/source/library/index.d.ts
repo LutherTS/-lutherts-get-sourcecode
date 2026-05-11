@@ -1,4 +1,4 @@
-export function getSourceCode(absolutePath: string): {
+export function getSourceCode<T extends string>(absolutePath: T): {
     readonly success: false;
     readonly errors: readonly [{
         readonly type: "error";

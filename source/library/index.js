@@ -22,7 +22,9 @@ import { makeSuccessFalseTypeError } from "./utilities/index.js";
  * @param absolutePath - $COMMENT#TSDOC#SRC#LIB#PARAMS#PUBLIC#ABSOLUTEPATH
  * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE
  */
-export const getSourceCode = (/** @type {string} */ absolutePath) => {
+export const getSourceCode = /** @template {string} T */ (
+  /** @type {T} */ absolutePath,
+) => {
   if (typeof absolutePath !== "string")
     return makeSuccessFalseTypeError(
       absolutePathSupposedToBeString,

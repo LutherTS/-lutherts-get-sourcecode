@@ -5,9 +5,9 @@ export const resolvedConfigData: {
                 "consts": {
                     "errors": {
                         "messages": {
-                            "absolutePathIsSupposedToBeAString": {
+                            "absolutePathSupposedToBeString": {
                                 "value": "`absolutePath` is supposed to be a string.";
-                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING";
+                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING";
                             };
                             "absolutePathCouldntBeRead": {
                                 "value": "Absolute file path could not be read.";
@@ -21,7 +21,7 @@ export const resolvedConfigData: {
                         "statuses": {
                             "public": {
                                 "ABSOLUTEPATH_NOT_STRING": {
-                                    "value": "\"`absolutePath` is supposed to be a string.\"";
+                                    "value": "\"$COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING\"";
                                     "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTEPATH_NOT_STRING";
                                 };
                                 "ABSOLUTE_PATH_NOT_FOUND": {
@@ -290,6 +290,10 @@ export const resolvedConfigData: {
             "status": {
                 "value": "status";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS";
+            };
+            "_void": {
+                "value": "Void";
+                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
             };
         };
     };

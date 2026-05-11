@@ -1,7 +1,7 @@
 export const messages: {
-    absolutePathIsSupposedToBeAString: {
+    absolutePathSupposedToBeString: {
         "value": "`absolutePath` is supposed to be a string.";
-        "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING";
+        "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING";
     };
     absolutePathCouldntBeRead: {
         "value": "Absolute file path could not be read.";
@@ -136,6 +136,10 @@ export const composedVariablesExclusives: {
     status: {
         "value": "status";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS";
+    };
+    _void: {
+        "value": "Void";
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
     };
 };
 export { commentVariablesData };

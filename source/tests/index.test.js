@@ -49,6 +49,8 @@ const languages = /** @type {const} */ ([
 ]);
 
 describe(GET_SOURCECODE, () => {
+  // initial tests
+
   it("should be a function", () => {
     const getSourceCodeType = typeof getSourceCode;
     assert.strictEqual(getSourceCodeType, "function");
@@ -59,6 +61,8 @@ describe(GET_SOURCECODE, () => {
     assert.strictEqual(getSourceCodeName, GET_SOURCECODE);
   });
 
+  // input validation tests
+
   it(`should error if \`${ABSOLUTE_PATH}\` is not a string`, () => {
     const getSourceCodeResults = getSourceCode(2);
     assertFailureWithMessage(
@@ -66,6 +70,8 @@ describe(GET_SOURCECODE, () => {
       absolutePathSupposedToBeString,
     );
   });
+
+  // operating tests
 
   it(`should error if \`${ABSOLUTE_PATH}\` is not found`, () => {
     const getSourceCodeResults = getSourceCode("does-not-exist.js");
