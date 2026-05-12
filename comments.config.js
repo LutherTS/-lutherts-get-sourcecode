@@ -355,13 +355,13 @@ const variations = Object.freeze({
   // public: [EN, FR] // can be omitted, otherwise must first include `variations.referenceVariant` as its first element // v3
 });
 
-// /* libraries */
+/* libraries */
 
-// import getSourceCodeCommentVariablesData from "./comments.config.json" with { type: "json" };
+import { resolvedConfigData as getSourceCodeCommentVariablesData } from "./comments.config.mjs";
 
-// const libraries = {
-//   "get-sourcecode": getSourceCodeCommentVariablesData.en,
-// }; // v3
+const libraries = {
+  "get-sourcecode": getSourceCodeCommentVariablesData.en,
+}; // v3
 
 const config = {
   data,
@@ -370,7 +370,7 @@ const config = {
   myIgnoresOnly,
   composedVariablesExclusives,
   variations,
-  // libraries, // v3
+  libraries, // v3
 };
 
 export default config;
