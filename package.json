@@ -13,6 +13,14 @@
   "type": "module",
   "main": "source/library/index.js",
   "types": "declarations/source/library/index.d.ts",
+  "files": [
+    "comment-variables",
+    "declarations",
+    "source",
+    "comments.config.js",
+    "comments.config.json",
+    "comments.config.mjs"
+  ],
   "scripts": {
     "types": "tsc",
     "test": "node --test",
