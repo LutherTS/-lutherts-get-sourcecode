@@ -17,7 +17,3 @@ export const ABSOLUTE_PATH =
 
 export const JAVASCRIPT = "JavaScript";
 export const TYPESCRIPT = "TypeScript";
-
-/* Notes
-$COMMENT#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE and GET_SOURCECODE are controlled by a single source of truth in `comments.config.js`, literally-typed across comments and variables. (Comment Variables.)
-*/

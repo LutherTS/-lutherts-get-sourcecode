@@ -73,7 +73,7 @@ export {
 export { typeScriptAndJSXCompatible } from "./constants/parser.js";
 
 export {
-  ABSOLUTEPATH_NOT_STRING as ABSOLUTE_PATH_NOT_STRING,
+  ABSOLUTEPATH_NOT_STRING,
   ABSOLUTE_PATH_NOT_FOUND,
   SOURCE_CODE_FATAL_SYNTAX,
 } from "../constants/errors/statuses.js";
@@ -89,6 +89,10 @@ export {
 // For the JS version (typed with literals):
 // - `import { commentVariablesData as getSourceCodeCommentVariablesData } from "get-sourcecode";`
 // For the JSON version (typed with strings):
-// - `import getSourceCodeCommentVariablesData from "get-sourcecode/comments.config.json" with { type: "json" };` // from "get-sourcecode/comments.public.json"
+// - `import getSourceCodeCommentVariablesData from "get-sourcecode/comments.config.json" with { type: "json" };`
+// - `import getSourceCodeCommentVariablesData from "get-sourcecode/comments.public.json" with { type: "json" };`
 
-export { resolvedConfigData as commentVariablesData } from "../../comments.config.mjs"; // from "../../comments.public.mjs"
+export { commentVariablesData } from "../comment-variables/index.js";
+// export { resolvedConfigData as commentVariablesData } from "../../comments.config.mjs";
+// export { commentVariablesData } from "../comment-variables/public/index.js";
+// export { resolvedPublicData as commentVariablesData } from "../../comments.public.mjs";
