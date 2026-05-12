@@ -9,7 +9,7 @@ import {
 export const GET_SOURCECODE =
   forComposedVariables.variables.getSourceCode.value;
 
-/** $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH */
+/** $COMMENT#FORCOMPOSEDVARIABLES#ARGUMENTS#ABSOLUTEPATH */
 export const ABSOLUTE_PATH =
   composedVariablesExclusives.arguments.absolutePath.value;
 
