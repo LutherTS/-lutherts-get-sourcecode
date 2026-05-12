@@ -120,14 +120,14 @@ export const enData = Object.freeze({
       getSourceCode:
         "getSourceCode" /* variations: $COMMENT#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE / core: $COMMENT#EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE */,
     }),
-    arguments: Object.freeze({
-      absolutePath:
-        "absolutePath" /* variations: $COMMENT#FORCOMPOSEDVARIABLES#ARGUMENTS#ABSOLUTEPATH / core: $COMMENT#EN#FORCOMPOSEDVARIABLES#ARGUMENTS#ABSOLUTEPATH */,
-    }),
+    arguments: Object.freeze({}),
   }),
   composedVariablesExclusives: Object.freeze({
     variables: Object.freeze({}),
-    arguments: Object.freeze({}),
+    arguments: Object.freeze({
+      absolutePath:
+        "absolutePath" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH */,
+    }),
     // tsDoc.src.consts
     successFalse:
       "successFalse" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE */,

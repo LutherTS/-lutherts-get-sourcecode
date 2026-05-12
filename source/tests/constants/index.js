@@ -1,4 +1,7 @@
-import { forComposedVariables } from "../../comment-variables/index.js";
+import {
+  forComposedVariables,
+  composedVariablesExclusives,
+} from "../../comment-variables/index.js";
 
 /* primary export names */
 
@@ -6,8 +9,8 @@ import { forComposedVariables } from "../../comment-variables/index.js";
 export const GET_SOURCECODE =
   forComposedVariables.variables.getSourceCode.value;
 
-/** $COMMENT#FORCOMPOSEDVARIABLES#ARGUMENTS#ABSOLUTEPATH */
-export const ABSOLUTE_PATH = forComposedVariables.arguments.absolutePath.value;
+export const ABSOLUTE_PATH =
+  composedVariablesExclusives.arguments.absolutePath.value;
 
 /* languages */
 

@@ -173,16 +173,16 @@
           "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE"
         }
       },
-      "arguments": {
-        "absolutePath": {
-          "value": "absolutePath",
-          "key": "EN#FORCOMPOSEDVARIABLES#ARGUMENTS#ABSOLUTEPATH"
-        }
-      }
+      "arguments": {}
     },
     "composedVariablesExclusives": {
       "variables": {},
-      "arguments": {},
+      "arguments": {
+        "absolutePath": {
+          "value": "absolutePath",
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH"
+        }
+      },
       "successFalse": {
         "value": "successFalse",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE"
