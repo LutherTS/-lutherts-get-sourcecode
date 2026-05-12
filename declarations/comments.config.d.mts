@@ -173,16 +173,16 @@ export const resolvedConfigData: {
                     "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE";
                 };
             };
-            "arguments": {};
-        };
-        "composedVariablesExclusives": {
-            "variables": {};
             "arguments": {
                 "absolutePath": {
                     "value": "absolutePath";
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH";
+                    "key": "EN#FORCOMPOSEDVARIABLES#ARGUMENTS#ABSOLUTEPATH";
                 };
             };
+        };
+        "composedVariablesExclusives": {
+            "variables": {};
+            "arguments": {};
             "successFalse": {
                 "value": "successFalse";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE";
@@ -412,8 +412,13 @@ export const resolvedConfigData: {
                 };
             };
         };
-        "forComposedVariables": {};
+        "forComposedVariables": {
+            "variables": {};
+            "arguments": {};
+        };
         "composedVariablesExclusives": {
+            "variables": {};
+            "arguments": {};
             "_enAnglais": {
                 "value": "En anglais \u00E0 l'ex\u00E9cution";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
