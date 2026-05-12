@@ -1,4 +1,4 @@
-/* variants */
+/* variants and labels */
 
 const EN = "en";
 const ENGLISH = "English";
