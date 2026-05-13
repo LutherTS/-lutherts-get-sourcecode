@@ -128,6 +128,7 @@ export const enData = Object.freeze({
       absolutePath:
         "absolutePath" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH */,
     }),
+
     // tsDoc.src.consts
     successFalse:
       "successFalse" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE */,
@@ -163,6 +164,7 @@ export const enData = Object.freeze({
       "sits at the top of its object's type definition, like" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE */,
     propApropB:
       "propertyA, propertyB" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB */,
+
     // tsDoc.src.lib.defs
     eslintSourceCode:
       "ESLint-generated `SourceCode` object of a file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE */,
@@ -170,21 +172,26 @@ export const enData = Object.freeze({
       "single error in its `errors` array" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR */,
     basedOnMessageAndStatus:
       "based on the `message` it is meant to display and the `status` it is meant to have" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS */,
+
     // tsDoc.src.lib.params
     absolutePath:
       "absolute path of the file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH */,
     atHand:
       "at hand" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ATHAND / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND */,
+
     // tsDoc.src.tests.defs.utils
     _asserts:
       "Asserts" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS */,
     whenItShould:
       "when it should" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD */,
-    // tsDoc.src.tests.params
+
+    // tsDoc.src.tests.params.utils
     message:
       "message" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE */,
     status:
       "status" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#STATUS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS */,
+
+    // tsDoc.src.tests.returns.utils
     _void:
       "Void" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_VOID / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID */,
   }),
