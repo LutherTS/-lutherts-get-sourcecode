@@ -62,7 +62,7 @@ export const getSourceCode = /** @template {string} T */ (
 
 /* secondary exports */
 
-// This library also exports the basic constants ...
+// This library also exports the basic constants (along with its parser) ...
 
 export {
   successFalse,
@@ -72,13 +72,7 @@ export {
 } from "./constants/index.js";
 export { typeScriptAndJSXCompatible } from "./constants/parser.js";
 
-export {
-  ABSOLUTEPATH_NOT_STRING,
-  ABSOLUTE_PATH_NOT_FOUND,
-  SOURCE_CODE_FATAL_SYNTAX,
-} from "../constants/errors/statuses.js";
-
-// ... and utilities used across my projects (and from this specific projet when it comes to statuses) for error handling.
+// ... and utilities used across my projects for error handling.
 
 export {
   makeSuccessFalseTypeError,

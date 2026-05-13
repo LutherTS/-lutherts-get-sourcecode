@@ -26,5 +26,4 @@ export function getSourceCode<T extends string>(absolutePath: T): {
 export { typeScriptAndJSXCompatible } from "./constants/parser.js";
 export { commentVariablesData } from "../comment-variables/index.js";
 export { successFalse, successTrue, typeError, typeWarning } from "./constants/index.js";
-export { ABSOLUTEPATH_NOT_STRING, ABSOLUTE_PATH_NOT_FOUND, SOURCE_CODE_FATAL_SYNTAX } from "../constants/errors/statuses.js";
 export { makeSuccessFalseTypeError, makeSuccessFalseTypeWarning } from "./utilities/index.js";
