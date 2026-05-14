@@ -19,7 +19,9 @@
     "source",
     "comments.config.js",
     "comments.config.json",
-    "comments.config.mjs"
+    "comments.config.mjs",
+    "comments.config.public.json",
+    "comments.config.public.mjs"
   ],
   "scripts": {
     "types": "tsc",

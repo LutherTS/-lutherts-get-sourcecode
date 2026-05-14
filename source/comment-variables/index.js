@@ -12,5 +12,3 @@ export const forComposedVariables =
 
 export const composedVariablesExclusives =
   commentVariablesData.en.composedVariablesExclusives;
-
-export { commentVariablesData };

@@ -83,10 +83,7 @@ export {
 // For the JS version (typed with literals):
 // - `import { commentVariablesData as getSourceCodeCommentVariablesData } from "get-sourcecode";`
 // For the JSON version (typed with strings):
-// - `import getSourceCodeCommentVariablesData from "get-sourcecode/comments.config.json" with { type: "json" };`
-// - `import getSourceCodeCommentVariablesData from "get-sourcecode/comments.public.json" with { type: "json" };`
+// - `import getSourceCodeCommentVariablesData from "get-sourcecode/comments.config.public.json" with { type: "json" };`
 
-export { commentVariablesData } from "../comment-variables/index.js";
-// export { resolvedConfigData as commentVariablesData } from "../../comments.config.mjs";
-// export { commentVariablesData } from "../comment-variables/public/index.js";
-// export { resolvedPublicData as commentVariablesData } from "../../comments.public.mjs";
+export { commentVariablesData } from "../comment-variables/public.js";
+// export { resolvedConfigData as commentVariablesData } from "../../comments.config.public.mjs";
