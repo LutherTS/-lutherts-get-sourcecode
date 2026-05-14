@@ -142,5 +142,3 @@ export const composedVariablesExclusives: {
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
     };
 };
-export { commentVariablesData };
-import { resolvedConfigData as commentVariablesData } from "../../comments.config.mjs";

@@ -24,6 +24,6 @@ export function getSourceCode<T extends string>(absolutePath: T): {
     readonly sourceCode: import("eslint").SourceCode;
 };
 export { typeScriptAndJSXCompatible } from "./constants/parser.js";
-export { commentVariablesData } from "../comment-variables/index.js";
+export { commentVariablesData } from "../comment-variables/public.js";
 export { successFalse, successTrue, typeError, typeWarning } from "./constants/index.js";
 export { makeSuccessFalseTypeError, makeSuccessFalseTypeWarning } from "./utilities/index.js";

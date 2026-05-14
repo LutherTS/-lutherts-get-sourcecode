@@ -21,7 +21,7 @@ export const resolvedConfigData: {
                         "statuses": {
                             "public": {
                                 "ABSOLUTEPATH_NOT_STRING": {
-                                    "value": "\"$COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHISSUPPOSEDTOBEASTRING\"";
+                                    "value": "\"`absolutePath` is supposed to be a string.\"";
                                     "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTEPATH_NOT_STRING";
                                 };
                                 "ABSOLUTE_PATH_NOT_FOUND": {
