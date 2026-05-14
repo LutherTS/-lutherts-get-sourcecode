@@ -49,11 +49,11 @@ const variations = Object.freeze({
 
 /* libraries */
 
-import { resolvedConfigData as getSourceCodeCommentVariablesData } from "./comments.config.mjs";
+// import { resolvedConfigData as getSourceCodeCommentVariablesData } from "./comments.config.mjs";
 
-const libraries = {
-  "get-sourcecode": getSourceCodeCommentVariablesData.en,
-}; // v3
+// const libraries = {
+//   "get-sourcecode": getSourceCodeCommentVariablesData.en,
+// }; // v3
 
 const config = {
   data,
@@ -62,7 +62,7 @@ const config = {
   myIgnoresOnly,
   composedVariablesExclusives,
   variations,
-  libraries, // v3
+  // libraries, // v3
 };
 
 export default config;
