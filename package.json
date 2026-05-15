@@ -8,14 +8,13 @@
     "ast",
     "comments"
   ],
-  "license": "MIT",
+  "license": "UNLICENSED",
   "author": "Luther Tchofo Safo <luther@tchofo-safo-portfolio.me>",
   "type": "module",
   "main": "source/library/index.js",
   "types": "get-sourcecode.d.ts",
   "files": [
     "comment-variables",
-    "declarations",
     "source",
     "comments.config.js",
     "comments.config.json",
