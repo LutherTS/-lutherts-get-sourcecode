@@ -1,9 +1,11 @@
-export namespace typeScriptAndJSXCompatible {
-    export { parser };
-    export namespace parserOptions {
-        namespace ecmaFeatures {
-            let jsx: true;
-        }
-    }
-}
+export const typeScriptAndJSXCompatible: {
+    parser: typeof parser;
+    parserOptions: typeof parserOptions;
+};
 import { parser } from "typescript-eslint";
+declare const parserOptions: Readonly<{
+    ecmaFeatures: Readonly<{
+        jsx: true;
+    }>;
+}>;
+export {};

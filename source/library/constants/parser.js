@@ -2,12 +2,15 @@ import { parser } from "typescript-eslint";
 
 /* languageOptions */
 
-/** $COMMENT#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE */
-export const typeScriptAndJSXCompatible = /** @type {const} */ ({
-  parser,
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
+const parserOptions = Object.freeze({
+  ecmaFeatures: Object.freeze({
+    jsx: true,
+  }),
 });
+
+/** $COMMENT#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE */
+export const typeScriptAndJSXCompatible =
+  /** @type {{parser: typeof parser, parserOptions: typeof parserOptions}} */ ({
+    parser,
+    parserOptions,
+  }); // The type needs to be explicit because `CompatibleParser` from "typescript-eslint" is actually internal.
