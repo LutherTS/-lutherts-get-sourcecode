@@ -2,9 +2,6 @@ export const resolvedPublicData: {
     "libraryKey": "GET_SOURCECODE";
     "libraryVariations": {
         "EN": {
-            "GET_SOURCECODE#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTEPATH_NOT_STRING": "\"`absolutePath` is supposed to be a string.\"";
-            "GET_SOURCECODE#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND": "\"Absolute file path could not be read.\"";
-            "GET_SOURCECODE#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX": "\"JS/TS/JSX/TSX source code could not be parsed.\"";
             "GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
             "GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
             "GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
@@ -21,9 +18,6 @@ export const resolvedPublicData: {
             "GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
         };
         "FR": {
-            "GET_SOURCECODE#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTEPATH_NOT_STRING": "En anglais \u00E0 l'ex\u00E9cution : \"`absolutePath` is supposed to be a string.\"";
-            "GET_SOURCECODE#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND": "En anglais \u00E0 l'ex\u00E9cution : \"Absolute file path could not be read.\"";
-            "GET_SOURCECODE#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX": "En anglais \u00E0 l'ex\u00E9cution : \"JS/TS/JSX/TSX source code could not be parsed.\"";
             "GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "\u00C0 apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successFalse}`.";
             "GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "\u00C0 apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successTrue}`.";
             "GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "\u00C0 apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeError}`.";
