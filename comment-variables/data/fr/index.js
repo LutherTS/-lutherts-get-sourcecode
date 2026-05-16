@@ -117,4 +117,4 @@ export const frData = Object.freeze({
 
 /* manual commentVariablesExclusives */
 
-export const frComposedVariablesExclusives = /** @type {string[]} */ ([]);
+export const frComposedVariablesExclusives = /** @type {const} */ ([]);

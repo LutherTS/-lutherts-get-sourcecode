@@ -199,4 +199,4 @@ export const enData = Object.freeze({
 
 /* manual commentVariablesExclusives */
 
-export const enComposedVariablesExclusives = /** @type {string[]} */ ([]);
+export const enComposedVariablesExclusives = /** @type {const} */ ([]);
