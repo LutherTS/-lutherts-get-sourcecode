@@ -8,7 +8,10 @@ const parserOptions = Object.freeze({
   }),
 });
 
-/** $COMMENT#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE */
+/**
+ * $COMMENT#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE
+ * @public
+ */
 export const typeScriptAndJSXCompatible =
   /** @type {{parser: typeof parser, parserOptions: typeof parserOptions}} */ ({
     parser,

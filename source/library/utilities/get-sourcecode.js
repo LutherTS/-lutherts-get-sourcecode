@@ -19,6 +19,8 @@ import { makeSuccessFalseTypeError } from "./index.js";
  *
  * @param absolutePath - $COMMENT#TSDOC#SRC#LIB#PARAMS#PUBLIC#ABSOLUTEPATH
  * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE
+ *
+ * @public
  */
 export const getSourceCode = /** @template {string} T */ (
   /** @type {T} */ absolutePath,
