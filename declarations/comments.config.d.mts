@@ -19,19 +19,17 @@ export const resolvedConfigData: {
                             };
                         };
                         "statuses": {
-                            "public": {
-                                "ABSOLUTEPATH_NOT_STRING": {
-                                    "value": "\"`absolutePath` is supposed to be a string.\"";
-                                    "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTEPATH_NOT_STRING";
-                                };
-                                "ABSOLUTE_PATH_NOT_FOUND": {
-                                    "value": "\"Absolute file path could not be read.\"";
-                                    "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND";
-                                };
-                                "SOURCE_CODE_FATAL_SYNTAX": {
-                                    "value": "\"JS/TS/JSX/TSX source code could not be parsed.\"";
-                                    "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX";
-                                };
+                            "ABSOLUTEPATH_NOT_STRING": {
+                                "value": "\"`absolutePath` is supposed to be a string.\"";
+                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_STRING";
+                            };
+                            "ABSOLUTE_PATH_NOT_FOUND": {
+                                "value": "\"Absolute file path could not be read.\"";
+                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTE_PATH_NOT_FOUND";
+                            };
+                            "SOURCE_CODE_FATAL_SYNTAX": {
+                                "value": "\"JS/TS/JSX/TSX source code could not be parsed.\"";
+                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#SOURCE_CODE_FATAL_SYNTAX";
                             };
                         };
                     };
@@ -303,19 +301,17 @@ export const resolvedConfigData: {
                 "consts": {
                     "errors": {
                         "statuses": {
-                            "public": {
-                                "ABSOLUTEPATH_NOT_STRING": {
-                                    "value": "En anglais \u00E0 l'ex\u00E9cution : \"`absolutePath` is supposed to be a string.\"";
-                                    "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTEPATH_NOT_STRING";
-                                };
-                                "ABSOLUTE_PATH_NOT_FOUND": {
-                                    "value": "En anglais \u00E0 l'ex\u00E9cution : \"Absolute file path could not be read.\"";
-                                    "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#ABSOLUTE_PATH_NOT_FOUND";
-                                };
-                                "SOURCE_CODE_FATAL_SYNTAX": {
-                                    "value": "En anglais \u00E0 l'ex\u00E9cution : \"JS/TS/JSX/TSX source code could not be parsed.\"";
-                                    "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#PUBLIC#SOURCE_CODE_FATAL_SYNTAX";
-                                };
+                            "ABSOLUTEPATH_NOT_STRING": {
+                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"`absolutePath` is supposed to be a string.\"";
+                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_STRING";
+                            };
+                            "ABSOLUTE_PATH_NOT_FOUND": {
+                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"Absolute file path could not be read.\"";
+                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTE_PATH_NOT_FOUND";
+                            };
+                            "SOURCE_CODE_FATAL_SYNTAX": {
+                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"JS/TS/JSX/TSX source code could not be parsed.\"";
+                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#SOURCE_CODE_FATAL_SYNTAX";
                             };
                         };
                     };

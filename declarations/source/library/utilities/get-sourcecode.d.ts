@@ -1,9 +1,3 @@
-/**
- * $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#DEFS#PUBLIC#GETSOURCECODE
- *
- * @param absolutePath - $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#PUBLIC#ABSOLUTEPATH
- * @returns $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE
- */
 export function getSourceCode<T extends string>(absolutePath: T): {
     readonly success: false;
     readonly errors: readonly [{

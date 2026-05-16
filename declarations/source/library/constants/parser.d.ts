@@ -1,4 +1,3 @@
-/** $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE */
 export const typeScriptAndJSXCompatible: {
     parser: typeof parser;
     parserOptions: typeof parserOptions;
