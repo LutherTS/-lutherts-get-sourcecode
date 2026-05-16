@@ -47,7 +47,7 @@ const variations = Object.freeze({
   // Defines which variants' `#PUBLIC#` Comment Variables should be publicly available, by default through `comments.public.mjs` and `comments.public.json`.
   public: [EN, FR], // can be omitted, otherwise must first include `variations.referenceVariant` as its first element // v3
   // Defines the declarations directory and the root directory relative to this configuration file for the `comvar doc` command, which reapplies your library's public Comment Variables as documentation to the applicable exported members of your API.
-  docCommand: Object.freeze({
+  docCommandData: Object.freeze({
     declarationDir: tsConfigJson.compilerOptions.declarationDir,
     rootDir: tsConfigJson.compilerOptions.rootDir,
   }), // can be omitted // v3
