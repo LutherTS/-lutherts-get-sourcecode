@@ -21,7 +21,8 @@
     "comments.config.mjs",
     "comments.config.public.json",
     "comments.config.public.mjs",
-    "get-sourcecode.d.ts"
+    "get-sourcecode.d.ts",
+    "get-sourcecode.public.d.ts"
   ],
   "scripts": {
     "types": "tsc",

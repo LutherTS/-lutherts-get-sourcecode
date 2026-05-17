@@ -10,8 +10,8 @@ Retrieves the ESLint-generated `SourceCode` object of a JS/TS/JSX/TSX file.
 export const getSourceCode = (/** @type {string} */ absolutePath) => {
   if (typeof absolutePath !== "string")
     return makeSuccessFalseTypeError(
-      absolutePathIsSupposedToBeAString,
-      errorMessages_errorStatuses[absolutePathIsSupposedToBeAString],
+      absolutePathSupposedToBeString,
+      errorMessages_errorStatuses[absolutePathSupposedToBeString],
     );
 
   const linter = new Linter();
