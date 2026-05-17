@@ -37,10 +37,10 @@
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
-    "comment-variables": "file:packages/dev-dependencies/comment-variables-2.5.0.tgz",
-    "comment-variables-resolve-config": "file:packages/dev-dependencies/comment-variables-resolve-config-2.5.0.tgz",
-    "find-all-imports": "file:packages/dev-dependencies/find-all-imports-0.1.7.tgz",
-    "get-sourcecode": "file:packages/dev-dependencies/get-sourcecode-0.1.7.tgz",
+    "comment-variables": "file:packages/comment-variables-2.5.0.tgz",
+    "comment-variables-resolve-config": "file:packages/comment-variables-resolve-config-2.5.0.tgz",
+    "find-all-imports": "file:packages/find-all-imports-0.1.7.tgz",
+    "get-sourcecode": "file:packages/get-sourcecode-0.1.7.tgz",
     "typescript": "^6.0.3"
   }
 }
