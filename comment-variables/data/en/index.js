@@ -7,7 +7,7 @@ export const enData = Object.freeze({
         errors: Object.freeze({
           messages: Object.freeze({
             absolutePathSupposedToBeString:
-              "`absolutePath` is supposed to be a string." /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING */,
+              "`$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH` is supposed to be a string." /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING */,
             absolutePathCouldntBeRead:
               "Absolute file path could not be read." /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD */,
             jsTsJsxTsxCouldntBeParsed:
