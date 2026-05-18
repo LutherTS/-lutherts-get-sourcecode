@@ -8,11 +8,15 @@ Retrieves the ESLint-generated `SourceCode` object of a JS/TS/JSX/TSX file.
  * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE
  */
 export const getSourceCode = (/** @type {string} */ absolutePath) => {
+  // input validations
+
   if (typeof absolutePath !== "string")
     return makeSuccessFalseTypeError(
       absolutePathSupposedToBeString,
       errorMessages_errorStatuses[absolutePathSupposedToBeString],
     );
+
+  // input operations
 
   const linter = new Linter();
   const languageOptions = typeScriptAndJSXCompatible;

@@ -71,12 +71,12 @@ describe(GET_SOURCECODE, () => {
     );
   });
 
+  // input operations tests
+
   it(`should error if \`${ABSOLUTE_PATH}\` is not found`, () => {
     const getSourceCodeResults = getSourceCode("does-not-exist.js");
     assertFailureWithMessage(getSourceCodeResults, absolutePathCouldntBeRead);
   });
-
-  // input operations tests
 
   for (const l of languages) {
     it(`should error if given an invalid ${l.language} file`, () => {
