@@ -43,7 +43,7 @@ const variations = Object.freeze({
   // Defines the variant of the reference variation.
   referenceVariant: EN,
   // Defines the behavior of the error handling in case of variations that do not match one-to-one with the reference variation. If `true`, allows incomplete variations data to remain. If `false`, errors and guides the fixing of missing variations data (while ignoring composed variables exclusives).
-  allowIncompleteVariations: true,
+  allowIncompleteVariations: false,
   // Defines which variants' `#PUBLIC#` Comment Variables should be publicly available, by default through `comments.config.public.mjs` and `comments.config.public.json`.
   public: [EN, FR], // can be omitted, otherwise must first include `variations.referenceVariant` as its first element // v3
   // Defines the declarations directory and the root directory relative to this configuration file for the `comvar doc` command, which reapplies your library's public Comment Variables as documentation to the applicable exported members of your API.

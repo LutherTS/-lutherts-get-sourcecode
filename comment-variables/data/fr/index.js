@@ -5,6 +5,14 @@ export const frData = Object.freeze({
     src: Object.freeze({
       consts: Object.freeze({
         errors: Object.freeze({
+          messages: Object.freeze({
+            absolutePathSupposedToBeString:
+              "$COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING / $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_" /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING */,
+            absolutePathCouldntBeRead:
+              "$COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD / $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_" /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD */,
+            jsTsJsxTsxCouldntBeParsed:
+              "$COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED / $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_" /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED */,
+          }),
           statuses: Object.freeze({
             ABSOLUTEPATH_NOT_STRING:
               '$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS : "$COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING"' /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_STRING / core: $COMMENT#FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_STRING */,
@@ -77,18 +85,52 @@ export const frData = Object.freeze({
           }),
         }),
       }),
+
+      tests: Object.freeze({
+        defs: Object.freeze({
+          utils: Object.freeze({
+            assertFailureWithMessage:
+              "$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS que `$COMMENT#EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE` échoue $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD." /* variations: $COMMENT#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE / core: $COMMENT#FR#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE */,
+            assertSuccess:
+              "$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS que `$COMMENT#EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE` réussit $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD." /* variations: $COMMENT#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS / core: $COMMENT#FR#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS */,
+          }),
+        }),
+        params: Object.freeze({
+          utils: Object.freeze({
+            getSourceCodeResults:
+              "Les résultats de l'instance de `$COMMENT#EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE` appelée lors du test, dont le succès ou l'échec est évalué à travers la valeur booléenne de leur clé `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS`." /* variations: $COMMENT#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS / core: $COMMENT#FR#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS */,
+            expectedMessage:
+              "Le message attendu de l'erreur qui devrait être rencontrée en cas d'échec (`$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE`), à partir duquel le statut peut être déduit (`$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS`)." /* variations: $COMMENT#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE / core: $COMMENT#EN#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE */,
+          }),
+        }),
+        returns: Object.freeze({
+          utils: Object.freeze({
+            assertFailureWithMessage:
+              "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE" /* variations: $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE / core: $COMMENT#FR#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE */,
+            assertSuccess:
+              "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE" /* variations: $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS / core: $COMMENT#FR#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS */,
+          }),
+        }),
+      }),
     }),
   }),
   forComposedVariables: Object.freeze({
-    variables: Object.freeze({}),
+    variables: Object.freeze({
+      getSourceCode:
+        "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE" /* variations: $COMMENT#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE / core: $COMMENT#FR#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE */,
+    }),
     arguments: Object.freeze({}),
   }),
   composedVariablesExclusives: Object.freeze({
     variables: Object.freeze({}),
     arguments: Object.freeze({}),
+
     // tsDoc.src.consts
     _enAnglais:
       "En anglais à l'exécution" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS */,
+    _enAnglais_:
+      "(En anglais uniquement.)" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_ / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_ */,
+
     // tsDoc.core.consts
     error:
       "erreur" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ERROR / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR */,
@@ -98,6 +140,7 @@ export const frData = Object.freeze({
       "pour s'assurer que" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE */,
     sitsAtTopLike:
       "apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE */,
+
     // tsDoc.src.lib.defs
     eslintSourceCode:
       "objet `SourceCode` généré par ESLint d'un fichier" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE */,
@@ -105,11 +148,18 @@ export const frData = Object.freeze({
       "seule erreur dans son array `errors`" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR */,
     basedOnMessageAndStatus:
       "basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS */,
+
     // tsDoc.src.lib.params
     absolutePath:
       "chemin absolu du fichier" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH */,
     concerné:
       "concerné" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ */,
+
+    // tsDoc.src.tests.defs.utils
+    _asserts:
+      "Confirme" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS */,
+    whenItShould:
+      "lors qu'il se doit" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD */,
   }),
 });
 
