@@ -25,11 +25,15 @@ import { makeSuccessFalseTypeError } from "./index.js";
 export const getSourceCode = /** @template {string} T */ (
   /** @type {T} */ absolutePath,
 ) => {
+  // input validations
+
   if (typeof absolutePath !== "string")
     return makeSuccessFalseTypeError(
       absolutePathSupposedToBeString,
       errorMessages_errorStatuses[absolutePathSupposedToBeString],
     );
+
+  // input operations
 
   const linter = new Linter();
   const languageOptions = typeScriptAndJSXCompatible;

@@ -61,7 +61,7 @@ describe(GET_SOURCECODE, () => {
     assert.strictEqual(getSourceCodeName, GET_SOURCECODE);
   });
 
-  // input validation tests
+  // input validations tests
 
   it(`should error if \`${ABSOLUTE_PATH}\` is not a string`, () => {
     const getSourceCodeResults = getSourceCode(2);
@@ -71,12 +71,12 @@ describe(GET_SOURCECODE, () => {
     );
   });
 
-  // operating tests
-
   it(`should error if \`${ABSOLUTE_PATH}\` is not found`, () => {
     const getSourceCodeResults = getSourceCode("does-not-exist.js");
     assertFailureWithMessage(getSourceCodeResults, absolutePathCouldntBeRead);
   });
+
+  // input operations tests
 
   for (const l of languages) {
     it(`should error if given an invalid ${l.language} file`, () => {

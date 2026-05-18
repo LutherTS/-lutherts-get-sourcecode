@@ -3,8 +3,9 @@ import assert from "node:assert";
 import { errorMessages_errorStatuses } from "../../constants/errors/index.js";
 
 /**
- * @typedef {import("../../typedefs/index.js").ErrorMessages_ErrorStatuses__Key} ErrorMessages_ErrorStatuses__Key
  * @typedef {import("../../typedefs/index.js").GetSourceCodeReturnType} GetSourceCodeReturnType
+ *
+ * @typedef {import("../../typedefs/index.js").ErrorMessages_ErrorStatuses__Key} ErrorMessages_ErrorStatuses__Key
  */
 
 /* assert */
