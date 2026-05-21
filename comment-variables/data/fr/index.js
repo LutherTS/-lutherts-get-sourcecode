@@ -163,6 +163,6 @@ export const frData = Object.freeze({
   }),
 });
 
-/* manual commentVariablesExclusives */
+/* manual composedVariablesExclusives */
 
 export const frComposedVariablesExclusives = /** @type {const} */ ([]);

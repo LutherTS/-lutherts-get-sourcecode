@@ -195,6 +195,6 @@ export const enData = Object.freeze({
   }),
 });
 
-/* manual commentVariablesExclusives */
+/* manual composedVariablesExclusives */
 
 export const enComposedVariablesExclusives = /** @type {const} */ ([]);

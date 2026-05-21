@@ -23,30 +23,29 @@ import { assertFailureWithMessage, assertSuccess } from "./utilities/index.js";
 
 const currentDirectoryPath = path.dirname(url.fileURLToPath(import.meta.url));
 
-const toFatalJsFilePath = "./fatal/javascript.js";
-const toFatalTsFilePath = "./fatal/typescript.ts";
-const toValidJsFilePath = "./valid/javascript.js";
-const toValidTsFilePath = "./valid/typescript.ts";
-const toJsxJsFilePath = "./jsx/javascript.jsx";
-const toJsxTsFilePath = "./jsx/typescript.tsx";
-
-const toValidDeclarationFilePath = "./valid/others/declaration.d.ts";
-const toValidDeclarationMFilePath = "./valid/others/declaration-m.d.mts";
-
 const languages = /** @type {const} */ ([
   {
     language: JAVASCRIPT,
-    fatalPath: path.join(currentDirectoryPath, toFatalJsFilePath),
-    validPath: path.join(currentDirectoryPath, toValidJsFilePath),
-    jsxPath: path.join(currentDirectoryPath, toJsxJsFilePath),
+    fatalPath: path.join(currentDirectoryPath, "./fatal/javascript.js"),
+    validPath: path.join(currentDirectoryPath, "./valid/javascript.js"),
+    jsxPath: path.join(currentDirectoryPath, "./jsx/javascript.jsx"),
   },
   {
     language: TYPESCRIPT,
-    fatalPath: path.join(currentDirectoryPath, toFatalTsFilePath),
-    validPath: path.join(currentDirectoryPath, toValidTsFilePath),
-    jsxPath: path.join(currentDirectoryPath, toJsxTsFilePath),
+    fatalPath: path.join(currentDirectoryPath, "./fatal/typescript.ts"),
+    validPath: path.join(currentDirectoryPath, "./valid/typescript.ts"),
+    jsxPath: path.join(currentDirectoryPath, "./jsx/typescript.tsx"),
   },
 ]);
+
+const validDeclarationFilePath = path.join(
+  currentDirectoryPath,
+  "./valid/others/declaration.d.ts",
+);
+const validDeclarationMFilePath = path.join(
+  currentDirectoryPath,
+  "./valid/others/declaration-m.d.mts",
+);
 
 describe(GET_SOURCECODE, () => {
   // initial tests
@@ -96,16 +95,12 @@ describe(GET_SOURCECODE, () => {
   }
 
   it("should succeed if given a valid `.ts` TypeScript declaration file", () => {
-    const getSourceCodeResults = getSourceCode(
-      path.join(currentDirectoryPath, toValidDeclarationFilePath),
-    );
+    const getSourceCodeResults = getSourceCode(validDeclarationFilePath);
     assertSuccess(getSourceCodeResults);
   });
 
   it("should succeed if given a valid `.mts` TypeScript declaration file", () => {
-    const getSourceCodeResults = getSourceCode(
-      path.join(currentDirectoryPath, toValidDeclarationMFilePath),
-    );
+    const getSourceCodeResults = getSourceCode(validDeclarationMFilePath);
     assertSuccess(getSourceCodeResults);
   });
 });

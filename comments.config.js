@@ -60,7 +60,7 @@ import { resolvedPublicData as getSourceCodeCommentVariablesData } from "./comme
 const libraries = {
   [getSourceCodeCommentVariablesData.libraryKey]:
     getSourceCodeCommentVariablesData.libraryVariations.FR,
-}; // v3
+}; // can be omitted // v3
 
 const config = {
   data,
