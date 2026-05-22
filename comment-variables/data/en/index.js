@@ -33,24 +33,27 @@ export const enData = Object.freeze({
           }),
         }),
         defs: Object.freeze({
-          utils: Object.freeze({}),
-          public: Object.freeze({
-            getSourceCode:
-              "Gets the $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE from its absolute path.",
+          utils: Object.freeze({
+            public: Object.freeze({
+              getSourceCode:
+                "Gets the $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE from its absolute path." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE */,
+            }),
           }),
         }),
         params: Object.freeze({
-          utils: Object.freeze({}),
-          public: Object.freeze({
-            absolutePath:
-              "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND.",
+          utils: Object.freeze({
+            public: Object.freeze({
+              absolutePath:
+                "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH */,
+            }),
           }),
         }),
         returns: Object.freeze({
-          utils: Object.freeze({}),
-          public: Object.freeze({
-            getSourceCode:
-              "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE}` object at its `sourceCode` key. In case of an error, a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` object is returned instead.",
+          utils: Object.freeze({
+            public: Object.freeze({
+              getSourceCode:
+                "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE}` object at its `sourceCode` key. In case of an error, a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` object is returned instead." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE */,
+            }),
           }),
         }),
       }),
@@ -96,7 +99,7 @@ export const enData = Object.freeze({
         "absolutePath" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH */,
     }),
 
-    // tsDoc.src.lib.defs
+    // tsDoc.src.lib.defs.utils
     eslintSourceCode:
       "ESLint-generated `SourceCode` object of a file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE */,
     singleError:
@@ -104,11 +107,15 @@ export const enData = Object.freeze({
     basedOnMessageAndStatus:
       "based on the `message` it is meant to display and the `status` it is meant to have" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS */,
 
-    // tsDoc.src.lib.params
+    // tsDoc.src.lib.params.utils
     absolutePath:
       "absolute path of the file" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH */,
     atHand:
       "at hand" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ATHAND / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND */,
+
+    // tsDoc.src.lib.returns.utils
+    success_true: "success: true" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE */,
+    success_false: "success: false" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE */,
 
     // tsDoc.src.tests.defs.utils
     _asserts:
@@ -121,6 +128,7 @@ export const enData = Object.freeze({
       "message" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE */,
     status:
       "status" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#STATUS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS */,
+    success: "success" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS */,
 
     // tsDoc.src.tests.returns.utils
     _void:

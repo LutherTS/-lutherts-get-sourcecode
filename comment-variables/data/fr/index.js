@@ -33,24 +33,27 @@ export const frData = Object.freeze({
           }),
         }),
         defs: Object.freeze({
-          utils: Object.freeze({}),
-          public: Object.freeze({
-            getSourceCode:
-              "Obtient l'$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE à partir de son chemin absolu.",
+          utils: Object.freeze({
+            public: Object.freeze({
+              getSourceCode:
+                "Obtient l'$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE à partir de son chemin absolu." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE */,
+            }),
           }),
         }),
         params: Object.freeze({
-          utils: Object.freeze({}),
-          public: Object.freeze({
-            absolutePath:
-              "Le $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ.",
+          utils: Object.freeze({
+            public: Object.freeze({
+              absolutePath:
+                "Le $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH */,
+            }),
           }),
         }),
         returns: Object.freeze({
-          utils: Object.freeze({}),
-          public: Object.freeze({
-            getSourceCode:
-              "L'$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE}` à sa clé `sourceCode`. En cas d'erreur, un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` est retourné à la place.",
+          utils: Object.freeze({
+            public: Object.freeze({
+              getSourceCode:
+                "L'$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE}` à sa clé `sourceCode`. En cas d'erreur, un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` est retourné à la place." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE */,
+            }),
           }),
         }),
       }),

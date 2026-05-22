@@ -2,10 +2,10 @@ Retrieves the ESLint-generated `SourceCode` object of a JS/TS/JSX/TSX file.
 
 ```js
 /**
- * $COMMENT#TSDOC#SRC#LIB#DEFS#PUBLIC#GETSOURCECODE
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE
  *
- * @param absolutePath - $COMMENT#TSDOC#SRC#LIB#PARAMS#PUBLIC#ABSOLUTEPATH
- * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE
+ * @param absolutePath - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE
  */
 export const getSourceCode = (/** @type {string} */ absolutePath) => {
   // input validations

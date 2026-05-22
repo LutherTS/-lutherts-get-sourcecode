@@ -36,24 +36,6 @@ export const resolvedConfigData: {
                 };
                 "lib": {
                     "consts": {
-                        "public": {
-                            "successFalse": {
-                                "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
-                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
-                            };
-                            "successTrue": {
-                                "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
-                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
-                            };
-                            "typeError": {
-                                "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
-                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
-                            };
-                            "typeWarning": {
-                                "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
-                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
-                            };
-                        };
                         "parser": {
                             "public": {
                                 "typeScriptAndJSXCompatible": {
@@ -64,61 +46,31 @@ export const resolvedConfigData: {
                         };
                     };
                     "defs": {
-                        "public": {
-                            "getSourceCode": {
-                                "value": "Gets the ESLint-generated `SourceCode` object of a file from its absolute path.";
-                                "key": "EN#TSDOC#SRC#LIB#DEFS#PUBLIC#GETSOURCECODE";
-                            };
-                        };
                         "utils": {
                             "public": {
-                                "makeSuccessFalseTypeError": {
-                                    "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.";
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
-                                };
-                                "makeSuccessFalseTypeWarning": {
-                                    "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.";
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                "getSourceCode": {
+                                    "value": "Gets the ESLint-generated `SourceCode` object of a file from its absolute path.";
+                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE";
                                 };
                             };
                         };
                     };
                     "params": {
-                        "public": {
-                            "absolutePath": {
-                                "value": "The absolute path of the file at hand.";
-                                "key": "EN#TSDOC#SRC#LIB#PARAMS#PUBLIC#ABSOLUTEPATH";
-                            };
-                        };
                         "utils": {
                             "public": {
-                                "message": {
-                                    "value": "The human-readable message of the error.";
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE";
-                                };
-                                "status": {
-                                    "value": "The static status text of the error.";
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
+                                "absolutePath": {
+                                    "value": "The absolute path of the file at hand.";
+                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
                                 };
                             };
                         };
                     };
                     "returns": {
-                        "public": {
-                            "getSourceCode": {
-                                "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.";
-                                "key": "EN#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE";
-                            };
-                        };
                         "utils": {
                             "public": {
-                                "makeSuccessFalseTypeError": {
-                                    "value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
-                                };
-                                "makeSuccessFalseTypeWarning": {
-                                    "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                "getSourceCode": {
+                                    "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.";
+                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE";
                                 };
                             };
                         };
@@ -181,78 +133,6 @@ export const resolvedConfigData: {
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH";
                 };
             };
-            "successFalse": {
-                "value": "successFalse";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSFALSE";
-            };
-            "successTrue": {
-                "value": "successTrue";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESSTRUE";
-            };
-            "typeError": {
-                "value": "typeError";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEERROR";
-            };
-            "typeWarning": {
-                "value": "typeWarning";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPEWARNING";
-            };
-            "success_false": {
-                "value": "success: false";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
-            };
-            "success_true": {
-                "value": "success: true";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
-            };
-            "type_error": {
-                "value": "type: error";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR";
-            };
-            "type_warning": {
-                "value": "type: warning";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING";
-            };
-            "success": {
-                "value": "success";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
-            };
-            "false": {
-                "value": "false";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE";
-            };
-            "true": {
-                "value": "true";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE";
-            };
-            "type": {
-                "value": "type";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE";
-            };
-            "error": {
-                "value": "error";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
-            };
-            "warning": {
-                "value": "warning";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING";
-            };
-            "_applyLastWith": {
-                "value": "Apply last with";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
-            };
-            "toEnsure": {
-                "value": "to ensure that";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
-            };
-            "sitsAtTopLike": {
-                "value": "sits at the top of its object's type definition, like";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
-            };
-            "propApropB": {
-                "value": "propertyA, propertyB";
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB";
-            };
             "eslintSourceCode": {
                 "value": "ESLint-generated `SourceCode` object of a file";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE";
@@ -273,6 +153,14 @@ export const resolvedConfigData: {
                 "value": "at hand";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
             };
+            "success_true": {
+                "value": "success: true";
+                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
+            };
+            "success_false": {
+                "value": "success: false";
+                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
+            };
             "_asserts": {
                 "value": "Asserts";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS";
@@ -288,6 +176,10 @@ export const resolvedConfigData: {
             "status": {
                 "value": "status";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS";
+            };
+            "success": {
+                "value": "success";
+                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
             };
             "_void": {
                 "value": "Void";
@@ -332,24 +224,6 @@ export const resolvedConfigData: {
                 };
                 "lib": {
                     "consts": {
-                        "public": {
-                            "successFalse": {
-                                "value": "\u00C0 apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successFalse}`.";
-                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
-                            };
-                            "successTrue": {
-                                "value": "\u00C0 apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successTrue}`.";
-                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
-                            };
-                            "typeError": {
-                                "value": "\u00C0 apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeError}`.";
-                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
-                            };
-                            "typeWarning": {
-                                "value": "\u00C0 apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeWarning}`.";
-                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
-                            };
-                        };
                         "parser": {
                             "public": {
                                 "typeScriptAndJSXCompatible": {
@@ -360,61 +234,31 @@ export const resolvedConfigData: {
                         };
                     };
                     "defs": {
-                        "public": {
-                            "getSourceCode": {
-                                "value": "Obtient l'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier \u00E0 partir de son chemin absolu.";
-                                "key": "FR#TSDOC#SRC#LIB#DEFS#PUBLIC#GETSOURCECODE";
-                            };
-                        };
                         "utils": {
                             "public": {
-                                "makeSuccessFalseTypeError": {
-                                    "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` bas\u00E9e sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.";
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
-                                };
-                                "makeSuccessFalseTypeWarning": {
-                                    "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.";
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                "getSourceCode": {
+                                    "value": "Obtient l'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier \u00E0 partir de son chemin absolu.";
+                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE";
                                 };
                             };
                         };
                     };
                     "params": {
-                        "public": {
-                            "absolutePath": {
-                                "value": "Le chemin absolu du fichier concern\u00E9.";
-                                "key": "FR#TSDOC#SRC#LIB#PARAMS#PUBLIC#ABSOLUTEPATH";
-                            };
-                        };
                         "utils": {
                             "public": {
-                                "message": {
-                                    "value": "Le message en clair de l'erreur.";
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE";
-                                };
-                                "status": {
-                                    "value": "Le texte statique du statut de l'erreur.";
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
+                                "absolutePath": {
+                                    "value": "Le chemin absolu du fichier concern\u00E9.";
+                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
                                 };
                             };
                         };
                     };
                     "returns": {
-                        "public": {
-                            "getSourceCode": {
-                                "value": "L'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier, \u00E0 partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent \u00EAtre extraits, \u00E0 l'int\u00E9rieur d'un objet `{success: true}` \u00E0 sa cl\u00E9 `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourn\u00E9 \u00E0 la place.";
-                                "key": "FR#TSDOC#SRC#LIB#RETURNS#PUBLIC#GETSOURCECODE";
-                            };
-                        };
                         "utils": {
                             "public": {
-                                "makeSuccessFalseTypeError": {
-                                    "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
-                                };
-                                "makeSuccessFalseTypeWarning": {
-                                    "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                "getSourceCode": {
+                                    "value": "L'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier, \u00E0 partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent \u00EAtre extraits, \u00E0 l'int\u00E9rieur d'un objet `{success: true}` \u00E0 sa cl\u00E9 `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourn\u00E9 \u00E0 la place.";
+                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE";
                                 };
                             };
                         };
@@ -479,22 +323,6 @@ export const resolvedConfigData: {
             "_enAnglais_": {
                 "value": "(En anglais uniquement.)";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_";
-            };
-            "error": {
-                "value": "erreur";
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
-            };
-            "_applyLastWith": {
-                "value": "\u00C0 apposer en dernier via";
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
-            };
-            "toEnsure": {
-                "value": "pour s'assurer que";
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
-            };
-            "sitsAtTopLike": {
-                "value": "apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on";
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
             };
             "eslintSourceCode": {
                 "value": "objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier";
