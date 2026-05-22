@@ -57,9 +57,14 @@ const variations = Object.freeze({
 
 import { resolvedPublicData as getSourceCodeCommentVariablesData } from "./comments.config.public.mjs";
 
+import { commentVariablesData as errorHandlingCommentVariablesData } from "@lutherts/error-handling";
+
 const libraries = {
   [getSourceCodeCommentVariablesData.libraryKey]:
     getSourceCodeCommentVariablesData.libraryVariations.FR,
+
+  [errorHandlingCommentVariablesData.libraryKey]:
+    errorHandlingCommentVariablesData.libraryVariations.FR,
 }; // can be omitted // v3
 
 const config = {

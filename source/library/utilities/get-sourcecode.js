@@ -1,5 +1,10 @@
 import fs from "fs";
 
+import {
+  successTrue,
+  makeSuccessFalseTypeError,
+} from "@lutherts/error-handling";
+
 import { Linter } from "eslint";
 
 import { errorMessages_errorStatuses } from "../../constants/errors/index.js";
@@ -9,10 +14,7 @@ import {
   jsTsJsxTsxCouldntBeParsed,
 } from "../../constants/errors/messages.js";
 
-import { successTrue } from "../constants/index.js";
 import { typeScriptAndJSXCompatible } from "../constants/parser.js";
-
-import { makeSuccessFalseTypeError } from "./index.js";
 
 /**
  * $COMMENT#TSDOC#SRC#LIB#DEFS#PUBLIC#GETSOURCECODE
