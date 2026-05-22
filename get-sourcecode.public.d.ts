@@ -74,70 +74,10 @@ export declare function getSourceCode<T extends string>(absolutePath: T): {
     readonly sourceCode: SourceCode;
 };
 
-/**
- * $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
- *
- * @param message - $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE
- * @param status - $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
- * @returns $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
- *
- * @public
- */
-export declare function makeSuccessFalseTypeError<T extends string, U extends string>(message: T, status: U): {
-    readonly success: false;
-    readonly errors: readonly [{
-        readonly type: "error";
-        readonly message: T;
-        readonly status: U;
-    }];
-};
-
-/**
- * $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING
- *
- * @param message - $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE
- * @param status - $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
- * @returns $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING
- *
- * @public
- */
-export declare function makeSuccessFalseTypeWarning<T extends string, U extends string>(message: T, status: U): {
-    readonly success: false;
-    readonly errors: readonly [{
-        readonly type: "warning";
-        readonly message: T;
-        readonly status: U;
-    }];
-};
-
 declare const parserOptions: Readonly<{
     ecmaFeatures: Readonly<{
         jsx: true;
     }>;
-}>;
-
-/**
- * $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE
- * @public
- */
-export declare const successFalse: Readonly<{
-    success: false;
-}>;
-
-/**
- * $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE
- * @public
- */
-export declare const successTrue: Readonly<{
-    success: true;
-}>;
-
-/**
- * $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR
- * @public
- */
-export declare const typeError: Readonly<{
-    type: "error";
 }>;
 
 /**
@@ -148,13 +88,5 @@ export declare const typeScriptAndJSXCompatible: {
     parser: typeof parser;
     parserOptions: typeof parserOptions;
 };
-
-/**
- * $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING
- * @public
- */
-export declare const typeWarning: Readonly<{
-    type: "warning";
-}>;
 
 export { }
