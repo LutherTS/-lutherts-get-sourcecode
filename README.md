@@ -47,5 +47,3 @@ export const getSourceCode = (/** @type {string} */ absolutePath) => {
   });
 };
 ```
-
-This project serves as a showcase for how I develop my own libraries, maintain my file system organization, shape the tools that I use for error handling and linters, and make a project's Comment Variables publicly available.

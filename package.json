@@ -14,22 +14,17 @@
   "main": "source/library/index.js",
   "types": "get-sourcecode.public.d.ts",
   "files": [
-    "comment-variables",
-    "source",
-    "comments.config.js",
-    "comments.config.json",
-    "comments.config.mjs",
-    "comments.config.public.json",
-    "comments.config.public.mjs",
-    "get-sourcecode.d.ts",
-    "get-sourcecode.public.d.ts"
+    "tsdown/index.mjs",
+    "get-sourcecode.public.d.ts",
+    "comments.config.public.json"
   ],
   "scripts": {
     "types": "tsc",
     "doc": "npx comment-variables doc",
     "api": "api-extractor run",
+    "build": "tsdown",
     "test": "node --test",
-    "prepare": "npm run types && npm run doc && npm run api && npm run test"
+    "prepare": "npm run types && npm run doc && npm run api && npm run build && npm run test"
   },
   "dependencies": {
     "@lutherts/error-handling": "file:packages/lutherts-error-handling-0.1.1.tgz",
@@ -42,6 +37,7 @@
     "comment-variables-resolve-config": "file:packages/comment-variables-resolve-config-2.5.1.tgz",
     "find-all-imports": "file:packages/find-all-imports-0.1.8.tgz",
     "get-sourcecode": "file:packages/get-sourcecode-0.1.8.tgz",
+    "tsdown": "^0.22.0",
     "typescript": "^6.0.3"
   }
 }

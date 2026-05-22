@@ -4,7 +4,8 @@ import path from "path";
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { getSourceCode } from "../library/index.js";
+// import { getSourceCode } from "../../source/library/index.js"; // dev
+import { getSourceCode } from "../../tsdown/index.mjs"; // prod
 
 import {
   absolutePathSupposedToBeString,
