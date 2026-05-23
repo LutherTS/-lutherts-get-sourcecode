@@ -6,8 +6,12 @@ Retrieves the ESLint-generated `SourceCode` object of a JS/TS/JSX/TSX file.
  *
  * @param absolutePath - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH
  * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE
+ *
+ * @public
  */
-export const getSourceCode = (/** @type {string} */ absolutePath) => {
+export const getSourceCode = /** @template {string} T */ (
+  /** @type {T} */ absolutePath,
+) => {
   // input validations
 
   if (typeof absolutePath !== "string")
