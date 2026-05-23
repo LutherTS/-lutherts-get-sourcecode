@@ -64,7 +64,7 @@ const libraries = {
     getSourceCodeCommentVariablesData.libraryVariations.FR,
 
   [errorHandlingCommentVariablesData.libraryKey]:
-    errorHandlingCommentVariablesData.libraryVariations.FR,
+    errorHandlingCommentVariablesData.libraryVariations.EN,
 }; // can be omitted // v3
 
 const config = {

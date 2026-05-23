@@ -33,10 +33,6 @@
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
-    "comment-variables": "file:packages/comment-variables-2.5.1.tgz",
-    "comment-variables-resolve-config": "file:packages/comment-variables-resolve-config-2.5.1.tgz",
-    "find-all-imports": "file:packages/find-all-imports-0.1.8.tgz",
-    "get-sourcecode": "file:packages/get-sourcecode-0.1.8.tgz",
     "tsdown": "^0.22.0",
     "typescript": "^6.0.3"
   }
