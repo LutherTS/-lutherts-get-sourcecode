@@ -5,7 +5,7 @@ import { resolvedConfigData as commentVariablesData } from "../../comments.confi
 export const messages =
   commentVariablesData.en.tsDoc.src.consts.errors.messages;
 
-/* tests */
+/* generals */
 
 export const forComposedVariables =
   commentVariablesData.en.forComposedVariables;
