@@ -1,4 +1,4 @@
-import { getSourceCode } from "../library/index.js";
+import { getSourceCode, typeScriptAndJSXCompatible } from "../library/index.js";
 
 import { errorMessages_errorStatuses } from "../constants/errors/index.js";
 
@@ -11,4 +11,8 @@ import { errorMessages_errorStatuses } from "../constants/errors/index.js";
  */
 /**
  * @typedef {keyof typeof errorMessages_errorStatuses} ErrorMessages_ErrorStatuses__Key
+ */
+
+/**
+ * @typedef {typeof typeScriptAndJSXCompatible} TypeScriptAndJSXCompatible
  */
