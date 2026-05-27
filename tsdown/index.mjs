@@ -96,7 +96,36 @@ const resolvedConfigData = {
 			"arguments": {}
 		},
 		"composedVariablesExclusives": {
-			"variables": {},
+			"variables": {
+				"typeScriptAndJSXCompatible": {
+					"value": "typeScriptAndJSXCompatible",
+					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPESCRIPTANDJSXCOMPATIBLE"
+				},
+				"parser": {
+					"value": "parser",
+					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSER"
+				},
+				"parserOptions": {
+					"value": "parserOptions",
+					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSEROPTIONS"
+				},
+				"ecmaFeatures": {
+					"value": "ecmaFeatures",
+					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ECMAFEATURES"
+				},
+				"pEcmaFeatures": {
+					"value": "parserOptions.ecmaFeatures",
+					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PECMAFEATURES"
+				},
+				"jsx": {
+					"value": "jsx",
+					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#JSX"
+				},
+				"pEJsx": {
+					"value": "parserOptions.ecmaFeatures.jsx",
+					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PEJSX"
+				}
+			},
 			"arguments": { "absolutePath": {
 				"value": "absolutePath",
 				"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH"
