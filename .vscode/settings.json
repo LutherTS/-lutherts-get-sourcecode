@@ -1,3 +1,4 @@
 {
-  "files.associations": { "api-extractor.json": "jsonc" }
+  "files.associations": { "api-extractor.json": "jsonc" },
+  "js/ts.experimental.useTsgo": false
 }

@@ -1,12 +1,12 @@
 /* libraries */
 
-import { resolvedPublicData as getSourceCodeCommentVariablesData } from "./comment-variables/config/comments.config.public.mjs";
+// import { resolvedPublicData as getSourceCodeCommentVariablesData } from "./comment-variables/config/comments.config.public.mjs";
 
 import { commentVariablesData as errorHandlingCommentVariablesData } from "@lutherts/error-handling";
 
 const libraries = {
-  [getSourceCodeCommentVariablesData.libraryKey]:
-    getSourceCodeCommentVariablesData.libraryVariations.FR,
+  // [getSourceCodeCommentVariablesData.libraryKey]:
+  //   getSourceCodeCommentVariablesData.libraryVariations.FR,
 
   [errorHandlingCommentVariablesData.libraryKey]:
     errorHandlingCommentVariablesData.libraryVariations.EN,
