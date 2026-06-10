@@ -1,3 +1,3 @@
-export const absolutePathSupposedToBeString: "`absolutePath` is supposed to be a string.";
-export const absolutePathCouldntBeRead: "Absolute file path could not be read.";
-export const jsTsJsxTsxCouldntBeParsed: "JS/TS/JSX/TSX source code could not be parsed.";
+export declare const absolutePathSupposedToBeString: "`absolutePath` is supposed to be a string.";
+export declare const absolutePathCouldntBeRead: "Absolute file path could not be read.";
+export declare const jsTsJsxTsxCouldntBeParsed: "JS/TS/JSX/TSX source code could not be parsed.";

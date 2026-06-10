@@ -19,7 +19,7 @@
     "comments.config.public.json"
   ],
   "scripts": {
-    "types": "tsc",
+    "types": "tsgo",
     "doc": "npx comment-variables doc",
     "api": "api-extractor run",
     "build": "tsdown",

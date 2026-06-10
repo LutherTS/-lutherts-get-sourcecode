@@ -13,9 +13,9 @@ export declare const commentVariablesData: {
         };
         "FR": {
             "GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE": "Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React).";
-            "GET_SOURCECODE#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE": "Obtient l'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier \u00E0 partir de son chemin absolu.";
-            "GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH": "Le chemin absolu du fichier concern\u00E9.";
-            "GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE": "L'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier, \u00E0 partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent \u00EAtre extraits, \u00E0 l'int\u00E9rieur d'un objet `{success: true}` \u00E0 sa cl\u00E9 `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourn\u00E9 \u00E0 la place.";
+            "GET_SOURCECODE#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE": "Obtient l'objet `SourceCode` généré par ESLint d'un fichier à partir de son chemin absolu.";
+            "GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH": "Le chemin absolu du fichier concerné.";
+            "GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE": "L'objet `SourceCode` généré par ESLint d'un fichier, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{success: true}` à sa clé `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourné à la place.";
         };
     };
 };
@@ -28,14 +28,7 @@ export declare const commentVariablesData: {
  *
  * @public
  */
-export declare function getSourceCode<T extends string>(absolutePath: T): {
-    readonly success: false;
-    readonly errors: readonly [{
-        readonly type: "error";
-        readonly message: "`absolutePath` is supposed to be a string.";
-        readonly status: "ABSOLUTEPATH_NOT_STRING";
-    }];
-} | {
+export declare const getSourceCode: <T extends string>(absolutePath: T) => {
     readonly success: false;
     readonly errors: readonly [{
         readonly type: "error";
@@ -48,6 +41,13 @@ export declare function getSourceCode<T extends string>(absolutePath: T): {
         readonly type: "error";
         readonly message: "JS/TS/JSX/TSX source code could not be parsed.";
         readonly status: "SOURCE_CODE_FATAL_SYNTAX";
+    }];
+} | {
+    readonly success: false;
+    readonly errors: readonly [{
+        readonly type: "error";
+        readonly message: "`absolutePath` is supposed to be a string.";
+        readonly status: "ABSOLUTEPATH_NOT_STRING";
     }];
 } | {
     readonly success: true;

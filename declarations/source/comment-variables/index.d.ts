@@ -1,4 +1,4 @@
-export const messages: {
+export declare const messages: {
     absolutePathSupposedToBeString: {
         "value": "`absolutePath` is supposed to be a string.";
         "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING";
@@ -12,7 +12,7 @@ export const messages: {
         "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED";
     };
 };
-export const forComposedVariables: {
+export declare const forComposedVariables: {
     variables: {
         "getSourceCode": {
             "value": "getSourceCode";
@@ -21,7 +21,7 @@ export const forComposedVariables: {
     };
     arguments: {};
 };
-export const composedVariablesExclusives: {
+export declare const composedVariablesExclusives: {
     variables: {
         "typeScriptAndJSXCompatible": {
             "value": "typeScriptAndJSXCompatible";

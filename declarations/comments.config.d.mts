@@ -1,4 +1,4 @@
-export const resolvedConfigData: {
+export declare const resolvedConfigData: {
     "en": {
         "tsDoc": {
             "src": {
@@ -237,15 +237,15 @@ export const resolvedConfigData: {
                         };
                         "statuses": {
                             "ABSOLUTEPATH_NOT_STRING": {
-                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"`absolutePath` is supposed to be a string.\"";
+                                "value": "En anglais à l'exécution : \"`absolutePath` is supposed to be a string.\"";
                                 "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_STRING";
                             };
                             "ABSOLUTE_PATH_NOT_FOUND": {
-                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"Absolute file path could not be read.\"";
+                                "value": "En anglais à l'exécution : \"Absolute file path could not be read.\"";
                                 "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTE_PATH_NOT_FOUND";
                             };
                             "SOURCE_CODE_FATAL_SYNTAX": {
-                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"JS/TS/JSX/TSX source code could not be parsed.\"";
+                                "value": "En anglais à l'exécution : \"JS/TS/JSX/TSX source code could not be parsed.\"";
                                 "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#SOURCE_CODE_FATAL_SYNTAX";
                             };
                         };
@@ -266,7 +266,7 @@ export const resolvedConfigData: {
                         "utils": {
                             "public": {
                                 "getSourceCode": {
-                                    "value": "Obtient l'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier \u00E0 partir de son chemin absolu.";
+                                    "value": "Obtient l'objet `SourceCode` généré par ESLint d'un fichier à partir de son chemin absolu.";
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE";
                                 };
                             };
@@ -276,7 +276,7 @@ export const resolvedConfigData: {
                         "utils": {
                             "public": {
                                 "absolutePath": {
-                                    "value": "Le chemin absolu du fichier concern\u00E9.";
+                                    "value": "Le chemin absolu du fichier concerné.";
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
                                 };
                             };
@@ -286,7 +286,7 @@ export const resolvedConfigData: {
                         "utils": {
                             "public": {
                                 "getSourceCode": {
-                                    "value": "L'objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier, \u00E0 partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent \u00EAtre extraits, \u00E0 l'int\u00E9rieur d'un objet `{success: true}` \u00E0 sa cl\u00E9 `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourn\u00E9 \u00E0 la place.";
+                                    "value": "L'objet `SourceCode` généré par ESLint d'un fichier, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{success: true}` à sa clé `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourné à la place.";
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE";
                                 };
                             };
@@ -297,11 +297,11 @@ export const resolvedConfigData: {
                     "defs": {
                         "utils": {
                             "assertFailureWithMessage": {
-                                "value": "Confirme que `getSourceCode` \u00E9choue lors qu'il se doit.";
+                                "value": "Confirme que `getSourceCode` échoue lors qu'il se doit.";
                                 "key": "FR#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE";
                             };
                             "assertSuccess": {
-                                "value": "Confirme que `getSourceCode` r\u00E9ussit lors qu'il se doit.";
+                                "value": "Confirme que `getSourceCode` réussit lors qu'il se doit.";
                                 "key": "FR#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS";
                             };
                         };
@@ -309,11 +309,11 @@ export const resolvedConfigData: {
                     "params": {
                         "utils": {
                             "getSourceCodeResults": {
-                                "value": "Les r\u00E9sultats de l'instance de `getSourceCode` appel\u00E9e lors du test, dont le succ\u00E8s ou l'\u00E9chec est \u00E9valu\u00E9 \u00E0 travers la valeur bool\u00E9enne de leur cl\u00E9 `success`.";
+                                "value": "Les résultats de l'instance de `getSourceCode` appelée lors du test, dont le succès ou l'échec est évalué à travers la valeur booléenne de leur clé `success`.";
                                 "key": "FR#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS";
                             };
                             "expectedMessage": {
-                                "value": "Le message attendu de l'erreur qui devrait \u00EAtre rencontr\u00E9e en cas d'\u00E9chec (`message`), \u00E0 partir duquel le statut peut \u00EAtre d\u00E9duit (`status`).";
+                                "value": "Le message attendu de l'erreur qui devrait être rencontrée en cas d'échec (`message`), à partir duquel le statut peut être déduit (`status`).";
                                 "key": "FR#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE";
                             };
                         };
@@ -346,7 +346,7 @@ export const resolvedConfigData: {
             "variables": {};
             "arguments": {};
             "_enAnglais": {
-                "value": "En anglais \u00E0 l'ex\u00E9cution";
+                "value": "En anglais à l'exécution";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
             };
             "_enAnglais_": {
@@ -354,7 +354,7 @@ export const resolvedConfigData: {
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_";
             };
             "eslintSourceCode": {
-                "value": "objet `SourceCode` g\u00E9n\u00E9r\u00E9 par ESLint d'un fichier";
+                "value": "objet `SourceCode` généré par ESLint d'un fichier";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE";
             };
             "singleError": {
@@ -362,16 +362,16 @@ export const resolvedConfigData: {
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
             };
             "basedOnMessageAndStatus": {
-                "value": "bas\u00E9e sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir";
+                "value": "basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
             };
             "absolutePath": {
                 "value": "chemin absolu du fichier";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH";
             };
-            "concern\u00E9": {
-                "value": "concern\u00E9";
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERN\u00C9";
+            "concerné": {
+                "value": "concerné";
+                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ";
             };
             "_asserts": {
                 "value": "Confirme";
