@@ -422,13 +422,13 @@
       "default": {
         "logLevel": "warning"
         // "addToApiReportFile": false
-      },
+      }
       // "ae-missing-release-tag": {
       //   "logLevel": "none"
       // },
-      "ae-forgotten-export": {
-        "logLevel": "none"
-      }
+      // "ae-forgotten-export": {
+      //   "logLevel": "none"
+      // },
       // "ae-extra-release-tag": {
       //   "logLevel": "warning",
       //   "addToApiReportFile": true

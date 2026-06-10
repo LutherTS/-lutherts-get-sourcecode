@@ -16,6 +16,8 @@ import {
 
 import { typeScriptAndJSXCompatible } from "../constants/parser.js";
 
+/* getSourceCode */
+
 /**
  * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE
  *
