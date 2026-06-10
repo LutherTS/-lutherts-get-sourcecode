@@ -1,4 +1,3 @@
-/** @public */
 export const resolvedPublicData: {
     "libraryKey": "GET_SOURCECODE";
     "libraryVariations": {
