@@ -14,7 +14,7 @@ import {
   jsTsJsxTsxCouldntBeParsed,
 } from "../../constants/errors/messages.js";
 
-import { typeScriptAndJSXCompatible } from "../constants/parser.js";
+import { typeScriptAndJSXCompatible as languageOptions } from "../constants/parser.js";
 
 /* getSourceCode */
 
@@ -40,7 +40,9 @@ export const getSourceCode = /** @template {string} T */ (
   // input operations
 
   const linter = new Linter();
-  const languageOptions = typeScriptAndJSXCompatible;
+  const linterOptions = /** @type {const} */ ({
+    noInlineConfig: true,
+  });
 
   let code = /** @type {string | undefined} */ (undefined);
 
@@ -53,7 +55,7 @@ export const getSourceCode = /** @template {string} T */ (
     );
   }
 
-  linter.verify(code, { languageOptions });
+  linter.verify(code, { languageOptions, linterOptions });
   const sourceCode = linter.getSourceCode();
 
   if (!sourceCode)
