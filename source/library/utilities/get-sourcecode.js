@@ -14,7 +14,8 @@ import {
   jsTsJsxTsxCouldntBeParsed,
 } from "../../constants/errors/messages.js";
 
-import { typeScriptAndJSXCompatible as languageOptions } from "../constants/parser.js";
+import { typeScriptAndJSXCompatible as languageOptions } from "../constants/language-options.js";
+import { noInlineConfig as linterOptions } from "../constants/linter-options.js";
 
 /* getSourceCode */
 
@@ -40,9 +41,6 @@ export const getSourceCode = /** @template {string} T */ (
   // input operations
 
   const linter = new Linter();
-  const linterOptions = /** @type {const} */ ({
-    noInlineConfig: true,
-  });
 
   let code = /** @type {string | undefined} */ (undefined);
 

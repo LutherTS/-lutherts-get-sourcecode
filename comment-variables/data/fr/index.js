@@ -29,6 +29,8 @@ export const frData = Object.freeze({
             public: Object.freeze({
               typeScriptAndJSXCompatible:
                 "Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React)." /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE / core: $COMMENT#FR#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE */,
+              noInlineConfig:
+                "Object `linterOptions` pour instances de classes `ESLint` et `Linter` désactivant les configurations dans le code lors d'usages programmatiques de ESLint." /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#NOINLINECONFIG / core: $COMMENT#FR#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#NOINLINECONFIG */,
             }),
           }),
         }),
