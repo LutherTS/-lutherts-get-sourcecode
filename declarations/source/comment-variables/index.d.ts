@@ -27,6 +27,10 @@ export declare const composedVariablesExclusives: {
             "value": "typeScriptAndJSXCompatible";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPESCRIPTANDJSXCOMPATIBLE";
         };
+        "noInlineConfig": {
+            "value": "noInlineConfig";
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#NOINLINECONFIG";
+        };
         "parser": {
             "value": "parser";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSER";
