@@ -42,6 +42,10 @@ export declare const resolvedConfigData: {
                                     "value": "`languageOptions` object for instances of the `ESLint` and `Linter` classes enabling the linting of TypeScript and JSX (React) files.";
                                     "key": "EN#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
                                 };
+                                "noInlineConfig": {
+                                    "value": "`linterOptions` object for instances of the `ESLint` and `Linter` classes disabling ESLint inline configs when using ESLint programmatically.";
+                                    "key": "EN#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#NOINLINECONFIG";
+                                };
                             };
                         };
                     };
@@ -258,6 +262,10 @@ export declare const resolvedConfigData: {
                                 "typeScriptAndJSXCompatible": {
                                     "value": "Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React).";
                                     "key": "FR#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
+                                };
+                                "noInlineConfig": {
+                                    "value": "Object `linterOptions` pour instances de classes `ESLint` et `Linter` désactivant les configurations dans le code lors d'usages programmatiques de ESLint.";
+                                    "key": "FR#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#NOINLINECONFIG";
                                 };
                             };
                         };

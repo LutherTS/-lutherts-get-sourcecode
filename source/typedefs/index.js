@@ -1,4 +1,8 @@
-import { getSourceCode, typeScriptAndJSXCompatible } from "../library/index.js";
+import {
+  getSourceCode,
+  typeScriptAndJSXCompatible,
+  noInlineConfig,
+} from "../library/index.js";
 
 import { errorMessages_errorStatuses } from "../constants/errors/index.js";
 
@@ -15,4 +19,7 @@ import { errorMessages_errorStatuses } from "../constants/errors/index.js";
 
 /**
  * @typedef {typeof typeScriptAndJSXCompatible} TypeScriptAndJSXCompatible
+ */
+/**
+ * @typedef {typeof noInlineConfig} NoInlineConfig
  */

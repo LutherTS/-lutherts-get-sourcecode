@@ -98,6 +98,7 @@ export const enData = Object.freeze({
     variables: Object.freeze({
       typeScriptAndJSXCompatible:
         "typeScriptAndJSXCompatible" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPESCRIPTANDJSXCOMPATIBLE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPESCRIPTANDJSXCOMPATIBLE */,
+      noInlineConfig: "noInlineConfig",
       parser:
         "parser" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSER / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSER */,
       parserOptions:

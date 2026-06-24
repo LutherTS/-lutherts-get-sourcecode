@@ -23,6 +23,9 @@ export const P_ECMA_FEATURES =
   composedVariablesExclusives.variables.pEcmaFeatures.value;
 export const P_E_JSX = composedVariablesExclusives.variables.pEJsx.value;
 
+export const NO_INLINE_CONFIG =
+  composedVariablesExclusives.variables.noInlineConfig.value;
+
 /* languages */
 
 export const JAVASCRIPT = "JavaScript";

@@ -13,7 +13,7 @@ import {
  * @typedef {import("../../../typedefs/index.js").TypeScriptAndJSXCompatible} TypeScriptAndJSXCompatible
  */
 
-export const parserSuite = (
+export const languageOptionsSuite = (
   /** @type {TypeScriptAndJSXCompatible} */ typeScriptAndJSXCompatible,
 ) => {
   describe(TYPESCRIPT_AND_JSX_COMPATIBLE, () => {
