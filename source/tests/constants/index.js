@@ -5,10 +5,14 @@ import {
 
 /* primary export names */
 
-/** $COMMENT#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE */
-export const GET_SOURCECODE =
-  forComposedVariables.variables.getSourceCode.value;
+/** $COMMENT#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMCODE */
+export const GET_SOURCECODE_FROM_CODE =
+  forComposedVariables.variables.getSourceCodeFromCode.value;
+/** $COMMENT#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMPATH */
+export const GET_SOURCECODE_FROM_PATH =
+  forComposedVariables.variables.getSourceCodeFromPath.value;
 
+export const CODE = composedVariablesExclusives.arguments.code.value;
 export const ABSOLUTE_PATH =
   composedVariablesExclusives.arguments.absolutePath.value;
 

@@ -7,6 +7,8 @@ import { NO_INLINE_CONFIG } from "../../constants/index.js";
  * @typedef {import("../../../typedefs/index.js").NoInlineConfig} NoInlineConfig
  */
 
+/* linterOptionsSuite */
+
 export const linterOptionsSuite = (
   /** @type {NoInlineConfig} */ noInlineConfig,
 ) => {

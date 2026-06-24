@@ -1,24 +1,56 @@
 import { describe, it } from "node:test";
 
-import { absolutePathSupposedToBeString } from "../../../constants/errors/messages.js";
+import {
+  codeSupposedToBeString,
+  absolutePathSupposedToBeString,
+  absolutePathSupposedToBeAbsolute,
+} from "../../../constants/errors/messages.js";
 
-import { GET_SOURCECODE, ABSOLUTE_PATH } from "../../constants/index.js";
+import {
+  GET_SOURCECODE_FROM_CODE,
+  GET_SOURCECODE_FROM_PATH,
+  CODE,
+  ABSOLUTE_PATH,
+} from "../../constants/index.js";
 
 import { assertFailureWithMessage } from "../../utilities/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").GetSourceCode} GetSourceCode
+ * @typedef {import("../../../typedefs/index.js").GetSourceCodeFromCode} GetSourceCodeFromCode
+ * @typedef {import("../../../typedefs/index.js").GetSourceCodeFromPath} GetSourceCodeFromPath
  */
 
+/* inputValidationsSuite */
+
 export const inputValidationsSuite = (
-  /** @type {GetSourceCode} */ getSourceCode,
+  /** @type {GetSourceCodeFromCode} */ getSourceCodeFromCode,
+  /** @type {GetSourceCodeFromPath} */ getSourceCodeFromPath,
 ) => {
-  describe(`${GET_SOURCECODE} - input validations`, () => {
-    it(`should error if \`${ABSOLUTE_PATH}\` is not a string`, () => {
-      const getSourceCodeResults = getSourceCode(2);
+  describe(`${GET_SOURCECODE_FROM_CODE} - input validations`, () => {
+    it(`should error if \`${CODE}\` is not a string`, () => {
+      const getSourceCodeFromCodeResults = getSourceCodeFromCode(2);
       assertFailureWithMessage(
-        getSourceCodeResults,
+        getSourceCodeFromCodeResults,
+        codeSupposedToBeString,
+      );
+    });
+  });
+
+  describe(`${GET_SOURCECODE_FROM_PATH} - input validations`, () => {
+    it(`should error if \`${ABSOLUTE_PATH}\` is not a string`, () => {
+      const getSourceCodeFromPathResults = getSourceCodeFromPath(2);
+      assertFailureWithMessage(
+        getSourceCodeFromPathResults,
         absolutePathSupposedToBeString,
+      );
+    });
+
+    it(`should error if \`${ABSOLUTE_PATH}\` is not absolute`, () => {
+      const getSourceCodeFromPathResults =
+        getSourceCodeFromPath("does-not-exist.js");
+      assertFailureWithMessage(
+        getSourceCodeFromPathResults,
+        absolutePathSupposedToBeAbsolute,
       );
     });
   });

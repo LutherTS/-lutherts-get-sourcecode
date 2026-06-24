@@ -1,12 +1,38 @@
 /**
- * $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODE
+ * $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMCODE
  *
- * @param absolutePath - $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH
- * @returns $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODE
+ * @param code - $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#CODE
+ * @returns $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE
  *
  * @public
  */
-export declare const getSourceCode: <T extends string>(absolutePath: T) => {
+export declare const getSourceCodeFromCode: <T extends string>(code: T) => {
+    readonly success: false;
+    readonly errors: readonly [{
+        readonly type: "error";
+        readonly message: "JS/TS/JSX/TSX source code could not be parsed.";
+        readonly status: "SOURCE_CODE_FATAL_SYNTAX";
+    }];
+} | {
+    readonly success: false;
+    readonly errors: readonly [{
+        readonly type: "error";
+        readonly message: "`code` is supposed to be a string.";
+        readonly status: "CODE_NOT_STRING";
+    }];
+} | {
+    readonly success: true;
+    readonly sourceCode: import("eslint").SourceCode;
+};
+/**
+ * $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMPATH
+ *
+ * @param absolutePath - $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH
+ * @returns $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE
+ *
+ * @public
+ */
+export declare const getSourceCodeFromPath: <T extends string>(absolutePath: T) => {
     readonly success: false;
     readonly errors: readonly [{
         readonly type: "error";
@@ -26,6 +52,20 @@ export declare const getSourceCode: <T extends string>(absolutePath: T) => {
         readonly type: "error";
         readonly message: "`absolutePath` is supposed to be a string.";
         readonly status: "ABSOLUTEPATH_NOT_STRING";
+    }];
+} | {
+    readonly success: false;
+    readonly errors: readonly [{
+        readonly type: "error";
+        readonly message: "`absolutePath` is supposed to be absolute.";
+        readonly status: "ABSOLUTEPATH_NOT_ABSOLUTE";
+    }];
+} | {
+    readonly success: false;
+    readonly errors: readonly [{
+        readonly type: "error";
+        readonly message: "`code` is supposed to be a string.";
+        readonly status: "CODE_NOT_STRING";
     }];
 } | {
     readonly success: true;

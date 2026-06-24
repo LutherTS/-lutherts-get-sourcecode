@@ -1,6 +1,9 @@
-/* primary export */
+/* primary exports */
 
-export { getSourceCode } from "./utilities/get-sourcecode.js";
+export {
+  getSourceCodeFromCode,
+  getSourceCodeFromPath,
+} from "./utilities/get-sourcecode.js";
 
 /* secondary exports */
 

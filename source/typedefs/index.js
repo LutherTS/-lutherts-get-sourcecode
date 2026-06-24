@@ -1,5 +1,6 @@
 import {
-  getSourceCode,
+  getSourceCodeFromCode,
+  getSourceCodeFromPath,
   typeScriptAndJSXCompatible,
   noInlineConfig,
 } from "../library/index.js";
@@ -7,11 +8,17 @@ import {
 import { errorMessages_errorStatuses } from "../constants/errors/index.js";
 
 /**
- * @typedef {typeof getSourceCode} GetSourceCode
+ * @typedef {typeof getSourceCodeFromCode} GetSourceCodeFromCode
+ */
+/**
+ * @typedef {typeof getSourceCodeFromPath} GetSourceCodeFromPath
  */
 
 /**
- * @typedef {ReturnType<GetSourceCode>} GetSourceCodeReturnType
+ * @typedef {ReturnType<GetSourceCodeFromCode>} GetSourceCodeFromCodeReturnType
+ */
+/**
+ * @typedef {ReturnType<GetSourceCodeFromPath>} GetSourceCodeFromPathReturnType
  */
 /**
  * @typedef {keyof typeof errorMessages_errorStatuses} ErrorMessages_ErrorStatuses__Key

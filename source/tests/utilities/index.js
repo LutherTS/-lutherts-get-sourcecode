@@ -3,12 +3,13 @@ import assert from "node:assert";
 import { errorMessages_errorStatuses } from "../../constants/errors/index.js";
 
 /**
- * @typedef {import("../../typedefs/index.js").GetSourceCodeReturnType} GetSourceCodeReturnType
+ * @typedef {import("../../typedefs/index.js").GetSourceCodeFromCodeReturnType} GetSourceCodeFromCodeReturnType
+ * @typedef {import("../../typedefs/index.js").GetSourceCodeFromPathReturnType} GetSourceCodeFromPathReturnType
  *
  * @typedef {import("../../typedefs/index.js").ErrorMessages_ErrorStatuses__Key} ErrorMessages_ErrorStatuses__Key
  */
 
-/* assert */
+/* assertFailureWithMessage */
 
 /**
  * $COMMENT#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE
@@ -19,7 +20,7 @@ import { errorMessages_errorStatuses } from "../../constants/errors/index.js";
  */
 export const assertFailureWithMessage =
   /** @template {ErrorMessages_ErrorStatuses__Key} T */ (
-    /** @type {GetSourceCodeReturnType} */ getSourceCodeResults,
+    /** @type {GetSourceCodeFromCodeReturnType | GetSourceCodeFromPathReturnType} */ getSourceCodeResults,
     /** @type {T} */ expectedMessage,
   ) => {
     assert.strictEqual(getSourceCodeResults.success, false);
@@ -33,6 +34,8 @@ export const assertFailureWithMessage =
     );
   };
 
+/* assertSuccess */
+
 /**
  * $COMMENT#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS
  *
@@ -40,7 +43,7 @@ export const assertFailureWithMessage =
  * @returns $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE
  */
 export const assertSuccess = (
-  /** @type {GetSourceCodeReturnType} */ getSourceCodeResults,
+  /** @type {GetSourceCodeFromCodeReturnType | GetSourceCodeFromPathReturnType} */ getSourceCodeResults,
 ) => {
   assert.strictEqual(getSourceCodeResults.success, true);
   assert.ok(getSourceCodeResults.sourceCode.ast);

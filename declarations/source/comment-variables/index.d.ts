@@ -1,7 +1,15 @@
 export declare const messages: {
+    codeSupposedToBeString: {
+        "value": "`code` is supposed to be a string.";
+        "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#CODESUPPOSEDTOBESTRING";
+    };
     absolutePathSupposedToBeString: {
         "value": "`absolutePath` is supposed to be a string.";
         "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING";
+    };
+    absolutePathSupposedToBeAbsolute: {
+        "value": "`absolutePath` is supposed to be absolute.";
+        "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBEABSOLUTE";
     };
     absolutePathCouldntBeRead: {
         "value": "Absolute file path could not be read.";
@@ -14,9 +22,13 @@ export declare const messages: {
 };
 export declare const forComposedVariables: {
     variables: {
-        "getSourceCode": {
-            "value": "getSourceCode";
-            "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODE";
+        "getSourceCodeFromCode": {
+            "value": "getSourceCodeFromCode";
+            "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMCODE";
+        };
+        "getSourceCodeFromPath": {
+            "value": "getSourceCodeFromPath";
+            "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMPATH";
         };
     };
     arguments: {};
@@ -57,6 +69,10 @@ export declare const composedVariablesExclusives: {
         };
     };
     arguments: {
+        "code": {
+            "value": "code";
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#CODE";
+        };
         "absolutePath": {
             "value": "absolutePath";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH";
@@ -73,6 +89,10 @@ export declare const composedVariablesExclusives: {
     basedOnMessageAndStatus: {
         "value": "based on the `message` it is meant to display and the `status` it is meant to have";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+    };
+    code: {
+        "value": "code as text of the file";
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#CODE";
     };
     absolutePath: {
         "value": "absolute path of the file";

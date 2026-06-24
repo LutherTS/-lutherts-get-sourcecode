@@ -9,7 +9,9 @@ import {
 } from "../../../constants/errors/messages.js";
 
 import {
-  GET_SOURCECODE,
+  GET_SOURCECODE_FROM_CODE,
+  GET_SOURCECODE_FROM_PATH,
+  CODE,
   ABSOLUTE_PATH,
   JAVASCRIPT,
   TYPESCRIPT,
@@ -21,8 +23,11 @@ import {
 } from "../../utilities/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").GetSourceCode} GetSourceCode
+ * @typedef {import("../../../typedefs/index.js").GetSourceCodeFromCode} GetSourceCodeFromCode
+ * @typedef {import("../../../typedefs/index.js").GetSourceCodeFromPath} GetSourceCodeFromPath
  */
+
+/* inputOperationsSuite */
 
 const currentDirectoryPath = path.dirname(url.fileURLToPath(import.meta.url));
 
@@ -51,42 +56,68 @@ const validDeclarationMFilePath = path.join(
 );
 
 export const inputOperationsSuite = (
-  /** @type {GetSourceCode} */ getSourceCode,
+  /** @type {GetSourceCodeFromCode} */ getSourceCodeFromCode,
+  /** @type {GetSourceCodeFromPath} */ getSourceCodeFromPath,
 ) => {
-  describe(`${GET_SOURCECODE} - input operations`, () => {
+  describe(`${GET_SOURCECODE_FROM_CODE} - input operations`, () => {
+    it(`should error if given fatal syntax`, () => {
+      const getSourceCodeFromCodeResults =
+        getSourceCodeFromCode("fatal#syntax");
+      assertFailureWithMessage(
+        getSourceCodeFromCodeResults,
+        jsTsJsxTsxCouldntBeParsed,
+      );
+    });
+
+    it(`should succeed if given valid syntax`, () => {
+      const getSourceCodeFromCodeResults = getSourceCodeFromCode("const x = 1");
+      assertSuccess(getSourceCodeFromCodeResults);
+    });
+  });
+
+  describe(`${GET_SOURCECODE_FROM_PATH} - input operations`, () => {
     it(`should error if \`${ABSOLUTE_PATH}\` is not found`, () => {
-      const getSourceCodeResults = getSourceCode("does-not-exist.js");
-      assertFailureWithMessage(getSourceCodeResults, absolutePathCouldntBeRead);
+      const getSourceCodeFromPathResults = getSourceCodeFromPath(
+        "/Users/Luther/Code/find-all-imports-ts/not-comments.config.js",
+      );
+      assertFailureWithMessage(
+        getSourceCodeFromPathResults,
+        absolutePathCouldntBeRead,
+      );
     });
 
     for (const l of languages) {
       it(`should error if given an invalid ${l.language} file`, () => {
-        const getSourceCodeResults = getSourceCode(l.fatalPath);
+        const getSourceCodeFromPathResults = getSourceCodeFromPath(l.fatalPath);
         assertFailureWithMessage(
-          getSourceCodeResults,
+          getSourceCodeFromPathResults,
           jsTsJsxTsxCouldntBeParsed,
         );
       });
 
       it(`should succeed if given a valid ${l.language} file`, () => {
-        const getSourceCodeResults = getSourceCode(l.validPath);
-        assertSuccess(getSourceCodeResults);
+        const getSourceCodeFromPathResults = getSourceCodeFromPath(l.validPath);
+        assertSuccess(getSourceCodeFromPathResults);
       });
 
       it(`should succeed if given a valid ${l.language} file with JSX`, () => {
-        const getSourceCodeResults = getSourceCode(l.jsxPath);
-        assertSuccess(getSourceCodeResults);
+        const getSourceCodeFromPathResults = getSourceCodeFromPath(l.jsxPath);
+        assertSuccess(getSourceCodeFromPathResults);
       });
     }
 
     it("should succeed if given a valid `.ts` TypeScript declaration file", () => {
-      const getSourceCodeResults = getSourceCode(validDeclarationFilePath);
-      assertSuccess(getSourceCodeResults);
+      const getSourceCodeFromPathResults = getSourceCodeFromPath(
+        validDeclarationFilePath,
+      );
+      assertSuccess(getSourceCodeFromPathResults);
     });
 
     it("should succeed if given a valid `.mts` TypeScript declaration file", () => {
-      const getSourceCodeResults = getSourceCode(validDeclarationMFilePath);
-      assertSuccess(getSourceCodeResults);
+      const getSourceCodeFromPathResults = getSourceCodeFromPath(
+        validDeclarationMFilePath,
+      );
+      assertSuccess(getSourceCodeFromPathResults);
     });
   });
 };
