@@ -6,7 +6,7 @@ import {
   typeScriptAndJSXCompatible,
   noInlineConfig,
   // } from "../../source/library/index.js"; // dev
-} from "../../tsdown/index.mjs"; // prod
+} from "../../tsdown/library/index.mjs"; // prod
 
 import {
   GET_SOURCECODE_FROM_CODE,

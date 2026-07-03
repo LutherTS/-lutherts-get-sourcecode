@@ -11,10 +11,10 @@
   "license": "UNLICENSED",
   "author": "Luther Tchofo Safo <luther@tchofo-safo-portfolio.me>",
   "type": "module",
-  "main": "tsdown/index.mjs",
+  "main": "tsdown/library/index.mjs",
   "types": "get-sourcecode.public.d.ts",
   "files": [
-    "tsdown/index.mjs",
+    "tsdown/library/index.mjs",
     "get-sourcecode.public.d.ts",
     "comments.config.public.json"
   ],
