@@ -148,21 +148,16 @@ export declare const resolvedConfigData: {
                 };
             };
         };
-        "forComposedVariables": {
+        "composedVariablesExclusives": {
             "variables": {
                 "getSourceCodeFromCode": {
-                    "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMCODE";
+                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMCODE";
                     "value": "getSourceCodeFromCode";
                 };
                 "getSourceCodeFromPath": {
-                    "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMPATH";
+                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMPATH";
                     "value": "getSourceCodeFromPath";
                 };
-            };
-            "arguments": {};
-        };
-        "composedVariablesExclusives": {
-            "variables": {
                 "typeScriptAndJSXCompatible": {
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPESCRIPTANDJSXCOMPATIBLE";
                     "value": "typeScriptAndJSXCompatible";
@@ -412,19 +407,6 @@ export declare const resolvedConfigData: {
                     };
                 };
             };
-        };
-        "forComposedVariables": {
-            "variables": {
-                "getSourceCodeFromCode": {
-                    "key": "FR#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMCODE";
-                    "value": "getSourceCodeFromCode";
-                };
-                "getSourceCodeFromPath": {
-                    "key": "FR#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMPATH";
-                    "value": "getSourceCodeFromPath";
-                };
-            };
-            "arguments": {};
         };
         "composedVariablesExclusives": {
             "variables": {};

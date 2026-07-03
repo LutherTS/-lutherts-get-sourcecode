@@ -20,21 +20,16 @@ export declare const messages: {
         "value": "JS/TS/JSX/TSX source code could not be parsed.";
     };
 };
-export declare const forComposedVariables: {
+export declare const composedVariablesExclusives: {
     variables: {
         "getSourceCodeFromCode": {
-            "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMCODE";
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMCODE";
             "value": "getSourceCodeFromCode";
         };
         "getSourceCodeFromPath": {
-            "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMPATH";
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMPATH";
             "value": "getSourceCodeFromPath";
         };
-    };
-    arguments: {};
-};
-export declare const composedVariablesExclusives: {
-    variables: {
         "typeScriptAndJSXCompatible": {
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPESCRIPTANDJSXCOMPATIBLE";
             "value": "typeScriptAndJSXCompatible";
