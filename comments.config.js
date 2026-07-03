@@ -8,7 +8,10 @@ const myIgnoresOnly = false; // can be omitted
 
 /* ignores */
 
-const ignores = [];
+const ignores = [
+  "source/tests/suites/input-operations/files/fatal/typescript.ts",
+  "source/tests/suites/input-operations/files/fatal/javascript.js",
+];
 
 /* lintConfigImports */
 

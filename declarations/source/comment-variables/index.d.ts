@@ -1,34 +1,34 @@
 export declare const messages: {
     codeSupposedToBeString: {
-        "value": "`code` is supposed to be a string.";
         "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#CODESUPPOSEDTOBESTRING";
+        "value": "`code` is supposed to be a string.";
     };
     absolutePathSupposedToBeString: {
-        "value": "`absolutePath` is supposed to be a string.";
         "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING";
+        "value": "`absolutePath` is supposed to be a string.";
     };
     absolutePathSupposedToBeAbsolute: {
-        "value": "`absolutePath` is supposed to be absolute.";
         "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBEABSOLUTE";
+        "value": "`absolutePath` is supposed to be absolute.";
     };
     absolutePathCouldntBeRead: {
-        "value": "Absolute file path could not be read.";
         "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD";
+        "value": "Absolute file path could not be read.";
     };
     jsTsJsxTsxCouldntBeParsed: {
-        "value": "JS/TS/JSX/TSX source code could not be parsed.";
         "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED";
+        "value": "JS/TS/JSX/TSX source code could not be parsed.";
     };
 };
 export declare const forComposedVariables: {
     variables: {
         "getSourceCodeFromCode": {
-            "value": "getSourceCodeFromCode";
             "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMCODE";
+            "value": "getSourceCodeFromCode";
         };
         "getSourceCodeFromPath": {
-            "value": "getSourceCodeFromPath";
             "key": "EN#FORCOMPOSEDVARIABLES#VARIABLES#GETSOURCECODEFROMPATH";
+            "value": "getSourceCodeFromPath";
         };
     };
     arguments: {};
@@ -36,102 +36,102 @@ export declare const forComposedVariables: {
 export declare const composedVariablesExclusives: {
     variables: {
         "typeScriptAndJSXCompatible": {
-            "value": "typeScriptAndJSXCompatible";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPESCRIPTANDJSXCOMPATIBLE";
+            "value": "typeScriptAndJSXCompatible";
         };
         "noInlineConfig": {
-            "value": "noInlineConfig";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#NOINLINECONFIG";
+            "value": "noInlineConfig";
         };
         "parser": {
-            "value": "parser";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSER";
+            "value": "parser";
         };
         "parserOptions": {
-            "value": "parserOptions";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSEROPTIONS";
+            "value": "parserOptions";
         };
         "ecmaFeatures": {
-            "value": "ecmaFeatures";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ECMAFEATURES";
+            "value": "ecmaFeatures";
         };
         "pEcmaFeatures": {
-            "value": "parserOptions.ecmaFeatures";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PECMAFEATURES";
+            "value": "parserOptions.ecmaFeatures";
         };
         "jsx": {
-            "value": "jsx";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#JSX";
+            "value": "jsx";
         };
         "pEJsx": {
-            "value": "parserOptions.ecmaFeatures.jsx";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PEJSX";
+            "value": "parserOptions.ecmaFeatures.jsx";
         };
     };
     arguments: {
         "code": {
-            "value": "code";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#CODE";
+            "value": "code";
         };
         "absolutePath": {
-            "value": "absolutePath";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH";
+            "value": "absolutePath";
         };
     };
     eslintSourceCode: {
-        "value": "ESLint-generated `SourceCode` object of a file";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE";
+        "value": "ESLint-generated `SourceCode` object of a file";
     };
     singleError: {
-        "value": "single error in its `errors` array";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
+        "value": "single error in its `errors` array";
     };
     basedOnMessageAndStatus: {
-        "value": "based on the `message` it is meant to display and the `status` it is meant to have";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+        "value": "based on the `message` it is meant to display and the `status` it is meant to have";
     };
     code: {
-        "value": "code as text of the file";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#CODE";
+        "value": "code as text of the file";
     };
     absolutePath: {
-        "value": "absolute path of the file";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH";
+        "value": "absolute path of the file";
     };
     atHand: {
-        "value": "at hand";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
+        "value": "at hand";
     };
     success_true: {
-        "value": "success: true";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
+        "value": "success: true";
     };
     success_false: {
-        "value": "success: false";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
+        "value": "success: false";
     };
     _asserts: {
-        "value": "Asserts";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS";
+        "value": "Asserts";
     };
     whenItShould: {
-        "value": "when it should";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD";
+        "value": "when it should";
     };
     message: {
-        "value": "message";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE";
+        "value": "message";
     };
     status: {
-        "value": "status";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS";
+        "value": "status";
     };
     success: {
-        "value": "success";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
+        "value": "success";
     };
     _void: {
-        "value": "Void";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
+        "value": "Void";
     };
 };
