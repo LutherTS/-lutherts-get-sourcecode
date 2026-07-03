@@ -40,7 +40,7 @@ export const assertFailureWithMessage =
  * $COMMENT#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS
  *
  * @param getSourceCodeResults - $COMMENT#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS
- * @returns $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE
+ * @returns $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS
  */
 export const assertSuccess = (
   /** @type {GetSourceCodeFromCodeReturnType | GetSourceCodeFromPathReturnType} */ getSourceCodeResults,

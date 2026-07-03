@@ -7,8 +7,5 @@ export const messages =
 
 /* generals */
 
-export const forComposedVariables =
-  commentVariablesData.en.forComposedVariables;
-
 export const composedVariablesExclusives =
   commentVariablesData.en.composedVariablesExclusives;
