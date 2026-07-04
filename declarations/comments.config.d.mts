@@ -320,7 +320,7 @@ export declare const resolvedConfigData: {
                                 };
                                 "noInlineConfig": {
                                     "key": "FR#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#NOINLINECONFIG";
-                                    "value": "Object `linterOptions` pour instances de classes `ESLint` et `Linter` désactivant les configurations dans le code lors d'usages programmatiques de ESLint.";
+                                    "value": "Objet `linterOptions` pour instances de classes `ESLint` et `Linter` désactivant les configurations dans le code lors d'usages programmatiques de ESLint.";
                                 };
                             };
                         };
