@@ -4,7 +4,7 @@
  * @param code - $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#CODE
  * @returns $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE
  *
- * @public
+ * @public $COMMENT#GET_SOURCECODE#PUBLIC#GETSOURCECODEFROMCODE
  */
 export declare const getSourceCodeFromCode: <T extends string>(code: T) => {
     readonly success: false;
@@ -30,7 +30,7 @@ export declare const getSourceCodeFromCode: <T extends string>(code: T) => {
  * @param absolutePath - $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH
  * @returns $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMPATH
  *
- * @public
+ * @public $COMMENT#GET_SOURCECODE#PUBLIC#GETSOURCECODEFROMPATH
  */
 export declare const getSourceCodeFromPath: <T extends string>(absolutePath: T) => {
     readonly success: false;

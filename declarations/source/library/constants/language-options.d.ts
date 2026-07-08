@@ -1,7 +1,7 @@
 import { parser } from "typescript-eslint";
 /**
  * $COMMENT#GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE
- * @public
+ * @public $COMMENT#GET_SOURCECODE#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE
  */
 export declare const typeScriptAndJSXCompatible: {
     readonly parser: typeof parser;
