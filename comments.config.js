@@ -9,6 +9,7 @@ const myIgnoresOnly = false; // can be omitted
 /* ignores */
 
 const ignores = [
+  "**/typedefs/**",
   "source/tests/suites/input-operations/files/fatal/typescript.ts",
   "source/tests/suites/input-operations/files/fatal/javascript.js",
 ];
