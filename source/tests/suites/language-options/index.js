@@ -10,7 +10,7 @@ import {
 } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").TypeScriptAndJSXCompatible} TypeScriptAndJSXCompatible
+ * @typedef {import("../../../types/index.ts").TypeScriptAndJSXCompatible} TypeScriptAndJSXCompatible
  */
 
 /* languageOptionsSuite */

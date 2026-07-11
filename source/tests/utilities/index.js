@@ -3,10 +3,10 @@ import assert from "node:assert";
 import { errorMessages_errorStatuses } from "../../constants/errors/index.js";
 
 /**
- * @typedef {import("../../typedefs/index.js").GetSourceCodeFromCodeReturnType} GetSourceCodeFromCodeReturnType
- * @typedef {import("../../typedefs/index.js").GetSourceCodeFromPathReturnType} GetSourceCodeFromPathReturnType
+ * @typedef {import("../../types/index.ts").GetSourceCodeFromCodeReturnType} GetSourceCodeFromCodeReturnType
+ * @typedef {import("../../types/index.ts").GetSourceCodeFromPathReturnType} GetSourceCodeFromPathReturnType
  *
- * @typedef {import("../../typedefs/index.js").ErrorMessages_ErrorStatuses__Key} ErrorMessages_ErrorStatuses__Key
+ * @typedef {import("../../types/index.ts").ErrorMessages_ErrorStatuses__Key} ErrorMessages_ErrorStatuses__Key
  */
 
 /* assertFailureWithMessage */

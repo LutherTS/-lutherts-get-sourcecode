@@ -4,7 +4,7 @@ import assert from "node:assert";
 import { NO_INLINE_CONFIG } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").NoInlineConfig} NoInlineConfig
+ * @typedef {import("../../../types/index.ts").NoInlineConfig} NoInlineConfig
  */
 
 /* linterOptionsSuite */

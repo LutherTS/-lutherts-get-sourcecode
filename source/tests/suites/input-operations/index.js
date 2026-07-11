@@ -23,8 +23,8 @@ import {
 } from "../../utilities/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").GetSourceCodeFromCode} GetSourceCodeFromCode
- * @typedef {import("../../../typedefs/index.js").GetSourceCodeFromPath} GetSourceCodeFromPath
+ * @typedef {import("../../../types/index.ts").GetSourceCodeFromCode} GetSourceCodeFromCode
+ * @typedef {import("../../../types/index.ts").GetSourceCodeFromPath} GetSourceCodeFromPath
  */
 
 /* inputOperationsSuite */
