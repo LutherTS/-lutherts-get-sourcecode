@@ -1,6 +1,6 @@
 {
   "name": "get-sourcecode",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "description": "Retrieves the ESLint-generated SourceCode object of a JS/TS/JSX/TSX file.",
   "keywords": [
     "ast",
