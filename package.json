@@ -10,6 +10,10 @@
   ],
   "license": "UNLICENSED",
   "author": "Luther Tchofo Safo <luther@tchofo-safo-portfolio.me>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LutherTS/-lutherts-get-sourcecode.git"
+  },
   "files": [
     "tsdown/library/index.mjs",
     "get-sourcecode.public.d.ts",
@@ -28,7 +32,7 @@
     "prepare": "npm run types && npm run doc && npm run api && npm run build && npm run test && npm run lint"
   },
   "dependencies": {
-    "@lutherts/error-handling": "^0.1.22",
+    "@lutherts/error-handling": "^0.1.23",
     "eslint": "^10.3.0",
     "typescript-eslint": "^8.59.1"
   },
