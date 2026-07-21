@@ -1,4 +1,3 @@
-import { parser } from 'typescript-eslint';
 import { SourceCode } from 'eslint';
 
 /** @public $COMMENT#_LUTHERTS_GET_SOURCECODE#PUBLIC#RESOLVEDPUBLICDATA */
@@ -126,7 +125,7 @@ export declare const noInlineConfig: {
  * @public $COMMENT#_LUTHERTS_GET_SOURCECODE#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE
  */
 export declare const typeScriptAndJSXCompatible: {
-    readonly parser: typeof parser;
+    readonly parser: unknown;
     readonly parserOptions: {
         readonly ecmaFeatures: {
             readonly jsx: true;
