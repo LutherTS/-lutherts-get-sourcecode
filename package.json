@@ -1,6 +1,6 @@
 {
   "name": "@lutherts/get-sourcecode",
-  "version": "0.1.24",
+  "version": "0.1.25",
   "description": "Retrieves the ESLint-generated SourceCode object of a JS/TS/JSX/TSX file.",
   "keywords": [
     "ast",
