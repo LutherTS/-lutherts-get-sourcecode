@@ -64,6 +64,28 @@ const libraries = {
     errorHandlingCommentVariablesData.libraryVariations.EN,
 }; // can be omitted
 
+/* sharedVariables */
+
+const sharedVariables = undefined; // can be omitted
+
+/* templateFunctions */
+
+const templateFunctions = {
+  [EN]: {
+    // #ATHAND#
+    atHand: {
+      beforeComposed: (/** @type {string} */ string) => {
+        const parts = string.split("§");
+        const part = parts[0];
+
+        return part + " $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND.";
+        // $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND
+      },
+      afterComposed: (/** @type {string} */ string) => string,
+    },
+  },
+}; // can be omitted
+
 /* config */
 
 const config = {
@@ -74,6 +96,8 @@ const config = {
   composedVariablesExclusives,
   variations,
   libraries,
+  sharedVariables,
+  templateFunctions,
 };
 
 export default config;

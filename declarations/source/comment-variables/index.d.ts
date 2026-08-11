@@ -1,132 +1,132 @@
 export declare const messages: {
-    codeSupposedToBeString: {
-        "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#CODESUPPOSEDTOBESTRING";
-        "value": "`code` is supposed to be a string.";
+    readonly codeSupposedToBeString: {
+        readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#CODESUPPOSEDTOBESTRING";
+        readonly value: "`code` is supposed to be a string.";
     };
-    absolutePathSupposedToBeString: {
-        "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING";
-        "value": "`absolutePath` is supposed to be a string.";
+    readonly absolutePathSupposedToBeString: {
+        readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING";
+        readonly value: "`absolutePath` is supposed to be a string.";
     };
-    absolutePathSupposedToBeAbsolute: {
-        "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBEABSOLUTE";
-        "value": "`absolutePath` is supposed to be absolute.";
+    readonly absolutePathSupposedToBeAbsolute: {
+        readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBEABSOLUTE";
+        readonly value: "`absolutePath` is supposed to be absolute.";
     };
-    absolutePathCouldntBeRead: {
-        "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD";
-        "value": "Absolute file path could not be read.";
+    readonly absolutePathCouldntBeRead: {
+        readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD";
+        readonly value: "Absolute file path could not be read.";
     };
-    jsTsJsxTsxCouldntBeParsed: {
-        "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED";
-        "value": "JS/TS/JSX/TSX source code could not be parsed.";
+    readonly jsTsJsxTsxCouldntBeParsed: {
+        readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED";
+        readonly value: "JS/TS/JSX/TSX source code could not be parsed.";
     };
 };
 export declare const composedVariablesExclusives: {
-    variables: {
-        "getSourceCodeFromCode": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMCODE";
-            "value": "getSourceCodeFromCode";
+    readonly variables: {
+        readonly getSourceCodeFromCode: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMCODE";
+            readonly value: "getSourceCodeFromCode";
         };
-        "getSourceCodeFromPath": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMPATH";
-            "value": "getSourceCodeFromPath";
+        readonly getSourceCodeFromPath: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMPATH";
+            readonly value: "getSourceCodeFromPath";
         };
-        "typeScriptAndJSXCompatible": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPESCRIPTANDJSXCOMPATIBLE";
-            "value": "typeScriptAndJSXCompatible";
+        readonly typeScriptAndJSXCompatible: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPESCRIPTANDJSXCOMPATIBLE";
+            readonly value: "typeScriptAndJSXCompatible";
         };
-        "noInlineConfig": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#NOINLINECONFIG";
-            "value": "noInlineConfig";
+        readonly noInlineConfig: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#NOINLINECONFIG";
+            readonly value: "noInlineConfig";
         };
-        "parser": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSER";
-            "value": "parser";
+        readonly parser: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSER";
+            readonly value: "parser";
         };
-        "parserOptions": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSEROPTIONS";
-            "value": "parserOptions";
+        readonly parserOptions: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSEROPTIONS";
+            readonly value: "parserOptions";
         };
-        "ecmaFeatures": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ECMAFEATURES";
-            "value": "ecmaFeatures";
+        readonly ecmaFeatures: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ECMAFEATURES";
+            readonly value: "ecmaFeatures";
         };
-        "pEcmaFeatures": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PECMAFEATURES";
-            "value": "parserOptions.ecmaFeatures";
+        readonly pEcmaFeatures: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PECMAFEATURES";
+            readonly value: "parserOptions.ecmaFeatures";
         };
-        "jsx": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#JSX";
-            "value": "jsx";
+        readonly jsx: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#JSX";
+            readonly value: "jsx";
         };
-        "pEJsx": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PEJSX";
-            "value": "parserOptions.ecmaFeatures.jsx";
-        };
-    };
-    arguments: {
-        "code": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#CODE";
-            "value": "code";
-        };
-        "absolutePath": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH";
-            "value": "absolutePath";
+        readonly pEJsx: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PEJSX";
+            readonly value: "parserOptions.ecmaFeatures.jsx";
         };
     };
-    eslintSourceCode: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE";
-        "value": "ESLint-generated `SourceCode` object of a file";
+    readonly arguments: {
+        readonly code: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#CODE";
+            readonly value: "code";
+        };
+        readonly absolutePath: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH";
+            readonly value: "absolutePath";
+        };
     };
-    singleError: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
-        "value": "single error in its `errors` array";
+    readonly eslintSourceCode: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE";
+        readonly value: "ESLint-generated `SourceCode` object of a file";
     };
-    basedOnMessageAndStatus: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
-        "value": "based on the `message` it is meant to display and the `status` it is meant to have";
+    readonly singleError: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
+        readonly value: "single error in its `errors` array";
     };
-    code: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#CODE";
-        "value": "code as text of the file";
+    readonly basedOnMessageAndStatus: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+        readonly value: "based on the `message` it is meant to display and the `status` it is meant to have";
     };
-    absolutePath: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH";
-        "value": "absolute path of the file";
+    readonly code: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#CODE";
+        readonly value: "code as text of the file";
     };
-    atHand: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
-        "value": "at hand";
+    readonly absolutePath: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH";
+        readonly value: "absolute path of the file";
     };
-    success_true: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
-        "value": "success: true";
+    readonly atHand: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
+        readonly value: "at hand";
     };
-    success_false: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
-        "value": "success: false";
+    readonly success_true: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
+        readonly value: "success: true";
     };
-    _asserts: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS";
-        "value": "Asserts";
+    readonly success_false: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
+        readonly value: "success: false";
     };
-    whenItShould: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD";
-        "value": "when it should";
+    readonly _asserts: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS";
+        readonly value: "Asserts";
     };
-    message: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE";
-        "value": "message";
+    readonly whenItShould: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD";
+        readonly value: "when it should";
     };
-    status: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS";
-        "value": "status";
+    readonly message: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE";
+        readonly value: "message";
     };
-    success: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
-        "value": "success";
+    readonly status: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS";
+        readonly value: "status";
     };
-    _void: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
-        "value": "Void";
+    readonly success: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
+        readonly value: "success";
+    };
+    readonly _void: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
+        readonly value: "Void";
     };
 };

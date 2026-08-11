@@ -1,455 +1,465 @@
 export declare const resolvedConfigData: {
-    "en": {
-        "tsDoc": {
-            "src": {
-                "consts": {
-                    "errors": {
-                        "messages": {
-                            "codeSupposedToBeString": {
-                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#CODESUPPOSEDTOBESTRING";
-                                "value": "`code` is supposed to be a string.";
+    readonly en: {
+        readonly tsDoc: {
+            readonly src: {
+                readonly consts: {
+                    readonly errors: {
+                        readonly messages: {
+                            readonly codeSupposedToBeString: {
+                                readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#CODESUPPOSEDTOBESTRING";
+                                readonly value: "`code` is supposed to be a string.";
                             };
-                            "absolutePathSupposedToBeString": {
-                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING";
-                                "value": "`absolutePath` is supposed to be a string.";
+                            readonly absolutePathSupposedToBeString: {
+                                readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING";
+                                readonly value: "`absolutePath` is supposed to be a string.";
                             };
-                            "absolutePathSupposedToBeAbsolute": {
-                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBEABSOLUTE";
-                                "value": "`absolutePath` is supposed to be absolute.";
+                            readonly absolutePathSupposedToBeAbsolute: {
+                                readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBEABSOLUTE";
+                                readonly value: "`absolutePath` is supposed to be absolute.";
                             };
-                            "absolutePathCouldntBeRead": {
-                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD";
-                                "value": "Absolute file path could not be read.";
+                            readonly absolutePathCouldntBeRead: {
+                                readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD";
+                                readonly value: "Absolute file path could not be read.";
                             };
-                            "jsTsJsxTsxCouldntBeParsed": {
-                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED";
-                                "value": "JS/TS/JSX/TSX source code could not be parsed.";
-                            };
-                        };
-                        "statuses": {
-                            "CODE_NOT_STRING": {
-                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#CODE_NOT_STRING";
-                                "value": "\"`code` is supposed to be a string.\"";
-                            };
-                            "ABSOLUTEPATH_NOT_STRING": {
-                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_STRING";
-                                "value": "\"`absolutePath` is supposed to be a string.\"";
-                            };
-                            "ABSOLUTEPATH_NOT_ABSOLUTE": {
-                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_ABSOLUTE";
-                                "value": "\"`absolutePath` is supposed to be absolute.\"";
-                            };
-                            "ABSOLUTE_PATH_NOT_FOUND": {
-                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTE_PATH_NOT_FOUND";
-                                "value": "\"Absolute file path could not be read.\"";
-                            };
-                            "SOURCE_CODE_FATAL_SYNTAX": {
-                                "key": "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#SOURCE_CODE_FATAL_SYNTAX";
-                                "value": "\"JS/TS/JSX/TSX source code could not be parsed.\"";
+                            readonly jsTsJsxTsxCouldntBeParsed: {
+                                readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED";
+                                readonly value: "JS/TS/JSX/TSX source code could not be parsed.";
                             };
                         };
-                    };
-                };
-                "lib": {
-                    "consts": {
-                        "parser": {
-                            "public": {
-                                "typeScriptAndJSXCompatible": {
-                                    "key": "EN#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
-                                    "value": "`languageOptions` object for instances of the `ESLint` and `Linter` classes enabling the linting of TypeScript and JSX (React) files.";
-                                };
-                                "noInlineConfig": {
-                                    "key": "EN#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#NOINLINECONFIG";
-                                    "value": "`linterOptions` object for instances of the `ESLint` and `Linter` classes disabling ESLint inline configs when using ESLint programmatically.";
-                                };
+                        readonly statuses: {
+                            readonly CODE_NOT_STRING: {
+                                readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#CODE_NOT_STRING";
+                                readonly value: "\"`code` is supposed to be a string.\"";
                             };
-                        };
-                    };
-                    "defs": {
-                        "utils": {
-                            "public": {
-                                "getSourceCodeFromCode": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMCODE";
-                                    "value": "Gets the ESLint-generated `SourceCode` object of a file from its code as text.";
-                                };
-                                "getSourceCodeFromPath": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMPATH";
-                                    "value": "Gets the ESLint-generated `SourceCode` object of a file from its absolute path.";
-                                };
+                            readonly ABSOLUTEPATH_NOT_STRING: {
+                                readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_STRING";
+                                readonly value: "\"`absolutePath` is supposed to be a string.\"";
                             };
-                        };
-                    };
-                    "params": {
-                        "utils": {
-                            "public": {
-                                "code": {
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#CODE";
-                                    "value": "The code as text of the file at hand.";
-                                };
-                                "absolutePath": {
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
-                                    "value": "The absolute path of the file at hand.";
-                                };
+                            readonly ABSOLUTEPATH_NOT_ABSOLUTE: {
+                                readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_ABSOLUTE";
+                                readonly value: "\"`absolutePath` is supposed to be absolute.\"";
                             };
-                        };
-                    };
-                    "returns": {
-                        "utils": {
-                            "public": {
-                                "getSourceCodeFromCode": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE";
-                                    "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.";
-                                };
-                                "getSourceCodeFromPath": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMPATH";
-                                    "value": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.";
-                                };
+                            readonly ABSOLUTE_PATH_NOT_FOUND: {
+                                readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTE_PATH_NOT_FOUND";
+                                readonly value: "\"Absolute file path could not be read.\"";
+                            };
+                            readonly SOURCE_CODE_FATAL_SYNTAX: {
+                                readonly key: "EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#SOURCE_CODE_FATAL_SYNTAX";
+                                readonly value: "\"JS/TS/JSX/TSX source code could not be parsed.\"";
                             };
                         };
                     };
                 };
-                "tests": {
-                    "defs": {
-                        "utils": {
-                            "assertFailureWithMessage": {
-                                "key": "EN#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE";
-                                "value": "Asserts that `getSourceCodeFromCode` or `getSourceCodeFromPath` fails when it should.";
-                            };
-                            "assertSuccess": {
-                                "key": "EN#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS";
-                                "value": "Asserts that `getSourceCodeFromCode` or `getSourceCodeFromPath` succeeds when it should.";
-                            };
-                        };
-                    };
-                    "params": {
-                        "utils": {
-                            "getSourceCodeResults": {
-                                "key": "EN#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS";
-                                "value": "The results of the `getSourceCodeFromCode` or `getSourceCodeFromPath` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.";
-                            };
-                            "expectedMessage": {
-                                "key": "EN#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE";
-                                "value": "The expected message of the error that should be encountered during failure, from which the status can be inferred.";
+                readonly lib: {
+                    readonly consts: {
+                        readonly parser: {
+                            readonly public: {
+                                readonly typeScriptAndJSXCompatible: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
+                                    readonly value: "`languageOptions` object for instances of the `ESLint` and `Linter` classes enabling the linting of TypeScript and JSX (React) files.";
+                                };
+                                readonly noInlineConfig: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#NOINLINECONFIG";
+                                    readonly value: "`linterOptions` object for instances of the `ESLint` and `Linter` classes disabling ESLint inline configs when using ESLint programmatically.";
+                                };
                             };
                         };
                     };
-                    "returns": {
-                        "utils": {
-                            "assertFailureWithMessage": {
-                                "key": "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE";
-                                "value": "Void.";
+                    readonly defs: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly getSourceCodeFromCode: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMCODE";
+                                    readonly value: "Gets the ESLint-generated `SourceCode` object of a file from its code as text.";
+                                };
+                                readonly getSourceCodeFromPath: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMPATH";
+                                    readonly value: "Gets the ESLint-generated `SourceCode` object of a file from its absolute path.";
+                                };
                             };
-                            "assertSuccess": {
-                                "key": "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS";
-                                "value": "Void.";
+                        };
+                    };
+                    readonly params: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly code: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#CODE";
+                                    readonly value: "The code as text of the file at hand.";
+                                };
+                                readonly absolutePath: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
+                                    readonly value: "The absolute path of the file at hand.";
+                                };
+                            };
+                            readonly atHand: {
+                                readonly code: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#CODE";
+                                    readonly value: "The code as text of the file§";
+                                };
+                                readonly absolutePath: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH";
+                                    readonly value: "The absolute path of the file§";
+                                };
+                            };
+                        };
+                    };
+                    readonly returns: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly getSourceCodeFromCode: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE";
+                                    readonly value: "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.";
+                                };
+                                readonly getSourceCodeFromPath: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMPATH";
+                                    readonly value: "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.";
+                                };
+                            };
+                        };
+                    };
+                };
+                readonly tests: {
+                    readonly defs: {
+                        readonly utils: {
+                            readonly assertFailureWithMessage: {
+                                readonly key: "EN#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE";
+                                readonly value: "Asserts that `getSourceCodeFromCode` or `getSourceCodeFromPath` fails when it should.";
+                            };
+                            readonly assertSuccess: {
+                                readonly key: "EN#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS";
+                                readonly value: "Asserts that `getSourceCodeFromCode` or `getSourceCodeFromPath` succeeds when it should.";
+                            };
+                        };
+                    };
+                    readonly params: {
+                        readonly utils: {
+                            readonly getSourceCodeResults: {
+                                readonly key: "EN#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS";
+                                readonly value: "The results of the `getSourceCodeFromCode` or `getSourceCodeFromPath` instance called in the test, whose success or failure is evaluated via its `success` key's boolean value.";
+                            };
+                            readonly expectedMessage: {
+                                readonly key: "EN#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE";
+                                readonly value: "The expected message of the error that should be encountered during failure, from which the status can be inferred.";
+                            };
+                        };
+                    };
+                    readonly returns: {
+                        readonly utils: {
+                            readonly assertFailureWithMessage: {
+                                readonly key: "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE";
+                                readonly value: "Void.";
+                            };
+                            readonly assertSuccess: {
+                                readonly key: "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS";
+                                readonly value: "Void.";
                             };
                         };
                     };
                 };
             };
         };
-        "composedVariablesExclusives": {
-            "variables": {
-                "getSourceCodeFromCode": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMCODE";
-                    "value": "getSourceCodeFromCode";
+        readonly composedVariablesExclusives: {
+            readonly variables: {
+                readonly getSourceCodeFromCode: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMCODE";
+                    readonly value: "getSourceCodeFromCode";
                 };
-                "getSourceCodeFromPath": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMPATH";
-                    "value": "getSourceCodeFromPath";
+                readonly getSourceCodeFromPath: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMPATH";
+                    readonly value: "getSourceCodeFromPath";
                 };
-                "typeScriptAndJSXCompatible": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPESCRIPTANDJSXCOMPATIBLE";
-                    "value": "typeScriptAndJSXCompatible";
+                readonly typeScriptAndJSXCompatible: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPESCRIPTANDJSXCOMPATIBLE";
+                    readonly value: "typeScriptAndJSXCompatible";
                 };
-                "noInlineConfig": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#NOINLINECONFIG";
-                    "value": "noInlineConfig";
+                readonly noInlineConfig: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#NOINLINECONFIG";
+                    readonly value: "noInlineConfig";
                 };
-                "parser": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSER";
-                    "value": "parser";
+                readonly parser: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSER";
+                    readonly value: "parser";
                 };
-                "parserOptions": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSEROPTIONS";
-                    "value": "parserOptions";
+                readonly parserOptions: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PARSEROPTIONS";
+                    readonly value: "parserOptions";
                 };
-                "ecmaFeatures": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ECMAFEATURES";
-                    "value": "ecmaFeatures";
+                readonly ecmaFeatures: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ECMAFEATURES";
+                    readonly value: "ecmaFeatures";
                 };
-                "pEcmaFeatures": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PECMAFEATURES";
-                    "value": "parserOptions.ecmaFeatures";
+                readonly pEcmaFeatures: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PECMAFEATURES";
+                    readonly value: "parserOptions.ecmaFeatures";
                 };
-                "jsx": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#JSX";
-                    "value": "jsx";
+                readonly jsx: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#JSX";
+                    readonly value: "jsx";
                 };
-                "pEJsx": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PEJSX";
-                    "value": "parserOptions.ecmaFeatures.jsx";
-                };
-            };
-            "arguments": {
-                "code": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#CODE";
-                    "value": "code";
-                };
-                "absolutePath": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH";
-                    "value": "absolutePath";
+                readonly pEJsx: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PEJSX";
+                    readonly value: "parserOptions.ecmaFeatures.jsx";
                 };
             };
-            "eslintSourceCode": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE";
-                "value": "ESLint-generated `SourceCode` object of a file";
+            readonly arguments: {
+                readonly code: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#CODE";
+                    readonly value: "code";
+                };
+                readonly absolutePath: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH";
+                    readonly value: "absolutePath";
+                };
             };
-            "singleError": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
-                "value": "single error in its `errors` array";
+            readonly eslintSourceCode: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE";
+                readonly value: "ESLint-generated `SourceCode` object of a file";
             };
-            "basedOnMessageAndStatus": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
-                "value": "based on the `message` it is meant to display and the `status` it is meant to have";
+            readonly singleError: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
+                readonly value: "single error in its `errors` array";
             };
-            "code": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#CODE";
-                "value": "code as text of the file";
+            readonly basedOnMessageAndStatus: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+                readonly value: "based on the `message` it is meant to display and the `status` it is meant to have";
             };
-            "absolutePath": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH";
-                "value": "absolute path of the file";
+            readonly code: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#CODE";
+                readonly value: "code as text of the file";
             };
-            "atHand": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
-                "value": "at hand";
+            readonly absolutePath: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH";
+                readonly value: "absolute path of the file";
             };
-            "success_true": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
-                "value": "success: true";
+            readonly atHand: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
+                readonly value: "at hand";
             };
-            "success_false": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
-                "value": "success: false";
+            readonly success_true: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
+                readonly value: "success: true";
             };
-            "_asserts": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS";
-                "value": "Asserts";
+            readonly success_false: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
+                readonly value: "success: false";
             };
-            "whenItShould": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD";
-                "value": "when it should";
+            readonly _asserts: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS";
+                readonly value: "Asserts";
             };
-            "message": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE";
-                "value": "message";
+            readonly whenItShould: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD";
+                readonly value: "when it should";
             };
-            "status": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS";
-                "value": "status";
+            readonly message: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE";
+                readonly value: "message";
             };
-            "success": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
-                "value": "success";
+            readonly status: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS";
+                readonly value: "status";
             };
-            "_void": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
-                "value": "Void";
+            readonly success: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
+                readonly value: "success";
+            };
+            readonly _void: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
+                readonly value: "Void";
             };
         };
     };
-    "fr": {
-        "tsDoc": {
-            "src": {
-                "consts": {
-                    "errors": {
-                        "messages": {
-                            "codeSupposedToBeString": {
-                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#CODESUPPOSEDTOBESTRING";
-                                "value": "`code` is supposed to be a string. / (En anglais uniquement.)";
+    readonly fr: {
+        readonly tsDoc: {
+            readonly src: {
+                readonly consts: {
+                    readonly errors: {
+                        readonly messages: {
+                            readonly codeSupposedToBeString: {
+                                readonly key: "FR#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#CODESUPPOSEDTOBESTRING";
+                                readonly value: "`code` is supposed to be a string. / (En anglais uniquement.)";
                             };
-                            "absolutePathSupposedToBeString": {
-                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING";
-                                "value": "`absolutePath` is supposed to be a string. / (En anglais uniquement.)";
+                            readonly absolutePathSupposedToBeString: {
+                                readonly key: "FR#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBESTRING";
+                                readonly value: "`absolutePath` is supposed to be a string. / (En anglais uniquement.)";
                             };
-                            "absolutePathSupposedToBeAbsolute": {
-                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBEABSOLUTE";
-                                "value": "`absolutePath` is supposed to be absolute. / (En anglais uniquement.)";
+                            readonly absolutePathSupposedToBeAbsolute: {
+                                readonly key: "FR#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHSUPPOSEDTOBEABSOLUTE";
+                                readonly value: "`absolutePath` is supposed to be absolute. / (En anglais uniquement.)";
                             };
-                            "absolutePathCouldntBeRead": {
-                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD";
-                                "value": "Absolute file path could not be read. / (En anglais uniquement.)";
+                            readonly absolutePathCouldntBeRead: {
+                                readonly key: "FR#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD";
+                                readonly value: "Absolute file path could not be read. / (En anglais uniquement.)";
                             };
-                            "jsTsJsxTsxCouldntBeParsed": {
-                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED";
-                                "value": "JS/TS/JSX/TSX source code could not be parsed. / (En anglais uniquement.)";
-                            };
-                        };
-                        "statuses": {
-                            "CODE_NOT_STRING": {
-                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#CODE_NOT_STRING";
-                                "value": "En anglais à l'exécution : \"`code` is supposed to be a string.\"";
-                            };
-                            "ABSOLUTEPATH_NOT_STRING": {
-                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_STRING";
-                                "value": "En anglais à l'exécution : \"`absolutePath` is supposed to be a string.\"";
-                            };
-                            "ABSOLUTEPATH_NOT_ABSOLUTE": {
-                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_ABSOLUTE";
-                                "value": "En anglais à l'exécution : \"`absolutePath` is supposed to be absolute.\"";
-                            };
-                            "ABSOLUTE_PATH_NOT_FOUND": {
-                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTE_PATH_NOT_FOUND";
-                                "value": "En anglais à l'exécution : \"Absolute file path could not be read.\"";
-                            };
-                            "SOURCE_CODE_FATAL_SYNTAX": {
-                                "key": "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#SOURCE_CODE_FATAL_SYNTAX";
-                                "value": "En anglais à l'exécution : \"JS/TS/JSX/TSX source code could not be parsed.\"";
+                            readonly jsTsJsxTsxCouldntBeParsed: {
+                                readonly key: "FR#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED";
+                                readonly value: "JS/TS/JSX/TSX source code could not be parsed. / (En anglais uniquement.)";
                             };
                         };
-                    };
-                };
-                "lib": {
-                    "consts": {
-                        "parser": {
-                            "public": {
-                                "typeScriptAndJSXCompatible": {
-                                    "key": "FR#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
-                                    "value": "Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React).";
-                                };
-                                "noInlineConfig": {
-                                    "key": "FR#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#NOINLINECONFIG";
-                                    "value": "Objet `linterOptions` pour instances de classes `ESLint` et `Linter` désactivant les configurations dans le code lors d'usages programmatiques de ESLint.";
-                                };
+                        readonly statuses: {
+                            readonly CODE_NOT_STRING: {
+                                readonly key: "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#CODE_NOT_STRING";
+                                readonly value: "En anglais à l'exécution : \"`code` is supposed to be a string.\"";
                             };
-                        };
-                    };
-                    "defs": {
-                        "utils": {
-                            "public": {
-                                "getSourceCodeFromCode": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMCODE";
-                                    "value": "Obtient l'objet `SourceCode` généré par ESLint d'un fichier à partir de son code en tant que texte.";
-                                };
-                                "getSourceCodeFromPath": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMPATH";
-                                    "value": "Obtient l'objet `SourceCode` généré par ESLint d'un fichier à partir de son chemin absolu.";
-                                };
+                            readonly ABSOLUTEPATH_NOT_STRING: {
+                                readonly key: "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_STRING";
+                                readonly value: "En anglais à l'exécution : \"`absolutePath` is supposed to be a string.\"";
                             };
-                        };
-                    };
-                    "params": {
-                        "utils": {
-                            "public": {
-                                "code": {
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#CODE";
-                                    "value": "Le code en tant que texte du fichier concerné.";
-                                };
-                                "absolutePath": {
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
-                                    "value": "Le chemin absolu du fichier concerné.";
-                                };
+                            readonly ABSOLUTEPATH_NOT_ABSOLUTE: {
+                                readonly key: "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTEPATH_NOT_ABSOLUTE";
+                                readonly value: "En anglais à l'exécution : \"`absolutePath` is supposed to be absolute.\"";
                             };
-                        };
-                    };
-                    "returns": {
-                        "utils": {
-                            "public": {
-                                "getSourceCodeFromCode": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE";
-                                    "value": "L'objet `SourceCode` généré par ESLint d'un fichier, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{success: true}` à sa clé `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourné à la place.";
-                                };
-                                "getSourceCodeFromPath": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMPATH";
-                                    "value": "L'objet `SourceCode` généré par ESLint d'un fichier, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{success: true}` à sa clé `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourné à la place.";
-                                };
+                            readonly ABSOLUTE_PATH_NOT_FOUND: {
+                                readonly key: "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTE_PATH_NOT_FOUND";
+                                readonly value: "En anglais à l'exécution : \"Absolute file path could not be read.\"";
+                            };
+                            readonly SOURCE_CODE_FATAL_SYNTAX: {
+                                readonly key: "FR#TSDOC#SRC#CONSTS#ERRORS#STATUSES#SOURCE_CODE_FATAL_SYNTAX";
+                                readonly value: "En anglais à l'exécution : \"JS/TS/JSX/TSX source code could not be parsed.\"";
                             };
                         };
                     };
                 };
-                "tests": {
-                    "defs": {
-                        "utils": {
-                            "assertFailureWithMessage": {
-                                "key": "FR#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE";
-                                "value": "Confirme que `getSourceCodeFromCode` ou `getSourceCodeFromPath` échoue lorsqu'il se doit.";
-                            };
-                            "assertSuccess": {
-                                "key": "FR#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS";
-                                "value": "Confirme que `getSourceCodeFromCode` ou `getSourceCodeFromPath` réussit lorsqu'il se doit.";
-                            };
-                        };
-                    };
-                    "params": {
-                        "utils": {
-                            "getSourceCodeResults": {
-                                "key": "FR#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS";
-                                "value": "Les résultats de l'instance de `getSourceCodeFromCode` ou `getSourceCodeFromPath` appelée lors du test, dont le succès ou l'échec est évalué à travers la valeur booléenne de leur clé `success`.";
-                            };
-                            "expectedMessage": {
-                                "key": "FR#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE";
-                                "value": "Le message attendu de l'erreur qui devrait être rencontrée en cas d'échec (`message`), à partir duquel le statut peut être déduit (`status`).";
+                readonly lib: {
+                    readonly consts: {
+                        readonly parser: {
+                            readonly public: {
+                                readonly typeScriptAndJSXCompatible: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE";
+                                    readonly value: "Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React).";
+                                };
+                                readonly noInlineConfig: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#NOINLINECONFIG";
+                                    readonly value: "Objet `linterOptions` pour instances de classes `ESLint` et `Linter` désactivant les configurations dans le code lors d'usages programmatiques de ESLint.";
+                                };
                             };
                         };
                     };
-                    "returns": {
-                        "utils": {
-                            "assertFailureWithMessage": {
-                                "key": "FR#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE";
-                                "value": "Void.";
+                    readonly defs: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly getSourceCodeFromCode: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMCODE";
+                                    readonly value: "Obtient l'objet `SourceCode` généré par ESLint d'un fichier à partir de son code en tant que texte.";
+                                };
+                                readonly getSourceCodeFromPath: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMPATH";
+                                    readonly value: "Obtient l'objet `SourceCode` généré par ESLint d'un fichier à partir de son chemin absolu.";
+                                };
                             };
-                            "assertSuccess": {
-                                "key": "FR#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS";
-                                "value": "Void.";
+                        };
+                    };
+                    readonly params: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly code: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#CODE";
+                                    readonly value: "Le code en tant que texte du fichier concerné.";
+                                };
+                                readonly absolutePath: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
+                                    readonly value: "Le chemin absolu du fichier concerné.";
+                                };
+                            };
+                        };
+                    };
+                    readonly returns: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly getSourceCodeFromCode: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE";
+                                    readonly value: "L'objet `SourceCode` généré par ESLint d'un fichier, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{success: true}` à sa clé `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourné à la place.";
+                                };
+                                readonly getSourceCodeFromPath: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMPATH";
+                                    readonly value: "L'objet `SourceCode` généré par ESLint d'un fichier, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{success: true}` à sa clé `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourné à la place.";
+                                };
+                            };
+                        };
+                    };
+                };
+                readonly tests: {
+                    readonly defs: {
+                        readonly utils: {
+                            readonly assertFailureWithMessage: {
+                                readonly key: "FR#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE";
+                                readonly value: "Confirme que `getSourceCodeFromCode` ou `getSourceCodeFromPath` échoue lorsqu'il se doit.";
+                            };
+                            readonly assertSuccess: {
+                                readonly key: "FR#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS";
+                                readonly value: "Confirme que `getSourceCodeFromCode` ou `getSourceCodeFromPath` réussit lorsqu'il se doit.";
+                            };
+                        };
+                    };
+                    readonly params: {
+                        readonly utils: {
+                            readonly getSourceCodeResults: {
+                                readonly key: "FR#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS";
+                                readonly value: "Les résultats de l'instance de `getSourceCodeFromCode` ou `getSourceCodeFromPath` appelée lors du test, dont le succès ou l'échec est évalué à travers la valeur booléenne de leur clé `success`.";
+                            };
+                            readonly expectedMessage: {
+                                readonly key: "FR#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE";
+                                readonly value: "Le message attendu de l'erreur qui devrait être rencontrée en cas d'échec (`message`), à partir duquel le statut peut être déduit (`status`).";
+                            };
+                        };
+                    };
+                    readonly returns: {
+                        readonly utils: {
+                            readonly assertFailureWithMessage: {
+                                readonly key: "FR#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE";
+                                readonly value: "Void.";
+                            };
+                            readonly assertSuccess: {
+                                readonly key: "FR#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS";
+                                readonly value: "Void.";
                             };
                         };
                     };
                 };
             };
         };
-        "composedVariablesExclusives": {
-            "variables": {};
-            "arguments": {};
-            "_enAnglais": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
-                "value": "En anglais à l'exécution";
+        readonly composedVariablesExclusives: {
+            readonly variables: {};
+            readonly arguments: {};
+            readonly _enAnglais: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
+                readonly value: "En anglais à l'exécution";
             };
-            "_enAnglais_": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_";
-                "value": "(En anglais uniquement.)";
+            readonly _enAnglais_: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_";
+                readonly value: "(En anglais uniquement.)";
             };
-            "eslintSourceCode": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE";
-                "value": "objet `SourceCode` généré par ESLint d'un fichier";
+            readonly eslintSourceCode: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE";
+                readonly value: "objet `SourceCode` généré par ESLint d'un fichier";
             };
-            "singleError": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
-                "value": "seule erreur dans son array `errors`";
+            readonly singleError: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
+                readonly value: "seule erreur dans son array `errors`";
             };
-            "basedOnMessageAndStatus": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
-                "value": "basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir";
+            readonly basedOnMessageAndStatus: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+                readonly value: "basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir";
             };
-            "code": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CODE";
-                "value": "code en tant que texte du fichier";
+            readonly code: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#CODE";
+                readonly value: "code en tant que texte du fichier";
             };
-            "absolutePath": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH";
-                "value": "chemin absolu du fichier";
+            readonly absolutePath: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH";
+                readonly value: "chemin absolu du fichier";
             };
-            "concerné": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ";
-                "value": "concerné";
+            readonly concerné: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ";
+                readonly value: "concerné";
             };
-            "_asserts": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS";
-                "value": "Confirme";
+            readonly _asserts: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS";
+                readonly value: "Confirme";
             };
-            "whenItShould": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD";
-                "value": "lorsqu'il se doit";
+            readonly whenItShould: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD";
+                readonly value: "lorsqu'il se doit";
             };
         };
     };

@@ -1,11 +1,11 @@
 /* data */
 
-export const enData = Object.freeze({
-  tsDoc: Object.freeze({
-    src: Object.freeze({
-      consts: Object.freeze({
-        errors: Object.freeze({
-          messages: Object.freeze({
+export const enData = /** @type {const} */ ({
+  tsDoc: {
+    src: {
+      consts: {
+        errors: {
+          messages: {
             codeSupposedToBeString:
               "`$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#CODE` is supposed to be a string." /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#CODESUPPOSEDTOBESTRING / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#CODESUPPOSEDTOBESTRING */,
             absolutePathSupposedToBeString:
@@ -16,8 +16,8 @@ export const enData = Object.freeze({
               "Absolute file path could not be read." /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD */,
             jsTsJsxTsxCouldntBeParsed:
               "JS/TS/JSX/TSX source code could not be parsed." /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED */,
-          }),
-          statuses: Object.freeze({
+          },
+          statuses: {
             CODE_NOT_STRING:
               '"$COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#CODESUPPOSEDTOBESTRING"' /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#STATUSES#CODE_NOT_STRING / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#CODE_NOT_STRING */,
             ABSOLUTEPATH_NOT_STRING:
@@ -28,80 +28,85 @@ export const enData = Object.freeze({
               '"$COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#ABSOLUTEPATHCOULDNTBEREAD"' /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTE_PATH_NOT_FOUND / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#ABSOLUTE_PATH_NOT_FOUND */,
             SOURCE_CODE_FATAL_SYNTAX:
               '"$COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#MESSAGES#JSTSJSXTSXCOULDNTBEPARSED"' /* variations: $COMMENT#TSDOC#SRC#CONSTS#ERRORS#STATUSES#SOURCE_CODE_FATAL_SYNTAX / core: $COMMENT#EN#TSDOC#SRC#CONSTS#ERRORS#STATUSES#SOURCE_CODE_FATAL_SYNTAX */,
-          }),
-        }),
-      }),
-      lib: Object.freeze({
-        consts: Object.freeze({
-          parser: Object.freeze({
-            public: Object.freeze({
+          },
+        },
+      },
+      lib: {
+        consts: {
+          parser: {
+            public: {
               typeScriptAndJSXCompatible:
                 "`languageOptions` object for instances of the `ESLint` and `Linter` classes enabling the linting of TypeScript and JSX (React) files." /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE / core: $COMMENT#EN#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE */,
               noInlineConfig:
                 "`linterOptions` object for instances of the `ESLint` and `Linter` classes disabling ESLint inline configs when using ESLint programmatically." /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#NOINLINECONFIG / core: $COMMENT#EN#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#NOINLINECONFIG */,
-            }),
-          }),
-        }),
-        defs: Object.freeze({
-          utils: Object.freeze({
-            public: Object.freeze({
+            },
+          },
+        },
+        defs: {
+          utils: {
+            public: {
               getSourceCodeFromCode:
                 "Gets the $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE from its code as text." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMCODE / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMCODE */,
               getSourceCodeFromPath:
                 "Gets the $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE from its absolute path." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMPATH / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#GETSOURCECODEFROMPATH */,
-            }),
-          }),
-        }),
-        params: Object.freeze({
-          utils: Object.freeze({
-            public: Object.freeze({
-              code: "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#CODE $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#CODE / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#CODE */,
+            },
+          },
+        },
+        params: {
+          utils: {
+            public: {
+              code: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#CODE" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#CODE / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#CODE */,
               absolutePath:
-                "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH */,
-            }),
-          }),
-        }),
-        returns: Object.freeze({
-          utils: Object.freeze({
-            public: Object.freeze({
+                "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH */,
+            },
+            atHand: {
+              code: "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#CODE§" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#CODE / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#CODE */,
+              absolutePath:
+                "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ABSOLUTEPATH§" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH */,
+            },
+          },
+        },
+        returns: {
+          utils: {
+            public: {
               getSourceCodeFromCode:
                 "The $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ESLINTSOURCECODE, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE}` object at its `sourceCode` key. In case of an error, a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` object is returned instead." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE */,
               getSourceCodeFromPath:
                 "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE" /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE */,
-            }),
-          }),
-        }),
-      }),
-      tests: Object.freeze({
-        defs: Object.freeze({
-          utils: Object.freeze({
+            },
+          },
+        },
+      },
+      tests: {
+        defs: {
+          utils: {
             assertFailureWithMessage:
               "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS that `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMCODE` or `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMPATH` fails $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD." /* variations: $COMMENT#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE / core: $COMMENT#EN#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTFAILUREWITHMESSAGE */,
             assertSuccess:
               "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_ASSERTS that `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMCODE` or `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMPATH` succeeds $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WHENITSHOULD." /* variations: $COMMENT#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS / core: $COMMENT#EN#TSDOC#SRC#TESTS#DEFS#UTILS#ASSERTSUCCESS */,
-          }),
-        }),
-        params: Object.freeze({
-          utils: Object.freeze({
+          },
+        },
+        params: {
+          utils: {
             getSourceCodeResults:
               "The results of the `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMCODE` or `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMPATH` instance called in the test, whose success or failure is evaluated via its `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS` key's boolean value." /* variations: $COMMENT#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS / core: $COMMENT#EN#TSDOC#SRC#TESTS#PARAMS#UTILS#GETSOURCECODERESULTS */,
             expectedMessage:
               "The expected $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#MESSAGE of the error that should be encountered during failure, from which the $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#STATUS can be inferred." /* variations: $COMMENT#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE / core: $COMMENT#EN#TSDOC#SRC#TESTS#PARAMS#UTILS#EXPECTEDMESSAGE */,
-          }),
-        }),
-        returns: Object.freeze({
-          utils: Object.freeze({
+          },
+        },
+        returns: {
+          utils: {
             assertFailureWithMessage:
               "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID." /* variations: $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE / core: $COMMENT#EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE */,
             assertSuccess:
               "EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTFAILUREWITHMESSAGE" /* variations: $COMMENT#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS / core: $COMMENT#EN#TSDOC#SRC#TESTS#RETURNS#UTILS#ASSERTSUCCESS */,
-          }),
-        }),
-      }),
-    }),
-  }),
-  composedVariablesExclusives: Object.freeze({
-    variables: Object.freeze({
+          },
+        },
+      },
+    },
+  },
+  composedVariablesExclusives: {
+    variables: {
       getSourceCodeFromCode:
         "getSourceCodeFromCode" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMCODE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#GETSOURCECODEFROMCODE */,
       getSourceCodeFromPath:
@@ -121,12 +126,12 @@ export const enData = Object.freeze({
       jsx: "jsx" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#JSX / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#JSX */,
       pEJsx:
         "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PECMAFEATURES.$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#JSX" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PEJSX / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PEJSX */,
-    }),
-    arguments: Object.freeze({
+    },
+    arguments: {
       code: "code" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#CODE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#CODE */,
       absolutePath:
         "absolutePath" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#ABSOLUTEPATH */,
-    }),
+    },
 
     // tsDoc.src.lib.defs.utils
     eslintSourceCode:
@@ -166,7 +171,7 @@ export const enData = Object.freeze({
     // tsDoc.src.tests.returns.utils
     _void:
       "Void" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_VOID / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID */,
-  }),
+  },
 });
 
 /* manual composedVariablesExclusives */
