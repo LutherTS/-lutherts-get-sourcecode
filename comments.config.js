@@ -78,8 +78,9 @@ const templateFunctions = {
         const parts = string.split("§");
         const part = parts[0];
 
-        return part + " $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND.";
-        // $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND
+        return /** @type {const} */ (
+          `${part} $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND.`
+        );
       },
       afterComposed: (/** @type {string} */ string) => string,
     },
