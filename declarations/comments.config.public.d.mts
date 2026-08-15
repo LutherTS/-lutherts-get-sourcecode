@@ -12,10 +12,14 @@ export declare const resolvedPublicData: {
             readonly "_LUTHERTS_GET_SOURCECODE#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH": "The absolute path of the file at hand.";
             readonly "_LUTHERTS_GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMPATH": "The ESLint-generated `SourceCode` object of a file, from which the AST (`sourceCode.ast`) and all comments (`sourceCode.getAllComments()`) can be extracted, inside a `{success: true}` object at its `sourceCode` key. In case of an error, a `{success: false}` object is returned instead.";
             readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#RESOLVEDPUBLICDATA": "";
+            readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#MAKEGETSOURCECODEFROMCODEERRORB": "";
+            readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#MAKEGETSOURCECODEFROMPATHERRORB": "";
             readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#GETSOURCECODEFROMCODE": "";
             readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#GETSOURCECODEFROMPATH": "";
             readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#NOINLINECONFIG": "";
             readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE": "";
+            readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#GETSOURCECODEFROMCODEERRORA": "";
+            readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#GETSOURCECODEFROMPATHERRORA": "";
         };
         readonly FR: {
             readonly "_LUTHERTS_GET_SOURCECODE#TSDOC#SRC#LIB#CONSTS#PARSER#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE": "Objet `languageOptions` pour instances de classes `ESLint` et `Linter` permettant l'analyse statique de fichiers TypeScript et JSX (React).";
@@ -27,10 +31,14 @@ export declare const resolvedPublicData: {
             readonly "_LUTHERTS_GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMCODE": "L'objet `SourceCode` généré par ESLint d'un fichier, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{success: true}` à sa clé `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourné à la place.";
             readonly "_LUTHERTS_GET_SOURCECODE#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#GETSOURCECODEFROMPATH": "L'objet `SourceCode` généré par ESLint d'un fichier, à partir duquel l'AST (`sourceCode.ast`) et tous les commentaires (`sourceCode.getAllComments()`) peuvent être extraits, à l'intérieur d'un objet `{success: true}` à sa clé `sourceCode`. En cas d'erreur, un objet `{success: false}` est retourné à la place.";
             readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#RESOLVEDPUBLICDATA": "";
+            readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#MAKEGETSOURCECODEFROMCODEERRORB": "";
+            readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#MAKEGETSOURCECODEFROMPATHERRORB": "";
             readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#GETSOURCECODEFROMCODE": "";
             readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#GETSOURCECODEFROMPATH": "";
             readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#NOINLINECONFIG": "";
             readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#TYPESCRIPTANDJSXCOMPATIBLE": "";
+            readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#GETSOURCECODEFROMCODEERRORA": "";
+            readonly "_LUTHERTS_GET_SOURCECODE#PUBLIC#GETSOURCECODEFROMPATHERRORA": "";
         };
     };
 };
